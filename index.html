@@ -3,59 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CDE4301 final-year project interim report draft.">
-  <title>VR-402 — CDE4301 Interim Report</title>
+  <meta name="description" content="Working FYP report on richer speech-audio assessment and effective debriefing for paediatric VR training.">
+  <title>Paediatric VR Assessment and Debriefing — FYP Working Report</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <main class="content">
-  <h1>VR-402 · CDE4301 FYP</h1>
-  <p class="subtitle">Interim report · Charlie</p>
-  <aside><strong>Working draft.</strong> Report scaffold only. Project title, supervisor details and research content remain to be confirmed.</aside>
+  <h1>Improving AI-Supported Assessment and Debriefing for Paediatric VR Training</h1>
+  <p class="subtitle">CDE4301 FYP · Working title<br>Charlie Hee (currently VR-402) · Ang Kang Zhe (currently VR-405)<br>Supervisor: A/Prof Khoo Eng Tat</p>
+  <aside><strong>Working draft · proposed study.</strong> The title and scope are subject to confirmation. Current implementation details remain to be verified; no completed prototype or experimental results are claimed.</aside>
   <nav aria-label="Table of contents">
     <h2>Table of contents</h2>
     <ol>
       <li><a href="#context">Project context and problem</a></li>
-      <li><a href="#prior-work">Existing work and research gap</a></li>
-      <li><a href="#literature">Literature review</a></li>
-      <li><a href="#objectives">Research question and objectives</a></li>
+      <li><a href="#prior-work">Existing pipeline and research gap</a></li>
+      <li><a href="#literature">Related work and evidence boundaries</a></li>
+      <li><a href="#objectives">Research question and workstreams</a></li>
       <li><a href="#methodology">Proposed methodology</a></li>
-      <li><a href="#prototype">Prototype and preliminary results</a></li>
-      <li><a href="#plan">Next steps and discussion</a></li>
-      <li><a href="#references">References</a></li>
+      <li><a href="#prototype">Implementation and evaluation status</a></li>
+      <li><a href="#plan">Next steps and supervisor questions</a></li>
+      <li><a href="#references">References and internal material</a></li>
     </ol>
   </nav>
   <section id="context">
     <h2>1. Project context and problem</h2>
-    <p>Describe the training context, existing system and problem this project addresses.</p>
+    <p>The shared context is paediatric VR training: using evidence from a simulated team interaction to support performance assessment and post-simulation debriefing. This project explores both what the assessment can recover from recorded speech and how its findings can help trainees and instructors reflect on performance.</p>
+    <p>Transcripts preserve spoken content but can omit delivery and timing information. Recovering that information may improve assessment, while clearer presentation may make feedback easier to understand and act on. Both benefits require evaluation.</p>
   </section>
   <section id="prior-work">
-    <h2>2. Existing work and research gap</h2>
-    <p>Summarise the two internal papers with verified citations. Separate existing capabilities from the proposed contribution.</p>
+    <h2>2. Existing pipeline and research gap</h2>
+    <p><strong>Current working reconstruction:</strong> audio → speech-to-text (STT)/transcript → cleaning → discourse/conversation reasoning → teamwork assessment → Excel debrief.</p>
+    <p>The intermediate outputs suggest contextual transcript correction, interpretation of conversational relationships, and summarisation against assessment criteria. They do not establish the exact implementation.</p>
+    <aside><strong>To be verified:</strong> the current LLM, prompts and stage boundaries, and whether timestamps enter assessment reasoning. For study planning only, condition A provisionally assumes a transcript/context language model without explicit timing evidence. Timestamp files alone do not prove that timing is used; revise the baseline once the implementation is confirmed.</aside>
   </section>
   <section id="literature">
-    <h2>3. Literature review</h2>
-    <p>Compare relevant audio-analysis approaches, evidence and limitations. Add only sources that have been checked.</p>
+    <h2>3. Related work and evidence boundaries</h2>
+    <p><strong>Explicit acoustic evidence.</strong> <a href="https://audeering.github.io/opensmile/about.html">openSMILE</a> performs signal analysis; <a href="https://audeering.github.io/opensmile-python/usage.html">eGeMAPS</a> is an acoustic feature set it can extract. The output is numerical measurements, including descriptors of pitch, loudness and voice quality, not semantic conclusions about teamwork or confidence. A separate interpretation stage must connect selected measurements to a defined assessment rubric.</p>
+    <p><strong>Measurement versus inference.</strong> A measured pause duration is evidence; calling it hesitation is a higher-level inference; attributing it to anxiety or lack of knowledge is a further claim. Automated measurements also need checking. Audio alone should not be treated as proof of internal state or clinical competence.</p>
+    <p><strong>Design precedent.</strong> <a href="https://www.vmock.com/interviews/">VMock</a> is a reference for how interview practice and feedback might be presented. It is not treated as a validated proprietary algorithm to reproduce, nor as evidence that any particular acoustic measure reliably scores confidence.</p>
+    <p><strong>Internal related work.</strong> The supplied SIA aviation papers inform discussion of VR training and multimodal cues only. They are not the paediatric study setting or evidence of validation in this setting; restricted papers are not reproduced here.</p>
   </section>
   <section id="objectives">
-    <h2>4. Research question and objectives</h2>
-    <p>Confirm the scope, research question and feasible objectives with the supervisor.</p>
+    <h2>4. Research question and workstreams</h2>
+    <p><strong>Shared question:</strong> How can richer assessment evidence and clearer feedback improve AI-supported debriefing for paediatric VR training?</p>
+    <ul>
+      <li><strong>Charlie Hee — richer assessment from raw speech audio:</strong> investigate whether information lost during STT improves assessment beyond transcript and conversational context. The scope is exploratory, rather than a predetermined “confidence detector”.</li>
+      <li><strong>Ang Kang Zhe — presentation of analysis and feedback:</strong> investigate how findings, supporting evidence and uncertainty can be organised and presented to support debriefing and learning.</li>
+    </ul>
+    <p>The proposed integration connects interpretable evidence and assessment outputs to Kang Zhe’s feedback interface. Each workstream retains its own evaluation: assessment validity and feedback usefulness.</p>
   </section>
   <section id="methodology">
     <h2>5. Proposed methodology</h2>
-    <p>Explain the proposed approach, alternatives, evaluation criteria and data protocol.</p>
+    <p>Compare three conditions on the same recorded interactions, with matched assessment units, rubric and scenario context:</p>
+    <ol>
+      <li><strong>A · Current transcript/context baseline.</strong> Reproduce the verified current pipeline and document its model, prompts and inputs. The provisional assumption about timestamps must be checked before comparison.</li>
+      <li><strong>B · Engineered audio-feature pathway.</strong> Extract timing/disfluency evidence, such as pauses, speech rate and fillers, using suitable segmentation, alignment and detection methods, alongside openSMILE/eGeMAPS acoustic measurements. Convert selected values into structured text/JSON with units, time spans and measurement caveats. Give this evidence plus the transcript/context to a language model for rubric-based interpretation. openSMILE alone does not supply all timing or filler annotations.</li>
+      <li><strong>C · Direct raw-audio assessment.</strong> Give the original recording and matched task context to an audio-capable language model for assessment. Select and document the model before testing; its ability to accept audio does not establish assessment validity.</li>
+    </ol>
+    <p><strong>Independent human reference.</strong> Have raters assess the same recordings using an agreed rubric, independently of model outputs. Report inter-rater agreement and disagreements; human ratings are a reference with uncertainty, not infallible ground truth. Keep delivery judgements separate from procedural correctness and team-level performance.</p>
+    <p>First check measurement accuracy against manually annotated examples, then compare assessment agreement and evidence quality across A–C. Keep the text model and prompt consistent between A and B where feasible, separate development and evaluation speakers, and record model versions and settings. Consider recording conditions, language/accent variation and speaker normalization before interpreting acoustic differences.</p>
+    <p>An optional later hybrid may combine engineered evidence with direct audio assessment, if the initial comparison justifies the extra complexity. Improved model agreement alone would not demonstrate improved learning; feedback usefulness needs a separate evaluation with Kang Zhe’s interface.</p>
   </section>
   <section id="prototype">
-    <h2>6. Prototype and preliminary results</h2>
-    <p>Add implementation details and actual test results when available. No experiments or results are claimed in this starter.</p>
+    <h2>6. Implementation and evaluation status</h2>
+    <p>This report defines a proposed methodology. No new prototype, collected human ratings, comparative scores or learning outcomes are reported. The next deliverable is a small, auditable comparison on approved recordings, with time-linked evidence and clearly labelled interpretations.</p>
   </section>
   <section id="plan">
-    <h2>7. Next steps and discussion</h2>
-    <p>Record supervisor decisions, open questions and milestones toward the interim assessment.</p>
+    <h2>7. Next steps and supervisor questions</h2>
+    <p>Confirm the following with A/Prof Khoo Eng Tat before fixing the study protocol:</p>
+    <ul>
+      <li>Which current LLM(s) and prompts perform cleaning, conversation reasoning and assessment?</li>
+      <li>Do timestamps enter reasoning, or are they retained only for alignment/display?</li>
+      <li>Where do the Excel assessment criteria originate, and how do they relate to the Team Emergency Assessment Measure (TEAM)?</li>
+      <li>What do <code>AI_Before</code> and <code>AI_After</code> mean in the supplied outputs?</li>
+      <li>Which target construct and assessment unit matter most, and what human reference or ground truth is feasible?</li>
+      <li>What speaker normalization is appropriate, and how should accent, microphone and scenario differences be handled?</li>
+      <li>Which evidence fields, timestamps and uncertainty indicators should integrate with Kang Zhe’s UI?</li>
+    </ul>
+    <p>Then agree on data access and consent, a small annotation pilot, a reproducible A–C comparison, and a feedback-interface review. Set milestones after the scope and available recordings are confirmed.</p>
   </section>
   <section id="references">
-    <h2>8. References</h2>
-    <p>Add verified bibliographic references and links here.</p>
+    <h2>8. References and internal material</h2>
+    <ul>
+      <li>audEERING: <a href="https://audeering.github.io/opensmile/about.html">About openSMILE</a> and <a href="https://audeering.github.io/opensmile-python/usage.html">Python usage and eGeMAPS feature extraction</a>.</li>
+      <li><a href="https://www.vmock.com/interviews/">VMock Interviews</a>: product/design reference, not independent validation.</li>
+      <li>Supplied paediatric pipeline outputs and two SIA aviation papers: internal discussion material only. Full bibliographic details and permission to cite remain to be confirmed.</li>
+    </ul>
   </section>
   <footer><p>Based on the <a href="https://github.com/edic-nus/template">EDIC NUS report template</a>. <a href="https://edic-nus.github.io/tutorial/">Report website tutorial</a>.</p></footer>
 </main>
