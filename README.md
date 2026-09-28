@@ -1,5 +1,7 @@
 # VR-402 — CDE4301 FYP interim report
 
+[Repository](https://github.com/Charlieheemg/VR-402) · [Report website](https://Charlieheemg.github.io/VR-402/)
+
 Charlie’s report website, based on [EDIC NUS template](https://github.com/edic-nus/template) and its [tutorial](https://edic-nus.github.io/tutorial/).
 
 This is an initial scaffold, not a completed interim submission. Assigned project code: VR-402. The official project title still needs confirmation.
