@@ -103,7 +103,14 @@ def analyze_recording(audio, bundle, output):
         raise ValueError('Near-silent recording: no benchmark prediction generated; check microphone permissions/input')
     notes = ['Uncalibrated classifier probabilities; not clinical evidence or a PVC 1–5 score.',
              'No validated speech detector checks this input. Noise/tones can also produce predictions.',
-             'Adult speech, microphone differences, acted delivery and short sentences are outside the training context.']
+             'Adult speech, microphone differences, acted delivery and short sentences are outside the training context.',
+             'Being inside training duration or feature ranges does not establish validity for adult PVC.']
+    context = dict(duration_s=len(signal)/sr, source_sample_rate_hz=sr, source_channels=info.channels,
+                   source_rms_full_scale=float(np.sqrt(np.mean(signal.astype(float)**2))),
+                   source_peak_full_scale=float(np.max(np.abs(signal))), analysis_sample_rate_hz=16000,
+                   analysis_channels=1)
+    if context['source_peak_full_scale'] >= .999:
+        notes.append('Source samples near full scale: inspect possible clipping before interpreting any output.')
     if info.channels > 1:
         notes.append('Channels averaged to mono; overlapping speakers or phase cancellation may affect results.')
     source_hash = sha(audio)
@@ -133,7 +140,8 @@ def analyze_recording(audio, bundle, output):
         probabilities={name:float(probabilities[i]) for i,name in enumerate(LABELS.values())},
         predicted_class=list(LABELS.values())[int(np.argmax(probabilities))],
         source_audio_sha256=source_hash, analysis_audio_sha256=result['audio_sha256'],
-        notes=notes, model_kind=bundle['kind'])
+        notes=notes, model_kind=bundle['kind'], recording_context=context,
+        extractor_warnings=result['warnings'])
     write = json.dumps(output_result,indent=2,allow_nan=False)+'\n'
     (output/'prediction.json').write_text(write)
     f = result['features']
@@ -144,6 +152,8 @@ def analyze_recording(audio, bundle, output):
              'Predicted class: '+output_result['predicted_class'], '',
              'Acoustic measurements (not causal explanations of this prediction):',
              f"Duration: {value('audio_duration_s')} s",
+             f"Source: {sr} Hz, {info.channels} channel(s); analysis: 16000 Hz, mono",
+             f"Source RMS: {context['source_rms_full_scale']:.6f} full scale; peak {context['source_peak_full_scale']:.6f}",
              f"F0: normalised SD {value('F0semitoneFrom27.5Hz_sma3nz_stddevNorm')}; 20–80 percentile range {value('F0semitoneFrom27.5Hz_sma3nz_pctlrange0-2')} semitones",
              f"Loudness: mean {value('loudness_sma3_amean')} (openSMILE units); normalised SD {value('loudness_sma3_stddevNorm')}",
              f"Voice quality: jitter {value('jitterLocal_sma3nz_amean')}; shimmer {value('shimmerLocaldB_sma3nz_amean')} dB; HNR {value('HNRdBACF_sma3nz_amean')} dB",

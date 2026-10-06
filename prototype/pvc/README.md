@@ -117,3 +117,14 @@ Use the same clips/definition for raters and models, blind raters to predictions
 ## Evidence and limitations
 
 See [demonstration record](results/README.md). No valid human PVC labels were identified in the inspected sample JSON; the supplied teamwork assessments are a different construct. No external labelled dataset was integrated. Timing is unvalidated, recordings can contain overlap/background sounds, roles are not confirmed identities, transcripts can omit disfluencies, and whole-file F0 summaries hide contours. Boundary/threshold choices and recording gain affect results. Next work: expert review of construct and anchors, consented single-speaker clip selection, multiple independent listener ratings, manual measurement checks and speaker-held-out validation. Kang Zhe's feedback/debriefing evaluation remains a separate workstream.
+
+## Final meeting refinement: fixed-fold audit and paired demo
+
+From the repository root:
+
+```sh
+prototype/pvc/.venv/bin/python prototype/pvc/reading_ablation.py
+prototype/pvc/.venv/bin/python prototype/pvc/compare_demo.py --script reading
+```
+
+The ablation consumes the existing 600-recording feature table and exact saved folds; it does not retune or replace models. The paired demo keeps full-feature logistic as the default, records both takes before prediction, and preserves both outputs privately. [Ablation interpretation](../../docs/reading_confidence_ablation.md), [two readings and paired-WAV fallback](../../docs/live_confidence_demo.md), and [final meeting status](../../docs/pvc_meeting_status_final.md). Actual hardware microphone capture still requires a normal-terminal rehearsal.

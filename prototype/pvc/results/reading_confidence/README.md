@@ -65,3 +65,7 @@ Logistic coefficients are from the final all-data standardized model, not causal
 Raw audio, names, per-recording features, fold assignments, predictions and fitted models stay local. Aggregate metrics and feature summaries only are published.
 
 See [method/provenance](../../../../docs/reading_confidence_benchmark.md) and [live demo](../../../../docs/live_confidence_demo.md).
+
+## Fixed-fold ablation
+
+See [ablation_results.csv](ablation_results.csv) for all five conditions, three models, balanced accuracy, macro/per-class F1 and differences from Full. [ablation_fold_results.csv](ablation_fold_results.csv) contains matched-fold comparisons; [metadata](ablation_metadata.json) records frozen inputs and settings. [Interpretation](../../../../docs/reading_confidence_ablation.md): standardized features retain signal without custom duration/RMS, but speaker/task/recording confounds remain. The preselected live-demo model is unchanged.

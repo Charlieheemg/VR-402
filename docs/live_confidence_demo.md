@@ -4,6 +4,40 @@ This is a demonstration of an external three-class benchmark, not a PVC assessme
 
 > This prediction comes from an external model trained on children's English reading-confidence ratings. It is a demonstration of the acoustic modelling pipeline, not a validated PVC assessment for adult paediatric communication.
 
+## Paired A/B demonstration (recommended)
+
+From the repository root, run:
+
+```sh
+prototype/pvc/.venv/bin/python prototype/pvc/compare_demo.py --script reading
+```
+
+This records Take A and then Take B before displaying any predictions. Press Enter to start/stop each take. The selected microphone is fixed for the pair. Both recordings use the **same existing full-feature logistic model**; this default has not changed after the benchmark or ablation. Show its outputs even if the ordering is unexpected, rather than switching models. `--model` accepts an explicit trusted local model path, but preselect one model for the meeting.
+
+The table shows Low/Medium/High probabilities, class, F0 range, loudness variation, duration, source RMS/peak, sample rate and channels. Source/context and extractor warnings are retained for each take. Acoustic differences are observations, not causal explanations; there is no numeric confidence-change score or OOD-validity score. The training-duration warning remains, and being inside that range does not validate adult speech. Near-silent input is rejected.
+
+Both original WAVs and their complete extraction/prediction outputs are retained under ignored `prototype/pvc/private/paired_demo/<UTC timestamp>/take_a/` and `take_b/`, with `comparison.txt` and `comparison.json` at the pair root. An existing output folder is rejected, not overwritten. For prerecorded files, copies of both originals are preserved:
+
+```sh
+prototype/pvc/.venv/bin/python prototype/pvc/compare_demo.py --wav-a "/absolute/path/to/take_a.wav" --wav-b "/absolute/path/to/take_b.wav" --script reading
+```
+
+The tool does not verify spoken words or whether the intended acted delivery was achieved. `--script` displays the suggested stimulus and records that choice; it does not certify transcript compliance.
+
+**Benchmark sanity-check reading (57 words; roughly 20–30 seconds at 114–171 words/minute):**
+
+> On Saturday morning, Maya walked to the local library to return a book about birds. She stopped beside the garden and watched a small bird carrying a leaf. Inside, the librarian showed her a shelf of new stories. Maya chose one, sat near the window, and read quietly until it was time to meet her friend outside.
+
+Read naturally; the approximate time is not an instruction to pad or accelerate either take. Tentative delivery may take longer. This paragraph is closer to the source task/length, but adult voice, recording setup and acted conditions remain different.
+
+**Domain-relevance reading:** run the same command with `--script clinical` and use:
+
+> I recommend that we administer the medication now and reassess the patient in two minutes.
+
+For each script, use exactly the same words in both takes, the same microphone, distance, room and input gain. A is deliberately tentative/hesitant; B is deliberately assured. Same text controls lexical content better; it does not eliminate all confounds. These are intentionally acted conditions, **not ground-truth labels**. Expected ordering is a sanity check only; failure may reflect domain shift or model error. Neither result validates PVC.
+
+The [fixed-fold ablation](reading_confidence_ablation.md) does not select a replacement demo model. See the [final meeting status](pvc_meeting_status_final.md) for the research decision and concise explanation.
+
 ## Run during the meeting
 
 From the `VR-402` repository root, record yourself:
