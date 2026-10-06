@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PVC listener rating · v0.1</title>
+<style>
+body{font:17px/1.5 system-ui,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;color:#17232b}
+button,input,textarea{font:inherit}button{padding:.5rem .8rem;cursor:pointer;margin:.5rem .3rem .5rem 0}
+label{display:block;margin:.6rem 0}input[type=radio]{margin-right:.6rem}textarea{width:95%}
+fieldset{border:1px solid #aaa;padding:1rem}audio{width:100%}.reminder{background:#eef3f5;padding:1rem}
+#status{min-height:1.5em}#error{color:#9b1c20}button:disabled{cursor:default} [hidden]{display:none!important}
+</style>
+<script src="/app.js" defer></script>
+</head>
+<body>
+<h1>PVC listener rating <small>v0.1</small></h1>
+<p>Listen to each clip before answering. Work independently. Replay as needed and keep your listening setup consistent.</p>
+<form id="start-form">
+<label for="rater">Your assigned rater ID (use a pseudonym)</label>
+<input id="rater" required pattern="[A-Za-z0-9_-]{1,64}" maxlength="64" autocomplete="off">
+<button type="submit">Start / resume</button>
+</form>
+<p id="identity" hidden></p>
+<p id="status" role="status" aria-live="polite"></p>
+<p id="error" role="alert"></p>
+<section id="rating" hidden>
+<p id="progress"></p>
+<audio id="audio" controls preload="metadata"></audio>
+<form id="rating-form">
+<fieldset>
+<legend><strong>Based on the speaker’s vocal delivery, how confident does the speaker sound in what they are saying?</strong></legend>
+<label><input type="radio" name="score" value="1" required>1 = very low perceived vocal confidence / strongly tentative or doubtful</label>
+<label><input type="radio" name="score" value="2">2 = low</label>
+<label><input type="radio" name="score" value="3">3 = neutral or unclear</label>
+<label><input type="radio" name="score" value="4">4 = high</label>
+<label><input type="radio" name="score" value="5">5 = very high / strongly assured and committed</label>
+</fieldset>
+<p class="reminder">Judge how the speaker sounds. Do not judge whether the content is correct, whether the speaker is actually confident internally, or whether the speaker is competent.</p>
+<label for="notes">Short note (optional)</label>
+<textarea id="notes" rows="2" maxlength="2000"></textarea>
+<button id="save" type="submit" disabled>Save and next clip</button>
+<button id="unrateable" type="button">Unable to rate — skip</button>
+<p><small>If the audio is inaudible or the target speaker is unclear, use “Unable to rate” (blank score), rather than choosing 3. Add a reason in the optional note if helpful.</small></p>
+</form>
+</section>
+<p><a id="export" hidden>Export saved ratings as CSV</a></p>
+<p><small>Responses save locally after each clip. To resume, reopen this page with the same rater ID and clip folder. No acoustic measurements are shown. Audio and responses are not sent to an external service.</small></p>
+</body>
+</html>

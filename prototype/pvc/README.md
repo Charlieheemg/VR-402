@@ -18,6 +18,30 @@ python -m unittest -v
 
 `requirements-lock.txt` records the exact environment used for the demonstration. Use `python -m pip install -r requirements-lock.txt` to reproduce it on a compatible platform; use the bounded requirements file for other supported macOS/Python versions. openSMILE wheels include the native extractor. Check [openSMILE licensing](https://github.com/audeering/opensmile#license) before use outside research/education.
 
+## Supervisor demo (prepared Mac)
+
+From the repository root, one command:
+
+```sh
+prototype/pvc/.venv/bin/python prototype/pvc/demo.py "$HOME/Downloads/20260121_150424_AI_Sample/20260121_143844_AI_Before/Team Leader.wav"
+```
+
+It prints only the meeting-relevant subset and explicitly states: **These are candidate predictors of PVC, not a validated confidence score.** The complete JSON/CSV and a `.summary.txt` save under Git-ignored `prototype/pvc/private/demo/`. Optional `--transcript "..."` or `--transcript-file verbatim.txt` supplies word-rate/filler fields. `--sample-id` and `--output` distinguish additional recordings; repeated IDs replace prior demo exports. This wrapper reuses the existing extractor without changing it.
+
+## Collect human ratings
+
+[Local rating tool and protocol](annotation/README.md): `python3 prototype/pvc/annotation/serve.py --clips "/absolute/path/to/approved_clips"` from the repository root, then open http://127.0.0.1:8765. It saves each listener's responses locally and exports CSV; raters never see acoustic features. Prepare approved single-speaker clips first. No human ratings are included. Research choices and open questions are in the [living decision log](../../docs/pvc_decision_log.md).
+
+## Reproduce temporal sensitivity
+
+From the repository root on this Mac:
+
+```sh
+prototype/pvc/.venv/bin/python prototype/pvc/sensitivity.py
+```
+
+Defaults to the two supplied Team Leader WAVs in Downloads and five gates from −55 to −35 dBFS. Override with `--sample-root`, or `--before /path/before.wav --after /path/after.wav`; use `--thresholds -55 -45 -35` and `--output /path/results` if needed. It reuses the same temporal function and writes `temporal_sensitivity.csv`, metadata/source hashes and a [short interpretation](results/temporal_sensitivity.md). No normalization or VAD is applied. Activity and pause counts can change drastically with the gate; these are not validated speech/hesitation measurements.
+
 ## Extract evidence
 
 ```sh

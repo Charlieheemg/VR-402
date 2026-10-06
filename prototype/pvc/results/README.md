@@ -29,6 +29,10 @@ The After WAV has much lower measured RMS. The fixed −35 dBFS gate flags less 
 
 There is no claim that any threshold is correct. The large shifts demonstrate why manual checking, consistent recording conditions and a better segmentation/VAD method are needed before interpreting temporal features. eGeMAPS extraction was not retuned for this comparison. The script deliberately applies no gain normalisation.
 
+## Reproducible follow-up
+
+The new [five-threshold analysis](temporal_sensitivity.md) and `temporal_sensitivity.csv` extend this initial three-gate snapshot. Run `prototype/pvc/.venv/bin/python prototype/pvc/sensitivity.py` from the repository root; metadata includes WAV hashes and exact settings. The original JSON/CSV demonstration files above are unchanged. The next validation step is manual speech/non-speech annotation and a dedicated VAD comparison, not interpreting a preferred threshold as correct.
+
 ## Inspected source material and provenance
 
 User-confirmed folder: `~/Downloads/20260121_150424_AI_Sample/`.
