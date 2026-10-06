@@ -96,6 +96,16 @@ class AnnotationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             Study(self.clips,self.root/'ratings').rows('synthetic_test')
 
+    def test_changed_or_missing_audio_rejected_before_save_and_serve(self):
+        self.get('/audio?clip_id=clip_a')
+        sf.write(self.clips/'clip_a.wav',np.ones(16000)*.1,16000)
+        with self.assertRaises(HTTPError):self.get('/audio?clip_id=clip_a')
+        with self.assertRaises(HTTPError):self.post(self.rating())
+        with self.assertRaises(HTTPError):self.post(self.rating(pvc_score=None,rating_status='unrateable'))
+        self.assertFalse((self.root/'ratings/synthetic_test.csv').exists())
+        (self.clips/'clip_b.wav').unlink()
+        with self.assertRaises(HTTPError):self.post(self.rating(clip_id='clip_b'))
+
     def test_rater_page_blinding_and_local_scope(self):
         page=self.get('/').decode()
         self.assertIn('Based on the speaker’s vocal delivery, how confident does the speaker sound in what they are saying?',page)

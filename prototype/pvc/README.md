@@ -4,6 +4,16 @@
 
 Working now: local WAV → 88 openSMILE eGeMAPSv02 functionals + transparent temporal measurements → JSON/CSV/terminal summary. A separate training/prediction pipeline implements mean, Ridge and Random Forest regression. **No real PVC model has been trained; no confidence score is fabricated.** Tests use explicitly synthetic fixtures to verify mechanics only.
 
+Also working: an **external perceived-reading-confidence benchmark** trained on 600 genuinely labelled children's reading recordings, with original Low/Medium/High classes. This separate classifier does not validate adult/domain-specific PVC or convert labels to 1–5. Read the [provenance and evaluation limits](../../docs/reading_confidence_benchmark.md), [aggregate results](results/reading_confidence/README.md), and [microphone/WAV demo instructions](../../docs/live_confidence_demo.md). Raw data, per-recording derived tables and models stay local; model files are not downloaded automatically.
+
+```sh
+# From the repository root, on the prepared Mac:
+prototype/pvc/.venv/bin/python prototype/pvc/live_demo.py --record
+prototype/pvc/.venv/bin/python prototype/pvc/live_demo.py "/absolute/path/to/my_recording.wav"
+```
+
+The default demo model is logistic regression, chosen before evaluating performance. Existing PVC extraction, regression training, sensitivity results and listener-rating tools remain separate.
+
 ## macOS installation
 
 From the repository root, with Python 3.11+ installed (tested with Python 3.12.7 on Apple Silicon):

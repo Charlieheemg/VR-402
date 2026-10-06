@@ -28,7 +28,7 @@ clip_id,rater_id,pvc_score,notes,timestamp,rating_status,audio_sha256,definition
 
 Scores are integers 1–5 or blank for unrateable. Timestamp is UTC ISO 8601. CSV quoting preserves commas, quotes, newlines and Unicode notes; import notes as text in spreadsheet software. Hashes allow checking that listeners heard identical audio. `definition_version` is `PVC v0.1`.
 
-Use `--output /path/to/private/study_directory` for a different study and `--port 8766` if needed. Keep the source clip set unchanged during a study; use a new output folder for a revised clip set or protocol. Changed audio under an already-rated clip ID is detected after restarting. Do not run two server processes against the same output folder. This is a trusted local workstation tool, not an authenticated multi-user service; IDs distinguish raters but do not authenticate them. The server binds only to loopback and does not publish recordings.
+Use `--output /path/to/private/study_directory` for a different study and `--port 8766` if needed. Keep the source clip set unchanged during a study; use a new output folder for a revised clip set or protocol. Audio hashes are rechecked before serving a clip and before saving a rating; a changed or missing clip is rejected while the server is running. Changed audio under an already-rated clip ID is also detected after restarting. Do not run two server processes against the same output folder. This is a trusted local workstation tool, not an authenticated multi-user service; IDs distinguish raters but do not authenticate them. The server binds only to loopback and does not publish recordings.
 
 ## Multiple raters: minimal proposed protocol
 

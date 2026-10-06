@@ -114,3 +114,7 @@ Suggested meeting explanation:
 Key artifacts are [the definition](pvc_definition_v0_1.md), [decision log](pvc_decision_log.md), [meeting brief](pvc_meeting_brief.md), [prototype instructions](../prototype/pvc/README.md), annotation files, `demo.py`, `sensitivity.py`, training/prediction scripts, tests and example results. `index.html` contains the narrowed research framing. This audit adds this document only; it does not change the implementation or repair the outstanding findings.
 
 Assessment source: *CDE4301 Innovation & Design Capstone: Interim Assessment*, supplied AY2026 brief and rubrics, pp. 1–6. Weekly expectation: Charlie's clarification in this conversation. No supervisor approval, research ratings or project grade is inferred.
+
+## Follow-up implementation, 6 October 2026
+
+The historical findings above describe the audited commits. A subsequent update adds the [external reading-confidence benchmark](reading_confidence_benchmark.md) and [local live demo](live_confidence_demo.md); it does not supply adult PVC labels or validate that construct. The annotation server now rechecks clip bytes against the startup hash before serving audio and before saving a response, with regression tests for changed/missing files. The website's stale “condition A” reference was replaced with the narrowed PVC comparison. These two implementation findings are addressed; the research gaps in this audit remain.

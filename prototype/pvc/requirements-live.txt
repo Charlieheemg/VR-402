@@ -1,0 +1,2 @@
+# Optional microphone capture only; existing WAV mode needs no extra packages.
+sounddevice==0.5.5

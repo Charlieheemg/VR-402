@@ -37,6 +37,13 @@ class Study:
             raise ValueError('Use a pseudonymous rater ID: 1–64 letters, digits, underscores or hyphens')
         return self.output / f'{rater}.csv'
 
+    def verified_audio(self, clip):
+        """Return exactly the bytes checked against this study's frozen hash."""
+        data = self.clips[clip]['path'].read_bytes()
+        if hashlib.sha256(data).hexdigest() != self.clips[clip]['sha256']:
+            raise ValueError('Audio changed while the study was running. Restore the original clip or start a new study; rating rejected.')
+        return data
+
     def rows(self, rater):
         path = self.rater_path(rater)
         if not path.exists():
@@ -67,6 +74,9 @@ class Study:
         notes = body.get('notes', '')
         if not isinstance(notes, str) or len(notes) > 2000:
             raise ValueError('Notes must be text, at most 2000 characters')
+        # Recheck immediately before persistence, including unrateable responses.
+        # Audio serving also checks the same bytes, so changed content is never served.
+        self.verified_audio(clip)
         row = dict(clip_id=clip, rater_id=rater, pvc_score=score if score is not None else '',
                    notes=notes, timestamp=datetime.now(timezone.utc).isoformat(), rating_status=status,
                    audio_sha256=self.clips[clip]['sha256'], definition_version='PVC v0.1')
@@ -133,7 +143,7 @@ def make_server(study, port=8765):
                     clip = query.get('clip_id', [''])[0]
                     if clip not in study.clips:
                         raise ValueError('Unknown clip ID')
-                    self.reply(study.clips[clip]['path'].read_bytes(), 'audio/wav')
+                    self.reply(study.verified_audio(clip), 'audio/wav')
                 elif url.path == '/export':
                     rows = study.rows(query.get('rater_id', [''])[0])
                     stream = io.StringIO(newline='')
