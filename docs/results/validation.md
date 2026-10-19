@@ -1,3 +1,5 @@
+> Consolidation record at commit 668000d. For the later review-branch checks and annotation-coverage caveat, see [refinement-validation.md](refinement-validation.md).
+
 # Consolidation validation — 19 October 2026
 
 ## Completed checks

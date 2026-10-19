@@ -4,6 +4,10 @@ Official title: Paediatric VR Speech Analysis and Feedback. Charlie Hee Ming Gua
 
 Run commands from this repository folder.
 
+## Collaborative refinement review
+
+For this academic refinement, branch from current main, push the dedicated branch and open a pull request. Do not merge or publish automatically: the live Pages report stays on `main` until review. Check remote commits/open PRs first, preserve both authors' work, and recheck the group word budget including new Part B tables/figures. The everyday publication workflow below applies only when a later reviewed merge/publication is authorized.
+
 ## Everyday workflow
 
 1. Check for unfinished edits: `git status`. Commit those or ask for help before pulling.

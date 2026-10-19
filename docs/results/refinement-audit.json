@@ -1,0 +1,13 @@
+{
+  "models_trained": 0,
+  "annotations_reparsed": 125,
+  "existing_summaries_match": true,
+  "undercovered_textgrids": 2,
+  "r2spin_source_sha256": "ba9e86ebc26b7ff8fa513083ebe4e724f6dc7f4e96c0ee688f1ba8945e22c2d6",
+  "r2spin_oof_sha256": "9e60313187097fcc9abad86d668c3788b9d65fe83db90b4063d1f04c3920867b",
+  "r2spin_folds": 8,
+  "folds_with_accuracy_improvement": 8,
+  "folds_with_lower_brier": 8,
+  "f0_status": "Existing automated estimates/configuration checked; nine demo values agree with full-corpus cache; no manual pitch validation",
+  "script_sha256": "1a5008d65b9e87afe2121992128e8317fadd85806ac646b2c28bf01ff5847bb4"
+}

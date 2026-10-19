@@ -41,3 +41,7 @@ Refit the existing fixed models on saved features using the existing seed-42 rec
 Outputs: public aggregate CSVs plus `reproduction.json`; private recording-level measurements, input hashes and listener-level OOF predictions under `prototype/pvc/private/consolidation/`. Scientific figures read only these aggregate outputs. See `scripts/make_figures.py`. The simple conceptual figures are explicitly labelled conceptual.
 
 To regenerate SVGs in an isolated optional plotting environment: install `scripts/requirements-figures.txt`, then run `python scripts/make_figures.py`. The research extraction environment remains unchanged.
+
+## Audit the refinement without retraining
+
+Run `prototype/pvc/.venv/bin/python scripts/audit_refinement.py`. It reparses original annotations and checks unchanged WAV durations, verifies published aggregates against existing measurement/OOF tables, and writes coverage/sensitivity/per-list audit outputs. It calls no estimator fit and does not rerun feature extraction. The two undercovered TextGrids are retained unchanged; the n=23 exclusion is explicitly supplementary, not a correction. See [measurement audit](../results/measurement-audit.md). Actual pitch accuracy, perceptual pauses and articulation-rate validity remain separate, unfinished checks.

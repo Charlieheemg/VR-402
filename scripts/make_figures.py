@@ -30,7 +30,26 @@ def boxes(filename,title,items):
   for n,line in enumerate(lines):svg+=f'<text x="{x+16}" y="{135+n*28}" font-family="sans-serif" font-size="16">{html.escape(line)}</text>'
  svg+='<text x="30" y="285" font-family="sans-serif" font-size="14" fill="#53646d">Conceptual framework — arrows/integration do not denote an implemented system.</text></svg>'
  (O/filename).write_text(svg)
-boxes('context.svg','Two contributions within paediatric VR debriefing',[('Shared context',['Recorded team interaction','Transcript/content assessment','Complement with audio evidence']),('Part A · Charlie',['Acoustic measurement','Human-recognition validation','Research prototype']),('Part B · Kang Zhe',['Present evidence and uncertainty','Support replay and reflection','Draft contribution pending'])])
+def context_diagram():
+ import html
+ parts=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" role="img"><title>Content assessment and complementary acoustic research</title><rect width="1100" height="480" fill="white"/>']
+ def text(x,y,t,size=18,weight='normal'):
+  parts.append(f'<text x="{x}" y="{y}" font-family="sans-serif" font-size="{size}" font-weight="{weight}" fill="#193d4a">{html.escape(t)}</text>')
+ def box(x,y,w,h,title,lines,color):
+  parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{color}" stroke="#b5cbd1"/>');text(x+16,y+32,title,20,'bold')
+  for i,line in enumerate(lines):text(x+16,y+64+i*25,line)
+ text(25,34,'Paediatric VR: complementary evidence, separate contributions',24,'bold')
+ box(25,170,260,125,'Recorded interaction',['Intended application context','Deployment not audited'],'#e8eef0')
+ box(360,65,300,130,'Content/teamwork branch',['Speech-to-text / transcript','Contextual message assessment','Project-described existing approach'],'#e8eef0')
+ box(735,65,335,130,'Behavioural evidence',['Message content and check-backs','Not a test of acoustic recognition'],'#e8eef0')
+ box(360,260,300,130,'Acoustic branch · Charlie',['Local extractor implemented','Timing / F0 estimates','VR application proposed'],'#e1eee8')
+ box(735,260,335,130,'Human-outcome validation',['Independent listener recognition','Speaker-side prediction untested','Future evidence gate'],'#f7eddb')
+ parts.append('<path d="M285 200 H320 V130 H360 M660 130 H735" fill="none" stroke="#526a75" stroke-width="3"/>')
+ parts.append('<path d="M285 260 H320 V325 H360 M660 325 H735" fill="none" stroke="#a36b13" stroke-width="3" stroke-dasharray="8 6"/>')
+ text(25,433,'Part B · Kang Zhe: feedback presentation; author contribution pending. No implemented integration shown.',17)
+ text(25,462,'Solid lines: project-described content flow. Dashed lines: proposed application/validation relationships.',16)
+ parts.append('</svg>');(O/'context.svg').write_text(''.join(parts)+'\n')
+context_diagram()
 boxes('constructs.svg','Keep three different forms of evidence distinct',[('Speaking instruction',['Plain / computer / listener','An elicitation condition','Not an outcome score']),('Acoustic measurement',['Timing / pitch / level','Signal-derived descriptors','Require quality checks']),('Human outcome',['Recognized words / keywords','Specified listener + condition','Required for intelligibility'])])
 boxes('roadmap.svg','Evidence gates before feedback claims',[('Gate 1 · current',['Reproduce measurements','Audit labels and uncertainty','RQ1: descriptive evidence']),('Gate 2 · next',['Verify human-labelled corpus','Speaker-disjoint evaluation','RQ2: prediction test']),('Gate 3 · future',['Consent and controlled trial','Recognition + efficiency','RQ3: intervention effect'])])
 for path in O.glob('*.svg'):
