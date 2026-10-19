@@ -1,0 +1,46 @@
+{
+  "checked_date": "2026-10-19",
+  "cpc1_record": "https://zenodo.org/records/17046604",
+  "archive_sha256": "63580ece98c1f20000ae164a8560f2532d6093bc20c4b5664d3507eecca076f3",
+  "landing_record_license": "cc-by-4.0",
+  "archive_license": "CC BY-SA 4.0 with separate Clarity speech database license 1.00",
+  "label_files": [
+    {
+      "file": "clarity_CPC1_data/metadata/CPC1.test_labels.json",
+      "rows": 2421,
+      "fields": [
+        "correctness",
+        "hits",
+        "listener",
+        "n_words",
+        "prompt",
+        "response",
+        "scene",
+        "signal",
+        "system",
+        "volume"
+      ]
+    },
+    {
+      "file": "clarity_CPC1_data/metadata/CPC1.test_indep_labels.json",
+      "rows": 632,
+      "fields": [
+        "correctness",
+        "hits",
+        "listener",
+        "n_words",
+        "prompt",
+        "response",
+        "scene",
+        "signal",
+        "system",
+        "volume"
+      ]
+    }
+  ],
+  "audio_downloaded": false,
+  "audio_label_join_verified": false,
+  "models_trained": 0,
+  "outcome_values_exported": false,
+  "slusi_readme_sha256": "332f7327bcdb15f38b08a28dfa38e0271133ade3bbc4908ebf81ac5125ab465a"
+}

@@ -2,7 +2,7 @@
 
 ## Assessment map
 
-Requirements below are transcribed from the user-provided brief; confirm exact dates and final submission arrangements with the course.
+Requirements were checked against the supplied six-page CDE4301 assessment brief and rubrics, AY2026 interim assessment. Confirm exact dates and final submission arrangements with the course. See the [completed follow-up work](follow-up-work.md) and [meeting decision sheet](supervisor-decisions.md).
 
 | Criterion | Main report location | Review evidence / unresolved action |
 |---|---|---|
@@ -13,7 +13,7 @@ Requirements below are transcribed from the user-provided brief; confirm exact d
 | A5 Analysis | §§5–7 | Paired 25-item changes; R2SPIN OOF metrics; single-speaker/cluster limitations |
 | A6 Problems and plan | §7; Part B B3 | Access obstacle addressed with public Edinburgh; measured labels still missing; gates and scope |
 
-Group interim weighting 40%; ≤30 minute presentation, Semester 1 Week 12; Pages due end Week 13; ≤4,000 main words excluding appendices. Complete group report target 3,600–3,800. `python3 scripts/check_report.py` conservatively counts main headings/captions and draft Part B; references and appendices are outside `main`. Do not add Part B without recounting and tightening Part A if needed.
+Group interim weighting 40%; ≤30 minute presentation, Semester 1 Week 12; Pages due end Week 13; ≤4,000 main words excluding appendices. Complete group report target 3,600–3,800. `python3 scripts/check_report.py` conservatively counts main headings, tables, captions, draft Part B and visible SVG figure text; references and appendices are outside `main`. It also reports separate shared/Charlie/Kang Zhe allocations and replacement capacity. Do not add Part B without recounting and tightening Part A if needed.
 
 ## Suggested consecutive presentation (28 minutes, with 2-minute margin)
 
@@ -35,7 +35,7 @@ Use readable units, paired-change definitions, speaker/listener/sample counts an
 4. Define usefulness/usability/comprehension tests; report actual sample, procedure, observations and limits, or label them proposed.
 5. Add references, figures/captions and a feasible work plan; identify authorship and any dependencies on Charlie's output.
 
-Aim initially for approximately 800–950 substantive words; replace the draft placeholders and rebalance Part A to reach 3,600–3,800 for the completed group. No artificial integration is needed. Proposed common fields: recording reference, time span, metric/value/unit, measurement method, quality flag, evidence status; agree them before implementing an exchange format.
+Aim initially for **1,500–1,600 substantive words**, replacing the placeholders. The refinement conservatively counts visible figure labels as well as HTML. With 2,193 non-Part-B words, a 1,500–1,600-word Part B yields 3,693–3,793 group words. The replacement capacity is 1,807 words at the absolute 4,000 limit; 1,800 leaves only seven words of margin. Recount after adding tables, captions or figures, and rebalance if necessary. No artificial integration is needed. Proposed common fields: recording reference, time span, metric/value/unit, measurement method, quality flag, evidence status; agree them before implementing an exchange format.
 
 Write invitation sent to KayZzee17; acceptance required. The normal Git workflow is in WORKFLOW.md. Coordinate edited sections, pull before work, and review staged changes; do not force push. Restricted audio stays local.
 
@@ -45,12 +45,14 @@ Write invitation sent to KayZzee17; acceptance required. The normal Git workflow
 2. Charlie audits a multi-speaker human-labelled source (SLUSI first) for audio/excerpt/target alignment, rights and split feasibility; retain R2SPIN as an audibility/context benchmark.
 3. Perform manual timing/pitch quality checks and agree the first speaker-disjoint validation protocol; rehearse the consecutive presentation against the 30-minute cap.
 
-## Conditional milestones
+## Deliverables, prerequisites and contingencies
 
-| Gate | Owner | Timing / completion evidence |
-|---|---|---|
-| Evidence and report consolidation | Charlie | Current commit: scripts, aggregate data, cited limitations |
-| Part B evidence and rehearsal | Kang Zhe, then both | Before Week 12: attributable materials, tested presentation ≤30 minutes |
-| Complete group report | Both | End of Week 13: replace placeholders, recount ≤4,000, inspect live Pages |
-| Dataset and measurement audit | Charlie, supervisor decision | Next research block: verified label/audio join and manual quality results |
-| Human validation | Charlie, with approved protocol | Only after access/ethics and evaluation gates; no recruitment date assumed |
+| Stage / responsibility | Deliverable | Prerequisites | Completion criterion | Major risk and contingency |
+|---|---|---|---|---|
+| Before interim — both; each owns authored section | Evidence-backed Parts A/B, cited figures, presentation | Kang Zhe supplies his materials; course confirms dates | Group main ≤4,000 words; aim 3,600–3,800; all claims linked to evidence; rehearsal ≤30 min | Missing evidence → keep draft explicit, agree minimum scope with supervisor; never fabricate results |
+| Before interim — Charlie | Reviewed research evidence and PR | Current raw data/OOF caches; protected main | Annotation discrepancy and per-list audits attached; checks pass; PR reviewed before merge | Review delays → present current published version plus clearly labelled proposed revision |
+| Next scientific milestone — Charlie | Measurement-quality audit and dataset-access/alignment decision | Permission-compatible multi-speaker human-labelled data; representative audio | Exact audio/excerpt/transcript/outcome join verified; speaker IDs usable; boundary and pitch review documented | Missing identities or access → audit alternative source; retain production claims only |
+| Predictive validation — Charlie, supervisor approves design | Small interpretable feature-set evaluation with context/ASR baselines | Trustworthy measures/labels; enough independent speakers; fixed protocol | Speaker-disjoint splits where feasible; fold-local training; calibration/generalisation analysis; test set untouched | Too few speakers or label mismatch → narrow claims, seek better data; do not treat list CV as speaker CV |
+| Longer term — Charlie for recognition/efficiency trial, Kang Zhe for feedback design, both coordinate | Approved feedback experiment and eventual exchange contract | Measurement/prediction gates; permissions and ethics; author-owned prototypes ready | Independent listener recognition and correct words/minute compared under controlled conditions; usable feedback evidenced separately | Approval/data delays → synthetic examples and permitted design walkthroughs; no efficacy claim or forced integration |
+
+No firm experimental dates are assigned where access, feasibility or ethics are unresolved. Week 12/13 assessment timing is specified in the supplied official brief; calendar dates require course confirmation. A concrete feasibility pilot is now proposed in the listener protocol, with a tested hypothetical allocation. Confirmatory sample sizes remain undecided and require power/precision considerations accounting for speaker/listener clustering.

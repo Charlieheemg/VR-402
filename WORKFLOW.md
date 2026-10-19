@@ -4,6 +4,10 @@ Official title: Paediatric VR Speech Analysis and Feedback. Charlie Hee Ming Gua
 
 Run commands from this repository folder.
 
+## Collaborative refinement review
+
+For this academic refinement, branch from current main, push the dedicated branch and open a pull request. Do not merge or publish automatically: the live Pages report stays on `main` until review. Check remote commits/open PRs first, preserve both authors' work, and recheck the group word budget including new Part B tables/figures. The everyday publication workflow below applies only when a later reviewed merge/publication is authorized.
+
 ## Everyday workflow
 
 1. Check for unfinished edits: `git status`. Commit those or ask for help before pulling.
@@ -25,8 +29,8 @@ If a pull or push is rejected, stop and inspect the message; do not force-push o
 
 - `index.html`: report home page and sections.
 - `index.css`: report styling.
-- `assets/`: figures and media cleared for publication; includes original template examples.
-- `components/`: original EDIC reusable components, available for later use.
+- `assets/`: FYP figures and media cleared for publication.
+- `components/`: retained generic EDIC image/video, team-member, references and navigation helpers; unused example demos removed.
 - `README.md`: project/setup overview.
 - `WORKFLOW.md`: these instructions.
 - `.nojekyll`: serve this as a plain static website.

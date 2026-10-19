@@ -1,11 +1,27 @@
 {
-  "main_words": 3027,
+  "main_words": 2279,
+  "html_main_words": 2074,
+  "visible_svg_words": 205,
   "limit": 4000,
-  "method": "Whitespace tokens of text inside main, including headings/captions/Part B draft; excludes title/navigation/references/appendices",
-  "part_b_status": "Awaiting author evidence; target final group 3600\u20133800",
+  "section_words": {
+    "shared": 356,
+    "charlie": 1837,
+    "kang_zhe": 86
+  },
+  "html_section_words": {
+    "shared": 270,
+    "charlie": 1718,
+    "kang_zhe": 86
+  },
+  "non_part_b_words": 2193,
+  "part_b_replacement_capacity": 1807,
+  "completed_group_with_1500_word_part_b": 3693,
+  "completed_group_with_1800_word_part_b": 3993,
+  "method": "Whitespace tokens inside main plus visible SVG text labels; includes tables, headings, captions and draft Part B; excludes masthead/navigation/references/appendices and SVG accessibility titles",
+  "part_b_status": "Awaiting author evidence; replace draft with substantive 1500\u20131800-word contribution",
   "local_links": "passed",
   "duplicate_ids": "none",
   "image_alt": "passed",
   "metadata": "passed",
-  "figures": 5
+  "figures": 3
 }

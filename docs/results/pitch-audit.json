@@ -1,0 +1,106 @@
+{
+  "status": "Independent automated agreement only; no human pitch reference",
+  "selection": "Sentences 0001,0006,0009 across plain,infant,computer,non-native; selected to cover both known TextGrid anomalies",
+  "recordings": [
+    {
+      "file": "MKH800_19_0001.wav",
+      "sha256": "9b4bdc324a24863c4a03877984204731b87f21f36626cc07e1fba984d15a31bf",
+      "duration_s": 4.2545,
+      "peak": 0.9896240234375,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_20_0001.wav",
+      "sha256": "ce00f0541598e86ab8582e568a21c0a7f77970953219d391e8e559e027868285",
+      "duration_s": 4.69925,
+      "peak": 0.73687744140625,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_21_0001.wav",
+      "sha256": "cc71f9b636d52fc39060bf42343115af72d5f381c558cc1f00dc8a28dec861bf",
+      "duration_s": 5.852625,
+      "peak": 0.868804931640625,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_22_0001.wav",
+      "sha256": "dcbb1e4abfda7878e468ea986f7d50384825e3ecbef4731487784bd3fed7c6b2",
+      "duration_s": 5.7740625,
+      "peak": 0.968597412109375,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_19_0006.wav",
+      "sha256": "9abbc863803d0877edd93005f1fa70f475eec045acb054f93e94afd13afe297d",
+      "duration_s": 3.7505625,
+      "peak": 0.765045166015625,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_20_0006.wav",
+      "sha256": "de4b62f2ad4aec8cee02d692e1326b0424cebe8f5c14b5c1eec538fcd8664203",
+      "duration_s": 3.4495,
+      "peak": 0.8326416015625,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_21_0006.wav",
+      "sha256": "629967b284897dff1746013ee39367e36b990385bb6c79299e388dbcabbe72e7",
+      "duration_s": 5.2500625,
+      "peak": 0.578094482421875,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_22_0006.wav",
+      "sha256": "69f3d6d7b6bde54621cf3cb77c7ab6d794ecca17f5abb751e6933a1b0da2236c",
+      "duration_s": 4.3746875,
+      "peak": 0.600433349609375,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_19_0009.wav",
+      "sha256": "0dfe110870c822140cbd9f9b7472bfebb3a6725d94b92243fd62cdb44b688010",
+      "duration_s": 4.0424375,
+      "peak": 0.62255859375,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_20_0009.wav",
+      "sha256": "d7eabe7fb78902680b883a760398412d27a232e41bcc2dacdaec6bdbb434709d",
+      "duration_s": 3.8114375,
+      "peak": 0.757598876953125,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_21_0009.wav",
+      "sha256": "c595b917009722a6008f03f0e4ce841c28e7e3d838bd3b564354604ef665a42c",
+      "duration_s": 6.9275625,
+      "peak": 0.605072021484375,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "MKH800_22_0009.wav",
+      "sha256": "63ccfe7427c8100fa782ca5e360a2055d1602d2e155465f15c6396eb26cd21d7",
+      "duration_s": 4.7846875,
+      "peak": 0.58056640625,
+      "full_scale_samples": 0
+    }
+  ],
+  "parselmouth_version": "0.4.7",
+  "praat_version": "6.1.38",
+  "opensmile_version": "2.6.0",
+  "numpy_version": "2.5.3",
+  "synthetic_checks": [
+    {
+      "input_hz": 100,
+      "median_error_hz": 0.004543774119468935
+    },
+    {
+      "input_hz": 150,
+      "median_error_hz": 9.62084473314917e-05
+    }
+  ],
+  "silence_check": true,
+  "script_sha256": "09d9ae13a4a9f6ce14f96ea20b60a34a3d7864d426de30f13cf57bc3dbb7dc86"
+}
