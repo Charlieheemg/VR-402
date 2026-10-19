@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # Perceived Vocal Confidence (PVC) — Definition v0.1
 
 **Working definition:** Perceived Vocal Confidence (PVC) is the degree to which a listener judges, from a speaker's vocal delivery, that the speaker sounds certain and committed to what they are saying.

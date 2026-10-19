@@ -1,0 +1,5 @@
+model,predictors,accuracy,brier,n,folds
+context,['Pred'],0.69140625,0.20600962837977999,6400,8
+context_speaker,"['Pred', 'male']",0.69140625,0.20219981073636004,6400,8
+context_keyword,"['Pred', 'KWGP']",0.72875,0.18050837702410275,6400,8
+context_speaker_keyword,"['Pred', 'male', 'KWGP']",0.7334375,0.17845447424749536,6400,8

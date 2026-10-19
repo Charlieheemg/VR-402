@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # Speaker metadata request — draft only, not sent
 
 Subject: Speaker-ID mapping for ReadingConfidenceDataset academic evaluation

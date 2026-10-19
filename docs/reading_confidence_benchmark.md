@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # External perceived-reading-confidence benchmark
 
 This is a separate three-class external benchmark, not validated ground truth for adult paediatric PVC v0.1. Original codes remain **−1 = Low, 0 = Medium, 1 = High**. There is no conversion to a PVC 1–5 value.

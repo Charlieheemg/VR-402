@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # PVC decision log
 
 Living research history. Add dated entries for v0.2, v0.3, etc.; preserve earlier decisions and say what evidence changed them. These are working choices, not validated findings.

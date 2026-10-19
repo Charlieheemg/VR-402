@@ -1,0 +1,17 @@
+condition,metric,n,median_difference,mean_difference,positive,negative,zero
+Infant-directed,annotated_span_s,25,0.020862582928496298,0.02134102315212713,13,12,0
+Infant-directed,phone_like_s,25,-0.005580693934133851,-0.01770629591995782,12,13,0
+Infant-directed,internal_sil_label_s,25,0.0,0.03904731907208496,10,5,10
+Infant-directed,f0_range_st,25,3.1616439819335938,3.598204574584961,24,1,0
+Computer-directed,annotated_span_s,25,1.7305151352629529,1.9653128285364105,25,0,0
+Computer-directed,phone_like_s,25,1.3332029699486343,1.3855429094969645,25,0,0
+Computer-directed,internal_sil_label_s,25,0.5055781300266979,0.5797699190394459,25,0,0
+Computer-directed,f0_range_st,25,-2.5964736938476562,-2.472224807739258,0,25,0
+Non-native-listener-directed,annotated_span_s,25,0.8044933368158231,0.8344261263220022,25,0,0
+Non-native-listener-directed,phone_like_s,25,0.5826402239611248,0.6146247454564482,25,0,0
+Non-native-listener-directed,internal_sil_label_s,25,0.19021963479035708,0.21980138086555392,20,1,4
+Non-native-listener-directed,f0_range_st,25,-0.5875034332275391,-0.5603422546386718,6,19,0
+Speech-in-noise,annotated_span_s,25,0.4319172205780486,0.46552646306113465,25,0,0
+Speech-in-noise,phone_like_s,25,0.4328700589895149,0.4379700055638713,25,0,0
+Speech-in-noise,internal_sil_label_s,25,0.0,0.027556457497263414,7,8,10
+Speech-in-noise,f0_range_st,25,-1.6619014739990234,-1.6909688568115235,3,22,0

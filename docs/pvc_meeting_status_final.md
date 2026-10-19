@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # PVC meeting status — final refinement
 
 6 October 2026. The meeting claim is **a defined research target, working extraction/annotation tools, and an audited external benchmark**. It is not a validated adult confidence detector.

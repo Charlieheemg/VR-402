@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Working FYP report on richer speech-audio assessment and effective debriefing for paediatric VR training.">
+  <title>Paediatric VR Assessment and Debriefing — FYP Working Report</title>
+  <link rel="stylesheet" href="../../index.css">
+</head>
+<body><aside>Historical snapshot before 19 October 2026 consolidation. Superseded by the <a href="../../index.html">VR-405 interim report</a>. Old project codes and status statements below are retained as historical evidence.</aside>
+<main class="content">
+  <h1>Improving AI-Supported Assessment and Debriefing for Paediatric VR Training</h1>
+  <p class="subtitle">CDE4301 FYP · Working title<br>Charlie Hee (currently VR-402) · Ang Kang Zhe (currently VR-405)<br>Supervisor: A/Prof Khoo Eng Tat</p>
+  <aside><strong>Working draft · proposed study.</strong> The title and scope are subject to confirmation. A local PVC feature-extraction prototype now runs on supplied paediatric audio. Human-rating validation and comparative model results remain outstanding.</aside>
+  <nav aria-label="Table of contents">
+    <h2>Table of contents</h2>
+    <ol>
+      <li><a href="#context">Project context and problem</a></li>
+      <li><a href="#prior-work">Existing pipeline and research gap</a></li>
+      <li><a href="#literature">Related work and evidence boundaries</a></li>
+      <li><a href="#objectives">Research question and workstreams</a></li>
+      <li><a href="#pvc-definition">PVC Definition v0.1</a></li>
+      <li><a href="#methodology">Proposed methodology</a></li>
+      <li><a href="#prototype">Implementation and evaluation status</a></li>
+      <li><a href="#plan">Next steps and supervisor questions</a></li>
+      <li><a href="#references">References and internal material</a></li>
+    </ol>
+  </nav>
+  <section id="context">
+    <h2>1. Project context and problem</h2>
+    <p>The shared context is paediatric VR training: using evidence from a simulated team interaction to support performance assessment and post-simulation debriefing. This project explores both what the assessment can recover from recorded speech and how its findings can help trainees and instructors reflect on performance.</p>
+    <p>Plain transcripts preserve words, potentially including fillers, but not the original pitch, intensity or detailed timing. Experiments on vocal confidence show that these prosodic cues contribute to listeners’ impressions alongside linguistic content (<a href="#ref-jiang">Jiang &amp; Pell, 2017</a>). This motivates testing whether retaining audio evidence improves assessment beyond transcript/context alone; benefits for paediatric debriefing remain to be evaluated.</p>
+  </section>
+  <section id="prior-work">
+    <h2>2. Existing pipeline and research gap</h2>
+    <p><strong>Current working reconstruction:</strong> audio → speech-to-text (STT)/transcript → cleaning → discourse/conversation reasoning → teamwork assessment → Excel debrief.</p>
+    <p>The intermediate outputs suggest contextual transcript correction, interpretation of conversational relationships, and summarisation against assessment criteria. They do not establish the exact implementation.</p>
+    <aside><strong>To be verified:</strong> the current LLM, prompts and stage boundaries, and whether timestamps enter assessment reasoning. The narrowed PVC study compares predictions against independent listener ratings, using a mean baseline, engineered acoustic models and a separate audio-LLM benchmark. Timestamp files alone do not prove that timing is used by the existing pipeline; confirm its implementation before claiming an improvement over it.</aside>
+  </section>
+  <section id="literature">
+    <h2>3. Related work and evidence boundaries</h2>
+    <p><strong>Delivery cues and their limits.</strong> Response delays, filled pauses and intonation influenced listeners’ estimates of a speaker’s knowledge, with effects depending on whether a response was an answer or a nonanswer (<a href="#ref-brennan">Brennan &amp; Williams, 1995</a>). In a controlled expressive-speech study, unconfident expressions had slower speaking rates and more pauses; pitch and amplitude/intensity patterns also differentiated confidence levels (<a href="#ref-jiang">Jiang &amp; Pell, 2017</a>). These findings motivate candidate features, not universal thresholds or a clinical competence score.</p>
+    <p><strong>Measurement versus inference.</strong> A pause duration is a measurement; hesitation is an interpretation; its cause is a further claim. Perceived confidence (listener ratings), self-reported certainty (speaker ratings), and correctness (task scoring) are distinct targets: Pon-Barry and Shieber annotated all three and found that perceived and self-reported certainty often differed (<a href="#ref-ponbarry">2010</a>). We will keep these labels separate and check automated measurements against human annotations.</p>
+    <p><strong>Explicit acoustic evidence.</strong> openSMILE is a signal-analysis and feature-extraction toolkit (<a href="#ref-opensmile">Eyben et al., 2010</a>); eGeMAPS is a compact, standardised acoustic feature set covering frequency, energy and spectral descriptors (<a href="#ref-egemaps">Eyben et al., 2016</a>). These provide interpretable numerical acoustic measurements, not semantic conclusions about confidence or teamwork. Connecting measurements to an assessment rubric requires a separate, validated interpretation stage.</p>
+    <p><strong>Assessment precedent and data.</strong> Naim et al. combined language, prosody and facial features to predict observer ratings in 138 mock interviews from 69 participants (<a href="#ref-naim">2015</a>). This offers a performance-rating and annotation precedent, but neither its dataset nor its results establish validity for paediatric teamwork.</p>
+    <p><strong>Practical design precedent.</strong> The NUS-hosted VMock guide separates speech delivery, content strength and non-verbal feedback, with replay and time-aligned feedback (<a href="#ref-vmock">VMock, n.d.</a>). It motivates separating delivery from content in our interface; product documentation does not establish the validity of proprietary acoustic scores or reveal the deployed algorithm.</p>
+    <p><strong>Internal aviation related work.</strong> <cite>From Roleplay to Virtual Reality</cite> provides an adaptive cabin-crew training example (<a href="#ref-roleplay">supplied manuscript, n.d.</a>); <cite>Signals of Aggression</cite> examines multimodal cues and perceived aggression in virtual agents (<a href="#ref-ong">Ong et al., 2026</a>). Both inform internal discussion of training and perception, not validation of paediatric assessment. The supplied files are not reproduced here.</p>
+  </section>
+  <section id="objectives">
+    <h2>4. Research question and workstreams</h2>
+    <p><strong>Shared question:</strong> How can richer assessment evidence and clearer feedback improve AI-supported debriefing for paediatric VR training?</p>
+    <ul>
+      <li><strong>Charlie Hee — richer assessment from raw speech audio:</strong> estimate listener-rated Perceived Vocal Confidence (PVC) from acoustic and temporal predictors, comparing an interpretable supervised pathway with an audio-LLM benchmark. The immediate scope is construct definition and testable measurement, with no validated confidence detector claimed.</li>
+      <li><strong>Ang Kang Zhe — presentation of analysis and feedback:</strong> investigate how findings, supporting evidence and uncertainty can be organised and presented to support debriefing and learning.</li>
+    </ul>
+    <p>The proposed integration connects interpretable evidence and assessment outputs to Kang Zhe’s feedback interface. Each workstream retains its own evaluation: assessment validity and feedback usefulness.</p>
+  </section>
+  <section id="pvc-definition">
+    <h2>PVC Definition v0.1</h2>
+    <p><strong>Perceived Vocal Confidence (PVC) is the degree to which a listener judges, from a speaker's vocal delivery, that the speaker sounds certain and committed to what they are saying.</strong></p>
+    <p>PVC is a listener-perceived communication construct, not a direct measurement of internal confidence, correctness, competence/expertise, anxiety/stress, personality or overall communication quality. Perceived and self-reported certainty can differ (<a href="#ref-ponbarry">Pon-Barry &amp; Shieber, 2010</a>). This working definition is explicitly Version 0.1, to be refined through literature review, experiments and consultation with a speech expert.</p>
+    <p>Operational ratings: <strong>1</strong> very low / strongly tentative or doubtful; <strong>2</strong> low; <strong>3</strong> neutral or unclear; <strong>4</strong> high; <strong>5</strong> very high / strongly assured and committed. Ground truth will be an agreed aggregate of multiple independent listeners, retaining disagreement and uncertainty. Individual ratings are ordinal; aggregate regression treats them as approximately continuous.</p>
+    <p><code>x = measurable acoustic/temporal features; y = aggregated human PVC rating; PVC_hat = f(x)</code>. Learn the mapping to human ratings. Acoustic features predict the construct; they do not define it. Temporal, pitch and intensity cues are motivated by <a href="#ref-jiang">Jiang &amp; Pell (2017)</a>; interacting filler, rate and F0 effects by <a href="#ref-kirkland">Kirkland et al. (2022)</a>. Every feature's sign and importance must be learned and validated: no universal “high pitch = low confidence” rule.</p>
+    <p><a href="https://github.com/Charlieheemg/VR-402/blob/main/docs/pvc_definition_v0_1.md">Full definition, cue families and references</a>.</p>
+  </section>
+  <section id="methodology">
+    <h2>5. Proposed methodology — narrowed PVC study</h2>
+    <p>The paediatric VR assessment/debriefing context remains unchanged. Charlie's immediate target is PVC at an agreed single-speaker analysis unit; this does not replace the existing teamwork rubric or assess clinical correctness.</p>
+    <ol>
+      <li><strong>Human reference.</strong> Multiple independent listeners rate identical clips using the PVC definition and 1–5 anchors, blind to model outputs. Agree aggregation, exclusions and inter-rater reliability before the main study. Resolve “neutral” versus “unclear”; use a separate unrateable flag for inaudible clips. Where an ICC is used, justify its form and confidence interval (<a href="#ref-koo">Koo &amp; Li, 2016</a>).</li>
+      <li><strong>Engineered pathway.</strong> Audio → openSMILE/eGeMAPSv02 plus transparent temporal features → mean baseline, Ridge regression and Random Forest → predicted PVC. Preserve all 88 functionals (<a href="#ref-opensmile">Eyben et al., 2010</a>; <a href="#ref-egemaps">Eyben et al., 2016</a>). Fit preprocessing inside folds, use speaker-grouped evaluation, and report MAE, Spearman, linear coefficients and forest importance. No arbitrary score weights or deep network.</li>
+      <li><strong>Audio-LLM benchmark.</strong> Same audio → an audio-capable language model using the identical definition and anchors → estimated PVC plus evidence and uncertainty. The separate template uses <code>gpt-audio-1.5</code>, verified against <a href="#ref-openai">official documentation</a>; it has not been run. SALMONN provides broader audio-language architecture context (<a href="#ref-salmonn">Tang et al., 2024</a>), not PVC validation. LLM estimates are not ground truth.</li>
+    </ol>
+    <p>Compare both predictions with independent human ratings on held-out speakers; session/scenario separation, rater agreement, preprocessing sensitivity and measurement checks require an agreed validation protocol. Any later transcript/context ablation should follow confirmation of the existing pipeline. Natural speech still carries lexical meaning, and listener perceptions may depend on accent, speaker and recording conditions.</p>
+    <p>Kang Zhe's data-presentation workstream remains focused on organising findings, evidence and uncertainty for debriefing. Better PVC prediction would not itself demonstrate improved teamwork or learning; feedback usefulness requires its own evaluation.</p>
+  </section>
+  <section id="prototype">
+    <h2>6. Implementation and evaluation status</h2>
+    <ul>
+      <li><strong>Completed work:</strong> PVC Definition v0.1, referenced cue families and independent-human-rating formulation; inspection of supplied Before/After WAV and transcript/timestamp materials.</li>
+      <li><strong>Prototype work:</strong> executable Python extraction of 88 eGeMAPSv02 functionals plus energy-based temporal measurements, JSON/CSV exports, and a supervised training/prediction scaffold. Real Before Team Leader audio (513.344 s) produced 35.6% energy activity and 188 internal low-energy gaps ≥0.2 s at −35 dBFS. These are measurement outputs, not PVC scores; whole-session gaps may include time when others speak. Missing transcripts/response context remain unavailable.</li>
+      <li><strong>Proposed validation:</strong> manually verify segmentation and timing; collect multiple independent listener ratings; quantify rater agreement; evaluate against the mean baseline and audio LLM on held-out speakers. No real labelled PVC model or comparative result is claimed.</li>
+      <li><strong>Separate external benchmark completed:</strong> 600 children's reading recordings with published Low/Medium/High labels were processed with our extractor. In five-fold recording-level cross-validation, balanced accuracy was 0.333 for the majority baseline, 0.716 for logistic regression and 0.781 for Random Forest. Speaker IDs could not be verified, so these are not speaker-independent results or adult PVC validation. The <a href="https://github.com/Charlieheemg/VR-402/blob/main/docs/reading_confidence_benchmark.md">provenance, methods and limitations</a> distinguish this benchmark from the final study; a <a href="https://github.com/Charlieheemg/VR-402/blob/main/docs/live_confidence_demo.md">local microphone/WAV demo</a> displays its three-class probabilities with a domain-shift warning.</li>
+      <li><strong>Confound audit:</strong> on exactly the same saved folds, eGeMAPS-only balanced accuracy was 0.733 (logistic) and 0.769 (Forest), while duration alone reached 0.569 and 0.539. The added duration/RMS fields do not explain the full result; residual speaker/task/recording confounds remain. No model was selected or replaced after this audit. See the <a href="https://github.com/Charlieheemg/VR-402/blob/main/docs/reading_confidence_ablation.md">ablation</a> and <a href="https://github.com/Charlieheemg/VR-402/blob/main/docs/pvc_meeting_status_final.md">final meeting status</a>.</li>
+      <li><strong>Unresolved questions:</strong> analysis unit, listener panel, neutral/unclear anchor, data permissions, role-to-speaker identity, threshold sensitivity, recording/overlap effects and integration with debriefing.</li>
+    </ul>
+    <p><a href="https://github.com/Charlieheemg/VR-402/tree/main/prototype/pvc">Prototype, runnable commands and demonstration record</a>. The After file measured only 0.03% energy activity at the same gate, showing strong recording-level/threshold sensitivity rather than a PVC difference. Existing cleaned transcripts contain changed wording and cannot be assumed to preserve fillers. The supplied teamwork assessments must not be relabelled as PVC ground truth.</p>
+  </section>
+  <section id="plan">
+    <h2>7. Next steps and supervisor questions</h2>
+    <p>Confirm the following with A/Prof Khoo Eng Tat before fixing the study protocol:</p>
+    <ul>
+      <li>Which current LLM(s) and prompts perform cleaning, conversation reasoning and assessment?</li>
+      <li>Do timestamps enter reasoning, or are they retained only for alignment/display?</li>
+      <li>Where do the Excel assessment criteria originate, and how do they relate to the Team Emergency Assessment Measure (TEAM)?</li>
+      <li>What do <code>AI_Before</code> and <code>AI_After</code> mean in the supplied outputs?</li>
+      <li>Does PVC v0.1 capture the desired delivery construct, what single-speaker unit is appropriate, and how many independent listeners are feasible?</li>
+      <li>What speaker normalization is appropriate, and how should accent, microphone and scenario differences be handled?</li>
+      <li>Which evidence fields, timestamps and uncertainty indicators should integrate with Kang Zhe’s UI?</li>
+    </ul>
+    <p>Then agree on data access and consent, a small annotation pilot, a reproducible engineered-model versus audio-LLM comparison against listener ratings, and a feedback-interface review. Set milestones after the scope and available recordings are confirmed.</p>
+  </section>
+  <section id="references">
+    <h2>8. References and internal material</h2>
+    <ul>
+      <li id="ref-jiang">Jiang, X., &amp; Pell, M. D. (2017). <a href="https://doi.org/10.1016/j.specom.2017.01.011">The sound of confidence and doubt</a>. <cite>Speech Communication, 88</cite>, 106–126.</li>
+      <li id="ref-kirkland">Kirkland, A., Lameris, H., Szekely, E., &amp; Gustafson, J. (2022). <a href="https://www.isca-archive.org/interspeech_2022/kirkland22_interspeech.html">Where's the uh, hesitation? The interplay between filled pause location, speech rate and fundamental frequency in perception of confidence</a>. <cite>Interspeech 2022</cite>, 4990–4994. DOI: 10.21437/Interspeech.2022-10973.</li>
+      <li id="ref-brennan">Brennan, S. E., &amp; Williams, M. (1995). <a href="https://doi.org/10.1006/jmla.1995.1017">The feeling of another’s knowing: Prosody and filled pauses as cues to listeners about the metacognitive states of speakers</a>. <cite>Journal of Memory and Language, 34</cite>(3), 383–398.</li>
+      <li id="ref-ponbarry">Pon-Barry, H., &amp; Shieber, S. (2010). <a href="https://www.isca-archive.org/speechprosody_2010/ponbarry10_speechprosody.html">Assessing self-awareness and transparency when classifying a speaker’s level of certainty</a>. <cite>Speech Prosody 2010</cite>, paper 210. DOI: 10.21437/SpeechProsody.2010-124.</li>
+      <li id="ref-opensmile">Eyben, F., Wöllmer, M., &amp; Schuller, B. (2010). <a href="https://doi.org/10.1145/1873951.1874246">openSMILE: The Munich versatile and fast open-source audio feature extractor</a>. <cite>ACM Multimedia</cite>, 1459–1462.</li>
+      <li id="ref-egemaps">Eyben, F., et al. (2016). <a href="https://doi.org/10.1109/TAFFC.2015.2457417">The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for Voice Research and Affective Computing</a>. <cite>IEEE Transactions on Affective Computing, 7</cite>(2), 190–202. Includes the extended set, eGeMAPS.</li>
+      <li id="ref-naim">Naim, I., Tanveer, M. I., Gildea, D., &amp; Hoque, M. E. (2015). <a href="https://www.cs.rochester.edu/u/gildea/pubs/naim-fg15.pdf">Automated Prediction and Analysis of Job Interview Performance: The Role of What You Say and How You Say It</a>. <cite>IEEE International Conference on Automatic Face and Gesture Recognition (FG)</cite>.</li>
+      <li id="ref-vmock">VMock. (n.d.). <a href="https://nus.edu.sg/cfg/docs/default-source/students/vmock-interviews-guide.pdf?sfvrsn=1f8598ee_0">VMock Interviews: How-To Guide</a>. NUS-hosted product documentation; design precedent, not independent validation. Accessed 28 September 2026.</li>
+      <li id="ref-roleplay"><cite>From Roleplay to Virtual Reality: Enhancing Cabin Crew Training for Managing Passenger Aggression</cite>. (n.d.). Supplied anonymised manuscript; authors and publication status not identified in the supplied copy. Internal related work only.</li>
+      <li id="ref-ong">Ong, S. J. H., Koh, A. T. Y., Cai, S., Tan, F. F.-Y., Chia, P., &amp; Khoo, E. T. (2026). <cite>Signals of Aggression: Modelling Multimodal Cues and Perceptual Effects in Virtual Agents</cite>. CHI ’26. DOI printed in supplied copy: 10.1145/3772318.3791031. Used as internal related work only.</li>
+      <li id="ref-salmonn">Tang, C., et al. (2024). <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/476ab8f369e489c04187ba84f68cfa68-Abstract-Conference.html">SALMONN: Towards Generic Hearing Abilities for Large Language Models</a>. <cite>International Conference on Learning Representations (ICLR)</cite>.</li>
+      <li id="ref-openai">OpenAI. (n.d.). <a href="https://developers.openai.com/api/docs/models/gpt-audio-1.5">GPT-Audio-1.5 model documentation</a>. API capability reference, not assessment validation. Rechecked 6 October 2026; see also the <a href="https://developers.openai.com/api/docs/guides/audio-chat-completions">audio input guide</a>.</li>
+      <li id="ref-koo">Koo, T. K., &amp; Li, M. Y. (2016). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4913118/">A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research</a>. <cite>Journal of Chiropractic Medicine, 15</cite>(2), 155–163. DOI: 10.1016/j.jcm.2016.02.012.</li>
+    </ul>
+  </section>
+  <footer><p>Based on the <a href="https://github.com/edic-nus/template">EDIC NUS report template</a>. <a href="https://edic-nus.github.io/tutorial/">Report website tutorial</a>.</p></footer>
+</main>
+</body>
+</html>

@@ -1,4 +1,6 @@
-# Editing and publishing the report
+# VR-405: editing and publishing the group report
+
+Official title: Paediatric VR Speech Analysis and Feedback. Charlie Hee Ming Guan (speech analysis) and Ang Kang Zhe (feedback presentation), supervised by A/Prof Khoo Eng Tat. `VR-402` remains the repository/Pages address only. Historical PVC documents are preserved; the main report supersedes their earlier scope.
 
 Run commands from this repository folder.
 
@@ -39,8 +41,8 @@ Do not automatically merge upstream template changes into the report; review the
 
 ## Before interim submission
 
-- Confirm official title, supervisor and required submission process.
-- Replace every scaffold paragraph with actual report content.
+- Confirm exact Week 12 presentation and Week 13 report deadlines; title and supervisor are now recorded above.
+- Complete Kang Zhe’s Part B from his evidence; do not invent results. Target 3,600–3,800 group words; run `python3 scripts/check_report.py` (limit 4,000).
 - Check citations, figure captions, links and mobile layout.
 - Include only real results, clearly separating completed work from proposed work.
 - Keep restricted papers, participant recordings, personal data and credentials out of this public report repository. Ignored folders are a convenience, not an access-control mechanism.

@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://claritychallenge.org/docs/cpc1/cpc1_intro",
+    "status": 200,
+    "final_url": "https://claritychallenge.org/docs/cpc1/cpc1_intro",
+    "note": ""
+  },
+  {
+    "url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+    "status": 200,
+    "final_url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+    "note": ""
+  },
+  {
+    "url": "https://doi.org/10.1016/j.specom.2017.01.011",
+    "status": 200,
+    "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0167639316301509",
+    "note": ""
+  },
+  {
+    "url": "https://doi.org/10.1109/TAFFC.2015.2457417",
+    "status": 202,
+    "final_url": "https://ieeexplore.ieee.org/document/7160715/",
+    "note": ""
+  },
+  {
+    "url": "https://doi.org/10.1145/1873951.1874246",
+    "status": 403,
+    "final_url": "https://dl.acm.org/doi/10.1145/1873951.1874246",
+    "note": "Network or access-protection limitation; not assumed broken"
+  },
+  {
+    "url": "https://github.com/Charlieheemg/VR-402",
+    "status": 200,
+    "final_url": "https://github.com/Charlieheemg/VR-402",
+    "note": ""
+  },
+  {
+    "url": "https://github.com/bbc/r2spin",
+    "status": 200,
+    "final_url": "https://github.com/bbc/r2spin",
+    "note": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+    "note": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20046964/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/20046964/",
+    "note": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22411282/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/22411282/",
+    "note": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35649935/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/35649935/",
+    "note": ""
+  },
+  {
+    "url": "https://pubs.asha.org/doi/10.1044/2023_AJSLP-23-00030",
+    "status": 403,
+    "final_url": "https://pubs.asha.org/doi/10.1044/2023_AJSLP-23-00030",
+    "note": "Network or access-protection limitation; not assumed broken"
+  },
+  {
+    "url": "https://sites.google.com/nau.edu/applied-ling-speech-lab-nau/projects/osim-project/slusi-corpus",
+    "status": 200,
+    "final_url": "https://sites.google.com/nau.edu/applied-ling-speech-lab-nau/projects/osim-project/slusi-corpus",
+    "note": ""
+  },
+  {
+    "url": "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+    "status": 200,
+    "final_url": "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+    "note": ""
+  },
+  {
+    "url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+    "status": 200,
+    "final_url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+    "note": ""
+  },
+  {
+    "url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+    "status": 200,
+    "final_url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+    "note": ""
+  }
+]

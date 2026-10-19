@@ -1,3 +1,5 @@
+> Historical research record: PVC was an earlier direction. Current official project: VR-405, Paediatric VR Speech Analysis and Feedback; see the [current report](../index.html). Recorded historical results and dates below are preserved.
+
 # Fixed-fold reading-confidence ablation and confound audit
 
 6 October 2026. **Recording-level, not speaker-independent.** This audits the existing external children's reading-confidence benchmark; it does not validate adult paediatric PVC or alter PVC Definition v0.1.

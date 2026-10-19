@@ -1,0 +1,94 @@
+{
+  "edinburgh": {
+    "recordings": 125,
+    "speakers": 1,
+    "matched_sentences": 25,
+    "uncertain_intervals": 847,
+    "composite_intervals": 36,
+    "raw_manifest_sha256": "4b912b08f30a72b633b45cf79b05377ab7991da0f247c43982bc030e1ffa111c"
+  },
+  "r2spin": {
+    "source_commit": "a9893f5ada87be2373c366d666d0c47e08dab138",
+    "source_sha256": "ba9e86ebc26b7ff8fa513083ebe4e724f6dc7f4e96c0ee688f1ba8945e22c2d6",
+    "rows": 6400,
+    "listeners": 16,
+    "speakers": 2,
+    "folds": "LeaveOneGroupOut(List), eight held-out lists; listeners/speakers shared",
+    "models": [
+      {
+        "model": "context",
+        "predictors": [
+          "Pred"
+        ],
+        "accuracy": 0.69140625,
+        "brier": 0.20600962837977999,
+        "n": 6400,
+        "folds": 8
+      },
+      {
+        "model": "context_speaker",
+        "predictors": [
+          "Pred",
+          "male"
+        ],
+        "accuracy": 0.69140625,
+        "brier": 0.20219981073636004,
+        "n": 6400,
+        "folds": 8
+      },
+      {
+        "model": "context_keyword",
+        "predictors": [
+          "Pred",
+          "KWGP"
+        ],
+        "accuracy": 0.72875,
+        "brier": 0.18050837702410275,
+        "n": 6400,
+        "folds": 8
+      },
+      {
+        "model": "context_speaker_keyword",
+        "predictors": [
+          "Pred",
+          "male",
+          "KWGP"
+        ],
+        "accuracy": 0.7334375,
+        "brier": 0.17845447424749536,
+        "n": 6400,
+        "folds": 8
+      }
+    ]
+  },
+  "reading": {
+    "n": 600,
+    "feature_table_sha256": "e4e8854555df2391950e6f4d7f5c4d340a5bdda9bf6eb595332fb55cd24d7be9",
+    "status": "Independent refit from saved feature table agrees within 1e-10; extraction not rerun; speaker independence not established",
+    "models": [
+      {
+        "model": "majority",
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.19160728424386383
+      },
+      {
+        "model": "logistic",
+        "balanced_accuracy": 0.7160217928616198,
+        "macro_f1": 0.7103760171888577
+      },
+      {
+        "model": "random_forest",
+        "balanced_accuracy": 0.7812549670414027,
+        "macro_f1": 0.7849374474608118
+      }
+    ]
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "opensmile": "2.6.0",
+    "soundfile": "0.14.0"
+  },
+  "script_sha256": "17ec3e30e827530563830f2689f1426f8ccb97d4faf0c8a6ace8dcfc64a91b33"
+}

@@ -1,0 +1,11 @@
+{
+  "main_words": 3027,
+  "limit": 4000,
+  "method": "Whitespace tokens of text inside main, including headings/captions/Part B draft; excludes title/navigation/references/appendices",
+  "part_b_status": "Awaiting author evidence; target final group 3600\u20133800",
+  "local_links": "passed",
+  "duplicate_ids": "none",
+  "image_alt": "passed",
+  "metadata": "passed",
+  "figures": 5
+}

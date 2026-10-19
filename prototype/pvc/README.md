@@ -1,3 +1,5 @@
+> Historical PVC implementation retained within **VR-405 — Paediatric VR Speech Analysis and Feedback**. Current research focuses on speech intelligibility; the code below is not a validated clinical score. See the [current report](../../index.html).
+
 # PVC v0.1 — acoustic evidence and supervised modelling scaffold
 
 **Perceived Vocal Confidence (PVC) is the degree to which a listener judges, from a speaker's vocal delivery, that the speaker sounds certain and committed to what they are saying.** It is not internal confidence, correctness, expertise or general speaking quality. Read the [definition, rating anchors and academic references](../../docs/pvc_definition_v0_1.md).
