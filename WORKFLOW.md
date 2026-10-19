@@ -29,8 +29,8 @@ If a pull or push is rejected, stop and inspect the message; do not force-push o
 
 - `index.html`: report home page and sections.
 - `index.css`: report styling.
-- `assets/`: figures and media cleared for publication; includes original template examples.
-- `components/`: original EDIC reusable components, available for later use.
+- `assets/`: FYP figures and media cleared for publication.
+- `components/`: retained generic EDIC image/video, team-member, references and navigation helpers; unused example demos removed.
 - `README.md`: project/setup overview.
 - `WORKFLOW.md`: these instructions.
 - `.nojekyll`: serve this as a plain static website.
