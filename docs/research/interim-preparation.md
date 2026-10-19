@@ -2,7 +2,7 @@
 
 ## Assessment map
 
-Requirements below are transcribed from the user-provided brief; confirm exact dates and final submission arrangements with the course.
+Requirements were checked against the supplied six-page CDE4301 assessment brief and rubrics, AY2026 interim assessment. Confirm exact dates and final submission arrangements with the course. See the [completed follow-up work](follow-up-work.md) and [meeting decision sheet](supervisor-decisions.md).
 
 | Criterion | Main report location | Review evidence / unresolved action |
 |---|---|---|
@@ -35,7 +35,7 @@ Use readable units, paired-change definitions, speaker/listener/sample counts an
 4. Define usefulness/usability/comprehension tests; report actual sample, procedure, observations and limits, or label them proposed.
 5. Add references, figures/captions and a feasible work plan; identify authorship and any dependencies on Charlie's output.
 
-Aim initially for **1,500–1,600 substantive words**, replacing the placeholders. The refinement conservatively counts visible figure labels as well as HTML. With 2,191 non-Part-B words, a 1,500–1,600-word Part B yields 3,691–3,791 group words. The replacement capacity is 1,809 words at the absolute 4,000 limit; 1,800 leaves only nine words of margin. Recount after adding tables, captions or figures, and rebalance if necessary. No artificial integration is needed. Proposed common fields: recording reference, time span, metric/value/unit, measurement method, quality flag, evidence status; agree them before implementing an exchange format.
+Aim initially for **1,500–1,600 substantive words**, replacing the placeholders. The refinement conservatively counts visible figure labels as well as HTML. With 2,193 non-Part-B words, a 1,500–1,600-word Part B yields 3,693–3,793 group words. The replacement capacity is 1,807 words at the absolute 4,000 limit; 1,800 leaves only seven words of margin. Recount after adding tables, captions or figures, and rebalance if necessary. No artificial integration is needed. Proposed common fields: recording reference, time span, metric/value/unit, measurement method, quality flag, evidence status; agree them before implementing an exchange format.
 
 Write invitation sent to KayZzee17; acceptance required. The normal Git workflow is in WORKFLOW.md. Coordinate edited sections, pull before work, and review staged changes; do not force push. Restricted audio stays local.
 
@@ -55,4 +55,4 @@ Write invitation sent to KayZzee17; acceptance required. The normal Git workflow
 | Predictive validation — Charlie, supervisor approves design | Small interpretable feature-set evaluation with context/ASR baselines | Trustworthy measures/labels; enough independent speakers; fixed protocol | Speaker-disjoint splits where feasible; fold-local training; calibration/generalisation analysis; test set untouched | Too few speakers or label mismatch → narrow claims, seek better data; do not treat list CV as speaker CV |
 | Longer term — Charlie for recognition/efficiency trial, Kang Zhe for feedback design, both coordinate | Approved feedback experiment and eventual exchange contract | Measurement/prediction gates; permissions and ethics; author-owned prototypes ready | Independent listener recognition and correct words/minute compared under controlled conditions; usable feedback evidenced separately | Approval/data delays → synthetic examples and permitted design walkthroughs; no efficacy claim or forced integration |
 
-No firm experimental dates are assigned where access, feasibility or ethics are unresolved. Week 12/13 assessment timing is user-supplied and requires course confirmation. Sample sizes are undecided: use a feasibility pilot then power/precision considerations accounting for speaker/listener clustering.
+No firm experimental dates are assigned where access, feasibility or ethics are unresolved. Week 12/13 assessment timing is specified in the supplied official brief; calendar dates require course confirmation. A concrete feasibility pilot is now proposed in the listener protocol, with a tested hypothetical allocation. Confirmatory sample sizes remain undecided and require power/precision considerations accounting for speaker/listener clustering.

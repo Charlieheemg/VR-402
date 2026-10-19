@@ -18,3 +18,8 @@ Confirm exact assessment dates; define the clinical listener/task/noise target; 
 ## Part B handover
 
 Kang Zhe should author a substantive contribution on feedback needs, design alternatives, prototype and actual testing, with sample/procedure/limitations and references. The intended 1,500–1,600 words preserve group margin; recount added diagram/table text. Interim contributions remain consecutive. No technical integration is required or claimed.
+
+
+## 19 October follow-up
+
+The [follow-up work log](follow-up-work.md) records the independent pitch diagnostic, dataset-access/terms audit and concrete proposed pilot. Current counts are 2,279 total, Charlie 1,837, shared 356 and placeholder Part B 86; replacement capacity 1,807. Earlier counts above describe the initial refinement snapshot. No new research model was trained; the existing demo remains unchanged.

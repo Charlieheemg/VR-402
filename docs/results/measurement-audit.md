@@ -58,3 +58,8 @@ The existing protocol used LeaveOneGroupOut(List), fold-local StandardScaler and
 ## Research status
 
 **Implemented:** extractor, historical classifiers and local demo. **Reproduced:** existing timing summaries and aggregate recognition metrics; this refinement adds only coverage/sensitivity and per-fold audits of existing evidence. **Preliminarily supported:** matched within-speaker production differences and incremental masking-related prediction in R2SPIN. **Not yet validated:** speaker-side intelligibility prediction, manual pitch/formant accuracy, clinical transfer, feedback efficacy or integrated-system usefulness.
+
+
+## Subsequent quality work
+
+The [12-recording independent pitch diagnostic and assistant visual inspection](pitch-quality-review.md) extends this earlier cache/configuration audit. It finds tracker/parameter sensitivity and retains the unvalidated-measurement boundary; it does not alter original summaries or supply human reference annotations.
