@@ -19,6 +19,21 @@ NUS CDE4301 Innovation & Design Capstone, group interim working report.
 - [Sources and claim boundaries](docs/references/source-audit.md)
 - [Local Edinburgh demo](prototype/pvc/edinburgh/README.md)
 
+## Feedback research record
+
+Ang Kang Zhe's evolving research notes distinguish existing team evidence, proposed design and untested assumptions. These complement the [Part B report draft](index.html#part-b) and [organised supporting material](docs/feedback/README.md).
+
+- [Problem, scope and questions](problem-and-scope.md)
+- [Literature-to-design evidence](literature-evidence.md)
+- [Method and alternatives](feedback-transformation.md)
+- [Feedback concepts](feedback-concepts.md)
+- [Expert-annotation feasibility and evidence limits](annotation-audit.md)
+- [Research decision log](decision-log.md)
+- [Reference register](references.md)
+- [Earlier foundation snapshot](docs/feedback/foundation.md)
+
+The discourse-assessment pipeline, expert annotations, rubric and existing worksheet are prior research-team work. The feedback workstream proposes learner and instructor representations; educational benefit and user testing remain unestablished. Keep private consultant workbooks, identifiable recordings/transcripts and restricted manuscripts out of this public repository; publish only authorised, de-identified material.
+
 Static HTML/CSS; no frontend framework or build step. Preview with `python3 -m http.server 8000 --bind 127.0.0.1` from this folder. Main report: `index.html`; style: `index.css`. `python3 scripts/check_report.py` checks local references, metadata and a conservative ≤4,000-word limit. Aggregate results are in `docs/results/`; three main-report figures (plus retained supplementary assets) have sources/renderers in `scripts/make_figures.py` (pandas/matplotlib needed only to regenerate figures).
 
 Retain earlier PVC code and documents as historical evidence. Current direction: acoustic measurements and human speech intelligibility, with no clinical or intervention effectiveness established. Raw recordings, participant rows, model binaries, archives and phonetic annotations stay in ignored local locations. Public aggregates do not authorize raw corpus redistribution.
