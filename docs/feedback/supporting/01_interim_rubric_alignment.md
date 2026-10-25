@@ -4,7 +4,7 @@ Source: **CDE4301 assessment brief and rubrics - AY2026 - interim assessment**, 
 
 | Criterion | Examiner/supervisor question | Current evidence | Missing evidence / action |
 |---|---|---|---|
-| A1 Objective, Scope and Context | What problem, contribution, and difference from prior work? | Existing manuscript, downstream feedback-design gap, precise scope | Show comparison to generic ChatGPT/worksheet and limitations of claimed novelty |
+| A1 Objective, Scope and Context | What problem, contribution, and difference from prior work? | Existing manuscript, downstream feedback-design gap, precise scope | Show comparison to generic LLM summary and worksheet and limitations of claimed novelty |
 | A2 Methodology / concept development | Why suitable, compared with alternatives? | Two complementary foundational pedagogies, theory-to-design map | Explicit comparison with raw Excel, generic LLM summary and other debriefing approaches |
 | A3 Fabrication of prototypes | What has been created and why? | Draft learner and instructor feedback mockups | Provide 2-3 source-linked annotated examples, versioned and visibly marked conceptual |
 | A4 Testing | What tests and why? | Consultant inventory is data audit, not intervention test | Execute small traceability/attribution feasibility test; log procedure and findings |

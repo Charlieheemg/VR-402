@@ -19,6 +19,4 @@
 9. *Structured Discourse Modelling for Automated Team Communication Feedback in Paediatric VR Resuscitation Training*. Research-team manuscript supplied for the FYP, online submission ID 1911. Table 1: seven operationalisations; Study 1: expert agreement; Study 2: change in balance rate; Section 5: severity weighting and transcript-only limitations. Obtain permission before repository upload or external distribution.
 10. CT and NN consultant annotation workbooks, 10 paired session IDs, supplied by research team. Private working materials. Do not upload raw workbooks publicly.
 
-**Citation-count note:** Earlier conversations discussed citation totals, but this register does not claim live verified citation counts. Citation count is a measure of influence, not validation of the proposed design.
-
-**Verification note:** Bibliographic information and study claims should be checked against the primary publications before submission; this register is not a verified journal-quartile assessment. The project manuscript and consultant workbooks are not included in this public package.
+**Source status:** Bibliographic details and study claims require primary-source verification before submission. The project manuscript and consultant workbooks are held separately from this public documentation.
