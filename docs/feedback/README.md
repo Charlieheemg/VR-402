@@ -2,6 +2,10 @@
 
 This folder contains Ang Kang Zhe's materials for VR-405. Start with [Part B of the research report](../../index.html#part-b). Design concepts and evaluation plans remain subject to author and expert review; no educational effectiveness or completed user testing is claimed.
 
+## Report evidence appendix
+
+[Read the worked examples, evaluation protocol and rubric map](report-evidence.html). This browser-readable appendix is the main supporting destination for Part B. It shows two learner concepts and an instructor brief, identifies worksheet source pointers, and distinguishes available design evidence from tests still to be conducted. The notes below retain the research history.
+
 ## Current research record
 
 - [Problem, scope and research questions](research/problem-and-scope.md)
@@ -30,8 +34,8 @@ These are retained as earlier snapshots; the research record above is the main n
 - [Earlier reference register](supporting/05_references.md)
 - [Earlier conceptual feedback formats](supporting/feedback_concepts.md)
 
-## Merge preparation
+## Contribution boundaries
 
-All feedback uploads are contained in this folder. Charlie's root README, scripts and results files match main. Report edits add Part B, its two references and associated draft status wording; Charlie's Part A is preserved. No merge to main or publication has been performed.
+All feedback uploads are contained in this folder. The 25 October revision shortens Part B, adds a browser-readable evidence appendix and extends its references. Charlie's Part A, root README, scripts and results files are unchanged by this revision. The original examples document is retained without editing; source verification remains pending.
 
 Before submission, verify original source spans and permissions, confirm rubric wording with the research team, review proposed clinical actions with an expert, and record actual feasibility or user-study results only after those studies occur.

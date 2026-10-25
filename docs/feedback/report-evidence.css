@@ -1,0 +1,7 @@
+/* Scope presentation changes to the Part B evidence appendix. */
+.example{border:1px solid var(--line);border-top:3px solid var(--accent);padding:24px;margin:28px 0;break-inside:avoid}
+.example h3{font-size:1.25rem;margin:6px 0 12px}.source{font: .78rem/1.6 system-ui,sans-serif;color:var(--muted)}
+dl{margin:20px 0 0}dt{font:700 .8rem/1.5 system-ui,sans-serif;color:var(--accent);margin:18px 0 5px}dd{margin:0;font-size:.94rem}
+.example .table-scroll{margin-bottom:16px}.example p:last-child{margin-bottom:0}
+@media(max-width:680px){.example{padding:18px 14px}}
+@media print{.example{break-inside:auto}dt{break-after:avoid}}

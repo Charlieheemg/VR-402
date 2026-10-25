@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25",
+  "part_b_words_before": 1504,
+  "part_b_words_after": 878,
+  "main_words_including_svg": 3072,
+  "limit": 4000,
+  "local_links_and_fragments": "passed",
+  "duplicate_ids": "none",
+  "charlie_and_other_report_content": "unchanged",
+  "method": "HTML text whitespace tokens plus visible SVG text; direct JavaScript checks. Existing Python launcher has no configured interpreter.",
+  "browser_preview": "Unavailable: no connected browsers",
+  "source_fidelity_audit": "not performed; source workbook unavailable",
+  "failures": []
+}
