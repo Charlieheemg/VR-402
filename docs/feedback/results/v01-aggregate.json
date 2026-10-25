@@ -1,0 +1,84 @@
+{
+  "version": "0.1",
+  "mode": "deterministic/local",
+  "python": "3.12.4",
+  "openpyxl": "3.1.2",
+  "generator_sha256": "8bd8e2ef75f5bb0a77568fd6a5e8ad3688f5e744479f16550a224a241ff66f1f",
+  "workbooks": 21,
+  "groups": {
+    "AI": {
+      "workbooks": 1,
+      "annotation_cells": 40,
+      "count_mismatches": 0,
+      "exact_cell_text_mismatches": 0,
+      "polarity": {
+        "unverified": 40
+      },
+      "unverified_fill_codes": {
+        "FF5FA052": 16,
+        "FFCB4C4E": 24
+      }
+    },
+    "NN": {
+      "workbooks": 10,
+      "annotation_cells": 63,
+      "count_mismatches": 0,
+      "exact_cell_text_mismatches": 0,
+      "polarity": {
+        "negative_color": 34,
+        "positive_color": 29
+      },
+      "unverified_fill_codes": {}
+    },
+    "CT": {
+      "workbooks": 10,
+      "annotation_cells": 268,
+      "count_mismatches": 0,
+      "exact_cell_text_mismatches": 0,
+      "polarity": {
+        "negative_color": 92,
+        "positive_color": 176
+      },
+      "unverified_fill_codes": {}
+    }
+  },
+  "report_checks": [
+    {
+      "source_group": "AI",
+      "extracted": 40,
+      "displayed": 14,
+      "not_displayed": 26,
+      "all_categories_visible": true,
+      "displayed_pointers_in_both": true,
+      "displayed_annotations_exact": true,
+      "repeat_identical": true,
+      "source_record_serialization_repeat_identical": true
+    },
+    {
+      "source_group": "CT",
+      "extracted": 30,
+      "displayed": 12,
+      "not_displayed": 18,
+      "all_categories_visible": true,
+      "displayed_pointers_in_both": true,
+      "displayed_annotations_exact": true,
+      "repeat_identical": true,
+      "source_record_serialization_repeat_identical": true
+    },
+    {
+      "source_group": "NN",
+      "extracted": 8,
+      "displayed": 6,
+      "not_displayed": 2,
+      "all_categories_visible": true,
+      "displayed_pointers_in_both": true,
+      "displayed_annotations_exact": true,
+      "repeat_identical": true,
+      "source_record_serialization_repeat_identical": true
+    }
+  ],
+  "count_check_scope": "All populated cells under independently recognised headers; identical header-layout assumption remains.",
+  "fidelity_scope": "Exact extracted cell text and displayed annotation/pointer presence only; no event meaning or clinical review.",
+  "external_calls": false,
+  "human_or_learning_evaluation": false
+}

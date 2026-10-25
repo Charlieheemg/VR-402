@@ -1,6 +1,6 @@
 # Feedback transformation: methodology and alternatives
 
-**Status:** proposed research method, not implemented or experimentally compared.
+**Status:** design specification with a local deterministic v0.1 implementation and preliminary engineering evaluation. Individual routing and full-event source verification remain incomplete.
 
 ## Input and evidence contract
 
@@ -35,7 +35,7 @@ Separate **validity** (is this assessment supported?), **routing** (who should s
 
 RQ-B1 — Feedback fidelity and quality: Can learner- and instructor-facing feedback preserve assessment evidence, meaning, category/polarity and defensible individual/team attribution? How clear, relevant and actionable is the output when assessed separately? RQ-B2 — Immediate educational usefulness: Compared with generic feedback from identical evidence, does theory-guided feedback improve learner comprehension, corrective learning-plan quality and instructors’ preparation of accurate, actionable debriefs? RQ-B3 — Subsequent learning effectiveness: Does theory-guided feedback improve communication performance in subsequent simulation scenarios? All three questions remain unanswered. The original assessments and expert annotations belong to the upstream research team.
 
-These are unanswered questions. The [evaluation protocol](../report-evidence.html#evaluation) distinguishes:
+RQ-B1 has partial mechanical evidence; quality, RQ-B2 and RQ-B3 remain untested. The [evaluation protocol](../report-evidence.html#evaluation) distinguishes:
 
 1. **Feedback fidelity and quality:** preserve source traceability, rubric/category/polarity, meaning, supported attribution and contextual repairs; log unsupported additions. Assess clarity, recipient relevance and actionability separately. There is no validated combined score.
 2. **Immediate educational usefulness:** learner comprehension (including gap recognition) and corrective learning-plan quality; instructor accuracy, usefulness and quality of debrief preparation. Compare generic LLM and theory-guided outputs from identical evidence; worksheet is an optional baseline. Time is secondary. A plan or intention is not observed uptake.
@@ -43,4 +43,13 @@ These are unanswered questions. The [evaluation protocol](../report-evidence.htm
 
 This hierarchy is a project-specific synthesis. Design pedagogies remain Hattie–Timperley and Nicol–Macfarlane-Dick. Evaluation draws on Carless–Boud (feedback literacy), Cook–Hatala (validity), Johnson et al. (FQI), Kirkpatrick and digital-feedback assessment literature; see the [reference register](../references.md#evaluation-literature). The FQI concerns conversations and is not validated for a static AI report.
 
-**Progress:** theory mapping, transformation specification and three conceptual content examples are documented. Source-fidelity audit, clinical expert review, implemented/automated transformation, user testing, comparative effectiveness and longitudinal outcomes are not completed. Next: verify 2–3 permission-cleared episodes, obtain expert review, then undertake a feasibility/pilot study subject to approvals. Blinded ratings where feasible, case counterbalancing, scoring anchors and sample-size justification are future protocol elements.
+**Progress:** local v0.1 implementation and reproducible engineering checks are documented in the [evaluation](../evaluation-v01.html). Source-span fidelity, clinical expert review, external-model generation, user testing and educational outcomes remain pending.
+
+
+## Version 0.1 progress — 25 October 2026
+
+The workbook-to-feedback generator is implemented in local deterministic mode. A new reproduction harness confirmed 21 workbooks and 371 populated annotation cells (AI 40, CT 268, NN 63), with zero count mismatches and exact extracted cell text for the tested layouts. Three learner/instructor report pairs retain displayed pointers and annotations and repeat deterministically. These are mechanical checks, not complete event-level fidelity or educational validation.
+
+Observed issues are 40/40 unverified AI polarities, default AI display of 14/40 records, a missed ampersand-form category header, generic actions, unverified individual attribution and limited context. Five synthetic characterisation tests pass while preserving the frozen defects. Clinical review, independent full-event fidelity review, user testing, external-model execution and learning-effectiveness results remain outstanding.
+
+See [the reproduced evaluation](../evaluation-v01.html), [source and run commands](../../../prototype/feedback/v0.1/README.md) and [aggregate results](../results/v01-aggregate.json). RQ-B1 is partially examined through mechanical checks; feedback quality, immediate educational usefulness (RQ-B2) and later performance (RQ-B3) remain unanswered.

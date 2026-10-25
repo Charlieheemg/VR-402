@@ -36,4 +36,13 @@
 | Kirkpatrick Partners; Johnston et al. (2018) | Distinguish reactions, learning, behaviour and results in training evaluation. | Later simulation performance does not demonstrate workplace transfer or patient benefit. |
 | Duran Espinoza et al. (2024) | Scoping review identifies limited digital-feedback assessment evidence. | Does not supply a validated instrument for this interface. |
 
-See [verified bibliographic records](../references.md#evaluation-literature) and the [evaluation protocol](../report-evidence.html#evaluation). Fidelity, subjective quality, immediate educational usefulness and later performance remain separate constructs. RQ-B1, RQ-B2 and RQ-B3 are unanswered; full definitions are maintained in the [research scope](problem-and-scope.md#questions).
+See [verified bibliographic records](../references.md#evaluation-literature) and the [evaluation protocol](../report-evidence.html#evaluation). Fidelity, subjective quality, immediate educational usefulness and later performance remain separate constructs. RQ-B1 has partial mechanical evidence; feedback quality, RQ-B2 and RQ-B3 remain untested; full definitions are maintained in the [research scope](problem-and-scope.md#questions).
+
+
+## Version 0.1 progress — 25 October 2026
+
+The workbook-to-feedback generator is implemented in local deterministic mode. A new reproduction harness confirmed 21 workbooks and 371 populated annotation cells (AI 40, CT 268, NN 63), with zero count mismatches and exact extracted cell text for the tested layouts. Three learner/instructor report pairs retain displayed pointers and annotations and repeat deterministically. These are mechanical checks, not complete event-level fidelity or educational validation.
+
+Observed issues are 40/40 unverified AI polarities, default AI display of 14/40 records, a missed ampersand-form category header, generic actions, unverified individual attribution and limited context. Five synthetic characterisation tests pass while preserving the frozen defects. Clinical review, independent full-event fidelity review, user testing, external-model execution and learning-effectiveness results remain outstanding.
+
+See [the reproduced evaluation](../evaluation-v01.html), [source and run commands](../../../prototype/feedback/v0.1/README.md) and [aggregate results](../results/v01-aggregate.json). RQ-B1 is partially examined through mechanical checks; feedback quality, immediate educational usefulness (RQ-B2) and later performance (RQ-B3) remain unanswered.
