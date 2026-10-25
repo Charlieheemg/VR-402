@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-25",
-  "main_words_including_svg": 3711,
-  "part_b_words": 1517,
+  "date": "2026-10-26",
+  "main_words_including_svg": 3798,
+  "part_b_words": 1604,
   "limit": 4000,
   "content_before_section_8": "unchanged",
   "generator_sha256": "8bd8e2ef75f5bb0a77568fd6a5e8ad3688f5e744479f16550a224a241ff66f1f",
@@ -13,5 +13,6 @@
   "event_level_fidelity_and_human_quality_review": "not completed",
   "external_model_execution": "not performed",
   "rendered_review": "not completed",
-  "failures": []
+  "failures": [],
+  "table_5_focus": "Feedback fidelity, learning structure, actionability, recipient relevance, instructor debrief support and educational outcomes"
 }
