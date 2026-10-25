@@ -4,7 +4,7 @@
 
 **Project:** VR-405 — Paediatric VR Speech Analysis and Feedback
 
-This contribution develops a theory-guided method for translating evidence-linked communication assessments into learner feedback and instructor debrief material. Current outputs comprise a framework specification and three content prototypes. Source verification, expert review, implementation and empirical evaluation remain subsequent stages.
+This contribution develops a theory-guided method for translating evidence-linked communication assessments into learner feedback and instructor debrief material. Current outputs include a frozen local v0.1 generator, learner/instructor report types, three earlier content concepts and reproduced engineering tests. Independent source-span verification, expert review and educational evaluation remain subsequent stages.
 
 ## Report and supplementary evidence
 
@@ -17,7 +17,15 @@ This contribution develops a theory-guided method for translating evidence-linke
 
 ## Evaluation framework
 
-The unanswered questions address **RQ-B1: feedback fidelity and quality**, **RQ-B2: immediate educational usefulness**, and **RQ-B3: subsequent learning effectiveness**. Learner comprehension includes recognition of performance gaps; corrective learning plans and instructor debrief preparation are distinct outcomes. Source verification, expert clinical review, implemented/automated transformation, user testing and comparative or longitudinal results remain pending. See [operational definitions and tentative procedures](report-evidence.html#evaluation) and [verified evaluation sources](references.md#evaluation-literature).
+The research questions address **RQ-B1: feedback fidelity and quality**, **RQ-B2: immediate educational usefulness**, and **RQ-B3: subsequent learning effectiveness**. Learner comprehension includes recognition of performance gaps; corrective learning plans and instructor debrief preparation are distinct outcomes. Local deterministic transformation and engineering tests are implemented. Independent event-level fidelity review, expert clinical review, user testing and comparative or longitudinal educational results remain pending. See [operational definitions and tentative procedures](report-evidence.html#evaluation) and [verified evaluation sources](references.md#evaluation-literature).
+
+## Implemented prototype and findings
+
+- [Feedback generator v0.1 — source, synthetic demo and reproduction](../../prototype/feedback/v0.1/README.md)
+- [Appendix C — reproduced evaluation, limitations and rubric evidence](evaluation-v01.html)
+- [Aggregate results](results/v01-aggregate.json)
+
+The original generator is retained unchanged. Twenty-one workbooks yielded 371 annotation cells with zero extraction-count mismatches; default display, polarity and header defects are documented. Private inputs, transcript-derived drafts, the upstream prompt library/manuscript and supplied conversation records are held under ignored private storage and are not redistributed.
 
 ## Research documentation
 
