@@ -8,7 +8,7 @@ NUS CDE4301 Innovation & Design Capstone, group interim working report.
 
 [Research report](https://Charlieheemg.github.io/VR-402/) · [Repository](https://github.com/Charlieheemg/VR-402)
 
-**Official code is VR-405.** The repository name, local folder and Pages URL retain `VR-402` to preserve links/remotes; this is a technical address, not a separate project. The report has consecutive contributions; integration is not claimed. Part B is an explicitly incomplete handover awaiting Kang Zhe's authored materials.
+**Official code is VR-405.** The repository name, local folder and Pages URL retain `VR-402` to preserve links/remotes; this is a technical address, not a separate project. The report has consecutive contributions; integration is not claimed. Part B now contains Kang Zhe’s feedback-design draft for author review; implementation and evaluation remain proposed. Supporting notes are organised in [docs/feedback/](docs/feedback/README.md).
 
 ## Read and reproduce
 
