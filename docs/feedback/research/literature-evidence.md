@@ -23,4 +23,4 @@
 | Feedback dialogue [2] | Instructor debrief question | Instructor usability review |
 | Evidence traceability [P1] | Timestamp/utterance reference and context | Match against original annotation |
 
-**Do not infer from theory alone:** a clinically valid top-three list, numeric severity weights, a mandatory card layout, or educational superiority of the proposed format. See [method alternatives](feedback-transformation.md).
+**Do not infer from theory alone:** a clinically valid top-three list, numeric severity weights, a mandatory card layout, or educational superiority of the proposed format. See [method alternatives](../methodology/feedback-transformation.md).

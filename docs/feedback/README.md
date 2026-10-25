@@ -1,25 +1,37 @@
 # Kang Zhe — feedback presentation and debriefing
 
-**Review draft, 25 October 2026.** Read [Part B in the main report](../../index.html#part-b) first. It follows Charlie's problem → research design → prototype → evidence → limitations structure. Changes are local pending Kang Zhe's review.
+This folder contains Ang Kang Zhe's materials for VR-405. Start with [Part B of the research report](../../index.html#part-b). Design concepts and evaluation plans remain subject to author and expert review; no educational effectiveness or completed user testing is claimed.
 
-## Supporting material
+## Current research record
 
-- [Foundation](foundation.md): earlier problem definition and pedagogical rationale.
-- [Rubric alignment](01_interim_rubric_alignment.md): assessment planning checklist.
-- [Theory-to-design matrix](02_theory_to_design.md): constructs, design choices and alternatives.
-- [Method and plan](03_method_and_plan.md): research questions and proposed evaluation.
-- [Conceptual feedback formats](feedback_concepts.md): learner and instructor examples; source verification still required.
-- [Presentation brief](04_presentation_brief.md): speaking narrative and anticipated questions.
-- [Reference register](05_references.md): source inventory and verification caveats.
+- [Problem, scope and research questions](research/problem-and-scope.md)
+- [Literature-to-design evidence](research/literature-evidence.md)
+- [Research decision log](research/decision-log.md)
+- [Transformation methodology and alternatives](methodology/feedback-transformation.md)
+- [Learner and instructor design concepts](design/feedback-concepts.md)
+- [Annotation audit and evidence limits](evidence/annotation-audit.md)
+- [Reference register](references.md)
 
-The six uploaded supporting notes were recovered from commit `0222189` and retained as source notes. The older root-level foundation note was moved here. The uploaded README was not restored over the group README; this index provides navigation instead. Source notes describe earlier discussions and are not independent proof that private workbooks, mockups or evaluations have been checked.
+## Feedback examples
 
-## Review before submission
+- [Feedback concept examples — original Word document](examples/FYP_Feedback_Concept_Examples.docx): two learner examples (team leader and IV role), an instructor debrief example, and their proposed educational rationale. Moved without editing the document.
 
-1. Confirm Part B accurately describes your contribution and preferred research question.
-2. Supply authorised source spans and the exact rubric before replacing conceptual examples with real cases. Private manuscript and consultant workbooks were not available for this drafting pass.
-3. Verify manuscript details, annotation inventory and claims about consultant agreement against the original materials.
-4. Run the planned feasibility check and add actual observations when available. No participant study, expert approval or educational improvement is claimed.
-5. Agree group wording and publication with Charlie before merging or publishing.
+The document identifies worksheet cells and distinguishes observations from proposed practice actions. The underlying workbook was not available for verification. Source accuracy, context and permission for public use require confirmation before publication. These examples are conceptual material, not validated clinical assessments or evidence of learning improvement.
 
-Core theory bibliographic details checked against the [Hattie and Timperley publisher page](https://journals.sagepub.com/doi/10.3102/003465430298487) and [Nicol and Macfarlane-Dick publisher page](https://www.tandfonline.com/doi/abs/10.1080/03075070600572090). This is a targeted source check, not a systematic literature review.
+## Earlier supporting notes
+
+These are retained as earlier snapshots; the research record above is the main navigation path. Similar filenames refer to distinct documents, not duplicate copies to delete.
+
+- [Foundation draft](supporting/foundation.md)
+- [Interim rubric alignment](supporting/01_interim_rubric_alignment.md)
+- [Theory-to-design matrix](supporting/02_theory_to_design.md)
+- [Method and evaluation plan](supporting/03_method_and_plan.md)
+- [Presentation briefing](supporting/04_presentation_brief.md)
+- [Earlier reference register](supporting/05_references.md)
+- [Earlier conceptual feedback formats](supporting/feedback_concepts.md)
+
+## Merge preparation
+
+All feedback uploads are contained in this folder. Charlie's root README, scripts and results files match main. Report edits add Part B, its two references and associated draft status wording; Charlie's Part A is preserved. No merge to main or publication has been performed.
+
+Before submission, verify original source spans and permissions, confirm rubric wording with the research team, review proposed clinical actions with an expert, and record actual feasibility or user-study results only after those studies occur.
