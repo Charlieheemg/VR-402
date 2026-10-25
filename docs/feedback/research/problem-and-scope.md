@@ -10,9 +10,7 @@ Evidence-linked assessment does not, by itself, specify how a learner should und
 
 ## Questions
 
-- **RQ1 — faithful transformation:** Can rubric-labelled communication instances be reorganised into learner/instructor feedback while retaining original evidence, category, polarity, speaker attribution and uncertainty?
-- **RQ2 — comprehension and actionability (future evaluation):** Compared with the existing worksheet and a generic summary, does structured feedback improve users' identification of observed gaps and formulation of feasible next steps?
-- **RQ3 — learning transfer (later research):** Does any improvement in understanding translate to better subsequent communication? This cannot be inferred from a concept mock-up or an immediate usability rating.
+RQ-B1 — Feedback fidelity and quality: Can learner- and instructor-facing feedback preserve assessment evidence, meaning, category/polarity and defensible individual/team attribution? How clear, relevant and actionable is the output when assessed separately? RQ-B2 — Immediate educational usefulness: Compared with generic feedback from identical evidence, does theory-guided feedback improve learner comprehension, corrective learning-plan quality and instructors’ preparation of accurate, actionable debriefs? RQ-B3 — Subsequent learning effectiveness: Does theory-guided feedback improve communication performance in subsequent simulation scenarios? All three questions remain unanswered. The original assessments and expert annotations belong to the upstream research team.
 
 ## Scope
 

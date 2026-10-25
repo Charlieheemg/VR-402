@@ -24,3 +24,16 @@
 | Evidence traceability [P1] | Timestamp/utterance reference and context | Match against original annotation |
 
 **Do not infer from theory alone:** a clinically valid top-three list, numeric severity weights, a mandatory card layout, or educational superiority of the proposed format. See [method alternatives](../methodology/feedback-transformation.md).
+
+
+## Evaluation literature and construct boundaries
+
+| Source | Evaluation rationale | Application limit |
+|---|---|---|
+| Carless & Boud (2018) | Judgement and action distinguish comprehension from actual feedback uptake. | Learning plans indicate intended action, not observed use. |
+| Cook & Hatala (2016) | Evidence must support intended assessment interpretations and uses. | Upstream validity does not automatically validate the feedback transformation. |
+| Johnson et al. (2021), FQI | Candidate domains for performance discussion and improvement planning. | Developed for conversations; not validated for static AI feedback. |
+| Kirkpatrick Partners; Johnston et al. (2018) | Distinguish reactions, learning, behaviour and results in training evaluation. | Later simulation performance does not demonstrate workplace transfer or patient benefit. |
+| Duran Espinoza et al. (2024) | Scoping review identifies limited digital-feedback assessment evidence. | Does not supply a validated instrument for this interface. |
+
+See [verified bibliographic records](../references.md#evaluation-literature) and the [evaluation protocol](../report-evidence.html#evaluation). Fidelity, subjective quality, immediate educational usefulness and later performance remain separate constructs. RQ-B1, RQ-B2 and RQ-B3 are unanswered; full definitions are maintained in the [research scope](problem-and-scope.md#questions).

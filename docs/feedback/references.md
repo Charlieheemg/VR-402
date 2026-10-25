@@ -15,3 +15,17 @@ This register identifies sources used in this research workstream. It is not a s
 **Private evidence:** CT/NN consultant annotation workbooks (reported as 20 workbooks over 10 paired sessions in the supplied research package). Do not upload these files or session-level rows to the public repository without explicit permission.
 
 **Additional context to assess later:** current INACSL Healthcare Simulation Standards of Best Practice: Debriefing Process. Exact edition and bibliographic metadata must be confirmed before formal citation.
+
+
+## Evaluation literature
+
+- **Main report [22]** Carless, D., & Boud, D. (2018). The development of student feedback literacy: enabling uptake of feedback. Assessment & Evaluation in Higher Education, 43(8), 1315–1325. https://doi.org/10.1080/02602938.2018.1463354
+- **Main report [23]** Cook, D. A., & Hatala, R. (2016). Validation of educational assessments: a primer for simulation and beyond. Advances in Simulation, 1, 31. https://pmc.ncbi.nlm.nih.gov/articles/PMC5806296/
+- **Main report [24]** Johnson, C. E., Keating, J. L., Leech, M., Congdon, P., Kent, F., Farlie, M. K., & Molloy, E. K. (2021). Development of the Feedback Quality Instrument: a guide for health professional educators in fostering learner-centred discussions. BMC Medical Education, 21, 382. https://link.springer.com/article/10.1186/s12909-021-02722-8
+- **Main report [25]** Kirkpatrick Partners. The Kirkpatrick Model. Official description of reactions, learning, behaviour and results; accessed 25 October 2026. https://www.kirkpatrickpartners.com/the-kirkpatrick-model/
+- **Main report [26]** Duran Espinoza, V., et al. (2024). Available assessment tools for evaluating feedback quality: a scoping review oriented to education in digital media. Global Surgical Education, 3, 42. https://link.springer.com/article/10.1007/s44186-024-00239-4
+- **Main report [27]** Johnston, S., Coyer, F. M., & Nash, R. (2018). Kirkpatrick’s evaluation of simulation and debriefing in health care education: a systematic review. Journal of Nursing Education, 57(7), 393–398. https://doi.org/10.3928/01484834-20180618-03
+
+**Verification (25 October 2026):** titles, authors, year and publication details checked against publisher, author-repository or full-text records. Cook and Hatala is a 2016 paper (DOI 10.1186/s41077-016-0033-y), correcting the proposed 2018 attribution. Johnston et al. metadata was verified against the publisher issue contents; no detailed study findings are attributed here. The Kirkpatrick distinction is supported by its official model description.
+
+**Use limits:** evaluation domains are a project-specific synthesis. FQI was developed for conversations; its domains are candidate review prompts for this static report, not a validated scale. Digital-feedback review findings do not establish validity of any local adaptation.

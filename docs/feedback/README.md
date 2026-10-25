@@ -15,6 +15,10 @@ This contribution develops a theory-guided method for translating evidence-linke
 - [Appendix B: worked examples, evaluation protocol and assessment map](report-evidence.html)
 - [Original learner and instructor examples](examples/FYP_Feedback_Concept_Examples.docx)
 
+## Evaluation framework
+
+The unanswered questions address **RQ-B1: feedback fidelity and quality**, **RQ-B2: immediate educational usefulness**, and **RQ-B3: subsequent learning effectiveness**. Learner comprehension includes recognition of performance gaps; corrective learning plans and instructor debrief preparation are distinct outcomes. Source verification, expert clinical review, implemented/automated transformation, user testing and comparative or longitudinal results remain pending. See [operational definitions and tentative procedures](report-evidence.html#evaluation) and [verified evaluation sources](references.md#evaluation-literature).
+
 ## Research documentation
 
 - [Problem, scope and questions](research/problem-and-scope.md)

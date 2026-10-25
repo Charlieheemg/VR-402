@@ -15,3 +15,8 @@ A record of **working decisions**, not approvals or test outcomes. Update this f
 ## How to update
 
 Add a dated entry documenting the question, alternatives, evidence reviewed, decision, responsible reviewer and consequences. Preserve earlier decisions rather than rewriting history. Do not label an assumption “validated” until actual evidence supports it.
+
+
+## 25 October 2026 — evaluation constructs
+
+Broadened the principal immediate outcomes from gap identification to feedback comprehension, corrective learning-plan quality and instructor debrief preparation quality. Gap recognition remains a component of comprehension. Fidelity and quality are assessed separately; later communication performance addresses learning effectiveness. This is a design decision, not a result or approval. Full unanswered RQ-B1–B3 and status are recorded in the [research scope](problem-and-scope.md#questions) and [evaluation protocol](../report-evidence.html#evaluation).

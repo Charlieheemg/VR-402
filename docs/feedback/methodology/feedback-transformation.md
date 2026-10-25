@@ -29,6 +29,18 @@ For each feedback instance, preserve where available: source reference, approved
 
 Separate **validity** (is this assessment supported?), **routing** (who should see it?) and **emphasis** (which items deserve discussion first?). Clinical severity, frequency and actionability may be discussed as candidate criteria, but there is no approved weighting model. Do not equate a red label with a clinically serious event. Do not conceal lower-ranked categories without a justified policy.
 
-## Candidate fidelity evaluation (not yet performed)
 
-Choose a small permission-cleared set of source-linked positive and negative instances across at least two categories; construct baseline and candidate views from the **same evidence**. Independently check source traceability, category/polarity preservation, role attribution, omitted context, unsupported claims, balanced positive evidence and action-label clarity. Record denominators, discrepancies and revisions. This evaluates transformation fidelity, **not** learning improvement. Subsequent expert/learner studies require their own protocols and approvals.
+
+## Evaluation framework (25 October 2026)
+
+RQ-B1 — Feedback fidelity and quality: Can learner- and instructor-facing feedback preserve assessment evidence, meaning, category/polarity and defensible individual/team attribution? How clear, relevant and actionable is the output when assessed separately? RQ-B2 — Immediate educational usefulness: Compared with generic feedback from identical evidence, does theory-guided feedback improve learner comprehension, corrective learning-plan quality and instructors’ preparation of accurate, actionable debriefs? RQ-B3 — Subsequent learning effectiveness: Does theory-guided feedback improve communication performance in subsequent simulation scenarios? All three questions remain unanswered. The original assessments and expert annotations belong to the upstream research team.
+
+These are unanswered questions. The [evaluation protocol](../report-evidence.html#evaluation) distinguishes:
+
+1. **Feedback fidelity and quality:** preserve source traceability, rubric/category/polarity, meaning, supported attribution and contextual repairs; log unsupported additions. Assess clarity, recipient relevance and actionability separately. There is no validated combined score.
+2. **Immediate educational usefulness:** learner comprehension (including gap recognition) and corrective learning-plan quality; instructor accuracy, usefulness and quality of debrief preparation. Compare generic LLM and theory-guided outputs from identical evidence; worksheet is an optional baseline. Time is secondary. A plan or intention is not observed uptake.
+3. **Subsequent learning effectiveness:** independently assessed communication in comparable later scenarios using the seven competencies. Candidate balance rate B=(G-R)/(G+R) is undefined at G+R=0 and depends on event definitions, annotation practices, team dependence and comparable behavioural opportunities. Later VR performance does not establish retention, workplace transfer or patient benefit.
+
+This hierarchy is a project-specific synthesis. Design pedagogies remain Hattie–Timperley and Nicol–Macfarlane-Dick. Evaluation draws on Carless–Boud (feedback literacy), Cook–Hatala (validity), Johnson et al. (FQI), Kirkpatrick and digital-feedback assessment literature; see the [reference register](../references.md#evaluation-literature). The FQI concerns conversations and is not validated for a static AI report.
+
+**Progress:** theory mapping, transformation specification and three conceptual content examples are documented. Source-fidelity audit, clinical expert review, implemented/automated transformation, user testing, comparative effectiveness and longitudinal outcomes are not completed. Next: verify 2–3 permission-cleared episodes, obtain expert review, then undertake a feasibility/pilot study subject to approvals. Blinded ratings where feasible, case counterbalancing, scoring anchors and sample-size justification are future protocol elements.

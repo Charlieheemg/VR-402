@@ -1,19 +1,15 @@
 {
   "date": "2026-10-25",
-  "part_b_sections": [
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
-  "part_b_words": 1084,
-  "main_words_including_svg": 3278,
-  "word_limit": 4000,
+  "main_words_including_svg": 3596,
+  "part_b_words": 1402,
+  "limit": 4000,
   "content_before_section_8": "unchanged",
-  "local_html_links_and_fragments": "passed",
-  "numbered_part_b_citations": "linked to matching reference entries; return links provided",
+  "report_checker": "passed: py -X utf8 scripts/check_report.py",
+  "local_links_and_fragments": "passed",
+  "citation_numbering": "passed",
   "duplicate_ids": "none",
-  "source_fidelity_audit": "pending",
+  "source_fidelity_audit": "not performed",
+  "rendered_review": "Not completed: browser policy blocks local-file previews",
+  "metadata_correction": "Cook and Hatala (2016), not Cook et al. (2018)",
   "failures": []
 }
