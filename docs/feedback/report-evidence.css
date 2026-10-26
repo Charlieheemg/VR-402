@@ -5,3 +5,8 @@ dl{margin:20px 0 0}dt{font:700 .8rem/1.5 system-ui,sans-serif;color:var(--accent
 .example .table-scroll{margin-bottom:16px}.example p:last-child{margin-bottom:0}
 @media(max-width:680px){.example{padding:18px 14px}}
 @media print{.example{break-inside:auto}dt{break-after:avoid}}
+
+/* Keep supporting evidence readable without changing the main-report layout. */
+main section > h3{margin-top:1.7rem;line-height:1.4}
+main li + li{margin-top:.5rem}
+caption{line-height:1.45}
