@@ -14,6 +14,8 @@ This contribution develops a theory-guided method for translating evidence-linke
 - [Evaluation strategy and current progress](../../index.html#feedback-evaluation)
 - [Appendix B: worked examples, evaluation protocol and assessment map](report-evidence.html)
 - [Original learner and instructor examples](examples/FYP_Feedback_Concept_Examples.docx)
+- [Appendix D: supplied v0.1 output and inspection](output-v01.html)
+- [Redacted generated-output text reading copy](examples/v01-output-redacted.md)
 
 ## Evaluation framework
 
@@ -25,7 +27,7 @@ The research questions address **RQ-B1: feedback fidelity and quality**, **RQ-B2
 - [Appendix C — reproduced evaluation, limitations and rubric evidence](evaluation-v01.html)
 - [Aggregate results](results/v01-aggregate.json)
 
-The original generator is retained unchanged. Twenty-one workbooks yielded 371 annotation cells with zero extraction-count mismatches; default display, polarity and header defects are documented. Private inputs, transcript-derived drafts, the upstream prompt library/manuscript and supplied conversation records are held under ignored private storage and are not redistributed.
+The original generator is retained unchanged. Twenty-one workbooks yielded 371 annotation cells with zero extraction-count mismatches; default display, polarity and header defects are documented. Private inputs, unredacted transcript-derived drafts, the upstream prompt library/manuscript and supplied conversation records are not redistributed. The author-supplied output in Appendix D is a separately identified copy with direct name, session and workbook identifiers redacted; source meaning and clinical review remain pending.
 
 ## Research documentation
 
