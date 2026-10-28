@@ -11,3 +11,6 @@ th,td{padding:12px;vertical-align:top;border-bottom:1px solid var(--line)}
 thead th{background:#e7eff2;color:#193d4a}tbody th{width:24%;font-weight:650}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 @media(max-width:680px){.table-scroll::before{content:"Scroll sideways to read all columns.";display:block;padding:10px;font:12px system-ui;color:var(--muted)}}
 @media print{.table-scroll{overflow:visible}table{min-width:0;font-size:8pt}tr{break-inside:avoid}}
+
+/* Proposed project schedule: distinguish planned work from approval-dependent study. */
+.gantt{min-width:1000px}.gantt tbody th{width:34%}.gantt td{text-align:center;min-width:82px;font-size:12px}.gantt .planned{background:#cce5e0;color:#123e3b}.gantt .conditional{background:repeating-linear-gradient(135deg,#fff1d5,#fff1d5 6px,#f8e7c3 6px,#f8e7c3 12px);color:#654500}.gantt .dependency{background:#e9edf1;color:#344a57}.gantt .milestone{background:#174b58;color:white;font-weight:700}

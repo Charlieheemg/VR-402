@@ -56,3 +56,7 @@ The following records retain earlier formulations of the design and assessment p
 ## Evidence and attribution
 
 The existing assessment pipeline, rubric and reported upstream outcomes belong to the preceding research team. Worksheet pointers in the content prototypes require verification against original records. Proposed practice actions require clinical review. Private workbooks and identifiable recordings are excluded from the repository.
+
+## Problem-led revision — 28 October 2026
+
+The report and presentation now lead with the existing VR research and worksheet, the narrower educational-use gap, problem statement, pedagogy and requirements before prototype/testing evidence. [Evidence and claim audit](research/problem-framing-20261028.md). Proposed project plan ends 1 April 2027; study phases depend on permissions and approvals. Appendix B owns design/alternatives; Appendix C owns frozen methods/results; Appendix D owns the supplied-output specimen.
