@@ -8,8 +8,12 @@ identical scripted transcripts; reproducible acoustic summaries and manifest.
 Phase 2 complete: five CREMA-D expressions, original WAVs from pinned upstream
 revision; local launcher, measured comparison text, provenance reveal, offline
 bundle, CSV/JSON exports and short presentation script.
-Phase 3 not built: no classifier or audio-LLM interpretation. Independent human
-perception ratings are not imported or evaluated.
+Exploratory perception study added: official CREMA-D audio-only vote distributions,
+720 fixed clips, 30 disjointly split speakers, 88 acoustic predictors and regularised
+logistic regression versus a training-majority baseline. Actor 1001 is test-only;
+ties are displayed and excluded from single-label metrics. No audio-LLM is used.
+See [study methods and actual results](study_results/METHODS.md),
+[Tuesday mock table](study_results/MOCK_TABLE.md) and `study_results/results.json`.
 
 The implementation brief is preserved in IMPLEMENTATION_BRIEF.md. Working brief
 v0.3 was read as supporting context; no deck, PDF or existing report was rewritten.
@@ -18,9 +22,13 @@ origin/main ab8ef1f in the outputs/VR-402 checkout.
 
 ## Tests run
 
-- `python -m unittest test_demo -v`: 8 passed. Checks matching controls, filename
+- `python -m unittest test_demo -v`: 10 passed. Checks matching controls, filename
   decoding against manifest, SHA-256, actual WAV duration/RMS, all thirteen pitch
-  medians/ranges recomputed from voiced frames, absent-input error and embedded audio.
+  medians/ranges recomputed from voiced frames, absent-input error, embedded audio,
+  original build without study results, and rejection of stale study attachment.
+- `python -m unittest test_study -v`: 11 passed. Checks vote/tie semantics, all
+  720 matched filenames, actor/split separation, training-only preprocessing,
+  metrics/confusion recomputation, baseline target and exact offline model replay.
 - `python -m unittest test_pvc -v` from parent directory: 6 passed, including
   extractor roundtrip, temporal fixtures and training/prediction regression checks.
 - Local preview at 127.0.0.1:8043 starts with standard-library launcher.
@@ -28,6 +36,10 @@ origin/main ab8ef1f in the outputs/VR-402 checkout.
   playback clock advanced on selected RAVDESS A and CREMA-D B clips. Dataset and
   take changes, reveal/hide, provenance disclosure and identical displayed scripts
   checked. Default browser layout screenshot inspected.
+- Extension browser check: optional CREMA-D panel displayed exact six-class votes,
+  the 5/5 anger/disgust tie with exclusion status, wrong and matching predictions,
+  uncalibrated probabilities and distinct split metrics. Existing acoustic panel
+  remained usable simultaneously; CREMA-D playback clock advanced without error.
 - Browser screenshots at forced desktop dimensions were clipped by the in-app
   capture surface; viewport was restored. Full laptop projection layout needs rehearsal.
 - All audio is inline data, with no remote scripts, fonts, fetches or audio requests.
@@ -38,8 +50,9 @@ Wi-Fi was not physically disabled. The managed browser disallows file URLs, so
 local-file-mode fallback was not tested there. A human has not confirmed audible
 contrast, room-volume suitability, speaker intelligibility or presentation timing.
 Use the local launcher with Wi-Fi off and listen through the intended speakers.
-No perceptual validity, emotion-model accuracy, clinical benefit or pitch-reference
-agreement has been established. RMS is recording level, not calibrated vocal SPL.
+Exploratory classification metrics are limited to the prespecified held-out subset;
+no broad perceptual validity, clinical benefit or pitch-reference agreement has
+been established. RMS is recording level, not calibrated vocal SPL.
 Neutral CREMA-D intensity is unspecified versus medium for the other four takes.
 A same-take A/B comparison is permitted as an honest no-difference control.
 

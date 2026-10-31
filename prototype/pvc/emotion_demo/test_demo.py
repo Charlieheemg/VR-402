@@ -4,6 +4,7 @@ import csv
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 import numpy as np
 import soundfile as sf
@@ -45,7 +46,7 @@ class BuiltEvidenceTests(unittest.TestCase):
             self.assertEqual(row['evidence']['egemaps_feature_count'],88)
 
     def test_measurements_are_not_emotion_predictions(self):
-        self.assertFalse(self.payload['perceptual_ratings_loaded'])
+        self.assertEqual(self.payload['perceptual_ratings_loaded'],self.payload.get('study') is not None)
         for row in self.payload['clips']:
             self.assertIsNone(row['evidence']['pvc_score'])
             self.assertTrue(all(v is None or np.isfinite(v) for v in row['metrics'].values()))
@@ -65,7 +66,8 @@ class BuiltEvidenceTests(unittest.TestCase):
             path=HERE.parents[2]/row['audio_path']
             self.assertTrue(path.is_file())
             self.assertEqual(path.name,row['filename'])
-            self.assertEqual(row['human_perception_rating_included'],'False')
+            included=self.payload.get('study') is not None and row['dataset']=='CREMA-D'
+            self.assertEqual(row['human_perception_rating_included'],str(included))
             if row['dataset']=='RAVDESS':
                 modality,channel,emotion,intensity,statement,repetition,actor=path.stem.split('-')
                 self.assertEqual((modality,channel),('03','01'))
@@ -91,6 +93,29 @@ class BuiltEvidenceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(FileNotFoundError,'Run build.py --download or import'):
                 build(Path(tmp)/'missing',Path(tmp)/'output')
+
+    def test_original_demo_still_builds_without_study_results(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            module=Path(tmp)/'module'
+            module.mkdir()
+            (module/'template.html').write_text((HERE/'template.html').read_text())
+            with patch('build.HERE',module):
+                build(HERE/'private/raw',module/'output')
+            payload=json.loads((module/'output/measurements.json').read_text())
+            self.assertEqual(len(payload['clips']),13)
+            self.assertIsNone(payload['study'])
+            self.assertFalse(payload['perceptual_ratings_loaded'])
+
+    def test_stale_study_cannot_silently_attach(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            module=Path(tmp)/'module'
+            results=module/'study_results'
+            results.mkdir(parents=True)
+            (results/'features.csv').write_text('changed')
+            (results/'results.json').write_text(json.dumps({'derived_hashes':{'features.csv':'wrong'}}))
+            with patch('build.HERE',module):
+                with self.assertRaisesRegex(ValueError,'Study derived input changed'):
+                    build(HERE/'private/raw',module/'output')
 
 if __name__=='__main__':
     unittest.main()

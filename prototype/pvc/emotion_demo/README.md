@@ -4,7 +4,8 @@ Offline RAVDESS A/B demo followed by a five-expression CREMA-D comparison.
 Implements the core Phase 1 and Phase 2 requirements in the supplied
 `VR402_Codex_Demo_Brief_2026-10-31.md`, cross-checked against working brief v0.3.
 The equivalent directory under `prototype/pvc/` reuses the existing extractor.
-Optional Phase 3 classification is not implemented.
+An optional exploratory human-perception study now trains a separate logistic
+classifier on independent audio-only CREMA-D votes; no audio-LLM is used.
 
 ## Run and rebuild
 
@@ -68,9 +69,54 @@ accuracy has not been validated against reference tracks. No silence fraction is
 displayed. The full inherited extraction JSON retains its documented energy gate
 and warnings, but these are not presented as a validated VAD result.
 
-Human perception ratings exist in both sources but are not loaded or evaluated
-here. Future assessment must map the correct audio-only stimulus ratings to each
-file and use speaker-separated evaluation before claiming model agreement.
+The optional CREMA-D study loads official independent audio-only vote distributions
+and keeps intended labels separate. RAVDESS human ratings are not loaded.
+
+## Exploratory CREMA-D study
+
+Use the **Optional study: human perceptions and model predictions** disclosure
+below the original comparison after selecting CREMA-D. The original five clips
+remain unchanged, and all five are test-only, including the tied angry example.
+Each selected clip shows six human vote counts/percentages, all tied plurality
+classes, its intended label, model prediction and uncalibrated model probabilities.
+No human tie is converted into an arbitrary single label. The original acoustic
+measurements remain available in their own panel.
+
+The prespecified subset has 720 clips / 30 speakers / four sentences, with
+20/5/5 disjoint training/validation/test speakers. Actor 1001 never enters training
+or model selection. Only 88 eGeMAPSv02 acoustic functionals enter the classifier.
+Median imputation and scaling use training rows only. Validation selects L2
+regularisation; no validation refit. The baseline always predicts the most common
+training human target. Unique human pluralities are scored; all ties/disagreement
+remain in the outputs.
+
+From this directory with the locked requirements installed:
+
+```sh
+python study.py --download  # full pinned-source reproduction; ~58 MiB selected WAVs
+python study.py --fit-only  # offline replay using committed derived data
+python -m unittest test_study test_demo -v
+python build.py            # embeds the optional study in the offline demo
+python launch.py
+```
+
+Model-only replay needs no WAV downloads. Full extraction uses eight download
+workers and a hash/version/source-checked feature cache. The original 13-clip demo
+still builds if study results are absent; if results exist but inputs have changed,
+the builder refuses stale study attachment until the model is rerun.
+
+- [Methods, counts, confusion matrices, failures and limitations](study_results/METHODS.md)
+- [Concise Tuesday mock table](study_results/MOCK_TABLE.md)
+- [Full results and all per-clip predictions](study_results/results.json)
+- [Derived-data licence and source attribution](study_results/DATA_LICENSE.md)
+
+Test macro-F1 is 0.367 versus 0.117 for the majority baseline; balanced accuracy
+is 0.395 versus 0.167. Training macro-F1 is much higher (0.886), so this is a
+limited exploratory result with substantial train/test degradation. On the five
+original demo clips the model matches only 2/4 non-tied human pluralities, versus
+3/4 for the baseline. No examples were replaced to improve this appearance.
+Probabilities are uncalibrated; neither they nor coefficients validate communication
+quality, causal coaching advice, internal emotion or clinical/VR outcomes.
 
 ## Sources and attribution
 
@@ -96,5 +142,8 @@ Pinned revision: 1658cd342dff90010aa843eaeebd53610a08b1dc.
    is better, or prove that the system understands emotion.”
 5. Switch to CREMA-D. Compare takes, then reveal intended labels separately.
    “We can explore several expressions while holding actor and sentence fixed.”
-6. “Next we can test predictions against audio-only human judgements. That
-   validation, and transfer to paediatric VR speech, remain future work.”
+6. Optionally open the study panel: “We tested an acoustic classifier against
+   audio-only listener votes from unseen speakers. It beats the majority baseline
+   on this limited test subset, but generalises much worse than its training result.
+   Here, even the angry label has a tied listener judgement. Clinical transfer and
+   useful communication feedback remain unvalidated.”

@@ -7,6 +7,7 @@ import json
 import os
 import sys
 import subprocess
+import shutil
 import zipfile
 from pathlib import Path
 
@@ -96,9 +97,26 @@ def build(raw, out):
                          metrics=metrics, waveform=[float(np.max(np.abs(a))) for a in np.array_split(y, 180)],
                          evidence=evidence, audio='data:audio/wav;base64,' + base64.b64encode(path.read_bytes()).decode()))
         print(selection['file'], metrics, flush=True)
+    study_path=HERE/'study_results/results.json'
+    study=None
+    if study_path.exists():
+        result=json.loads(study_path.read_text())
+        for filename,expected in result['derived_hashes'].items():
+            if hashlib.sha256((study_path.parent/filename).read_bytes()).hexdigest()!=expected:
+                raise ValueError('Study derived input changed; rerun study.py --fit-only before building: '+filename)
+        manifest=json.loads((study_path.parent/'manifest.json').read_text())
+        by_file={r['file']:r for r in manifest['clips']}
+        for row in rows:
+            if row['dataset']=='CREMA-D':
+                prediction=result['demo_clips'][row['file']]
+                if prediction['split']!='test' or row['sha256']!=by_file[row['file']]['sha256']:
+                    raise ValueError('Study demo must match held-out original WAVs')
+        study={k:result[k] for k in ['schema','labels','label_names','selected_C','upstream_revision','partitions','demo_clips','interpretation']}
+        shutil.copy2(study_path.parent/'METHODS.md',out/'study-methods.md')
+        shutil.copy2(study_path,out/'study-results.json')
     payload = dict(schema='acted-delivery-demo-1', selection_policy='Fixed actors/statements/emotions before extraction; illustrative, not representative.',
                    transcript_source='Dataset scripts, not automatic speech recognition.',
-                   perceptual_ratings_loaded=False, clips=rows)
+                   perceptual_ratings_loaded=study is not None, study=study, clips=rows)
     serial = json.dumps(payload, allow_nan=False)
     # Prevent data from terminating the inline script if metadata changes later.
     serial = serial.replace('<', '\\u003c')
@@ -114,7 +132,7 @@ def build(raw, out):
             writer.writerow(dict(dataset=row['dataset'],licence='CC BY-NC-SA 4.0' if row['dataset']=='RAVDESS' else 'ODbL 1.0; DbCL 1.0',
                 source_url=row['source'],filename=row['file'],actor=row['actor'],sentence=row['statement'],transcript=row['transcript'],
                 delivery_label=row['emotion'],intensity=row['intensity'],repetition=row['repetition'],
-                human_perception_rating_included=False,audio_path=os.path.relpath((raw/row['file']).resolve(),HERE.parents[2]),sha256=row['sha256']))
+                human_perception_rating_included=study is not None and row['dataset']=='CREMA-D',audio_path=os.path.relpath((raw/row['file']).resolve(),HERE.parents[2]),sha256=row['sha256']))
     with (out/'measurements.csv').open('w') as handle:
         fields = ['dataset','file','actor','statement','emotion','intensity','sha256',*rows[0]['metrics']]
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator='\n')
