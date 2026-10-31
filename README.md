@@ -18,6 +18,7 @@ NUS CDE4301 Innovation & Design Capstone, group interim working report.
 - [Rubric map / presentation / Part B handover](docs/research/interim-preparation.md)
 - [Sources and claim boundaries](docs/references/source-audit.md)
 - [Local Edinburgh demo](prototype/pvc/edinburgh/README.md)
+- [Audio beyond transcript: RAVDESS / CREMA-D offline demo](prototype/pvc/emotion_demo/README.md)
 
 Static HTML/CSS; no frontend framework or build step. Preview with `python3 -m http.server 8000 --bind 127.0.0.1` from this folder. Main report: `index.html`; style: `index.css`. `python3 scripts/check_report.py` checks local references, metadata and a conservative ≤4,000-word limit. Aggregate results are in `docs/results/`; three main-report figures (plus retained supplementary assets) have sources/renderers in `scripts/make_figures.py` (pandas/matplotlib needed only to regenerate figures).
 

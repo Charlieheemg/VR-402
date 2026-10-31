@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Same words. Different delivery. · VR-402</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101820;color:#edf5fa}*{box-sizing:border-box}body{margin:0}main{max-width:1160px;margin:auto;padding:42px 28px}h1{font-size:clamp(32px,5vw,64px);letter-spacing:-.045em;margin:10px 0 18px}h2{font-size:20px}.eyebrow{color:#7fe0ce;letter-spacing:.14em;font-size:12px}p{line-height:1.6;color:#c0ced8}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}select,button{background:#22323f;border:1px solid #5e7383;color:inherit;border-radius:9px;padding:12px;font:inherit}button{cursor:pointer}button:hover,button:focus-visible{border-color:#7fe0ce}label{display:flex;gap:8px;align-items:center}#pair{margin:18px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:25px;background:#192733;border:1px solid #344857;border-radius:16px;min-width:0}.quote{font-size:25px;color:#fff;min-height:65px}.badge{color:#7fe0ce}audio{width:100%;margin:10px 0}svg{width:100%;height:80px}.small{font-size:13px;color:#aebfcd}.reveal{background:#78d9c5;color:#102920;font-weight:650}.metrics{margin-top:22px;overflow:auto}table{border-collapse:collapse;width:100%;text-align:left}th,td{padding:14px;border-bottom:1px solid #344857}th{color:#a9bccb;font-weight:500}.num{font-variant-numeric:tabular-nums}.bar{height:4px;background:#7fe0ce;margin-top:7px}.notes{border-left:3px solid #7fe0ce;padding:0 18px;margin-top:28px}a{color:#7fe0ce}footer{margin-top:32px;padding-top:16px;border-top:1px solid #344857}[hidden]{display:none!important}@media(max-width:680px){.pair{grid-template-columns:1fr}main{padding:24px 16px}.quote{min-height:0}th,td{padding:10px}}
+</style>
+<main><div class="eyebrow">VR-402 / ACOUSTIC DEMONSTRATION</div>
+<h1>Same words.<br>Different delivery.</h1>
+<p>Listen to both recordings. Do they feel the same?<br>The script is identical. What changes in the voice?</p>
+<div class="controls"><label>Dataset <select id="dataset"><option>RAVDESS</option><option>CREMA-D</option></select></label><label id="groupLabel">Example <select id="group"></select></label></div>
+<div class="pair" id="pair"></div>
+<div class="controls"><button id="reveal" class="reveal" aria-expanded="false">Reveal acoustic comparison</button><button id="reset">Reset demonstration</button><button id="download">Export measurements (JSON)</button></div>
+<section id="comparison" hidden><h2>Additional information beyond the transcript</h2><p id="equality"></p><p id="intensity" class="small" hidden>CREMA-D: expressive takes use medium intended intensity; neutral is unspecified. Neutral comparisons therefore do not hold intensity constant.</p>
+<div class="metrics"><table><thead><tr><th>Measured feature</th><th>Recording A</th><th>Recording B</th><th>B − A</th></tr></thead><tbody id="values"></tbody></table></div><p id="observations"></p>
+<p class="small">Duration and RMS use the complete, untrimmed file. RMS dBFS is recording level, not calibrated sound pressure. Pitch uses finite, positive openSMILE eGeMAPSv02 F0 estimates (at least five frames); median is in Hz and range is the 80th–20th percentile difference in semitones. Pitch tracks have not been checked against reference F0. Waveforms share a full-scale amplitude axis and are stretched to each clip’s duration.</p>
+<details><summary>Reveal dataset labels and provenance</summary><div id="provenance"></div><p>These are the actors’ intended emotion labels from filenames. They are neither model predictions nor human listener judgements for these clips. Perceptual ratings are not loaded.</p></details></section>
+<div class="notes"><p>Identical text omits vocal delivery. Acoustic differences alone do not establish different literal meanings, better communication, emotion recognition accuracy, or validity for paediatric VR speech.</p><p class="small">Transcript baseline: published dataset script, supplied identically to both clips. No ASR or transcript-only model is run. Acoustic summaries are precomputed from the actual recordings; no emotion classifier is applied. Original audio is embedded for offline playback.</p></div>
+<footer class="small">RAVDESS: Livingstone &amp; Russo (2018), <a href="https://doi.org/10.1371/journal.pone.0196391">paper</a> · <a href="https://zenodo.org/records/1188976">original deposit</a> · CC BY-NC-SA 4.0.<br>CREMA-D: Cao et al. (2014), <a href="https://doi.org/10.1109/TAFFC.2014.2336244">paper</a> · <a href="https://github.com/CheyneyComputerScience/CREMA-D">original repository</a> · ODbL 1.0 / DbCL 1.0. Clips are unmodified. Examples are fixed illustrations, not a representative evaluation.</footer>
+</main><script>
+'use strict';
+const DATA=__DATA__;
+const $=id=>document.getElementById(id);
+let current=[], revealed=false;
+const specs=[['duration_s','Duration (s)'],['rms_dbfs','Whole-file RMS (dBFS)'],['f0_median_hz','Median voiced pitch F0 (Hz)'],['f0_range_st','Voiced pitch range (semitones)']];
+function node(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e}
+function stopAudio(){document.querySelectorAll('audio').forEach(a=>{a.pause();a.currentTime=0})}
+function hide(){revealed=false;$('comparison').hidden=true;$('reveal').textContent='Reveal acoustic comparison';$('reveal').setAttribute('aria-expanded','false');document.querySelectorAll('details').forEach(d=>d.open=false)}
+function datasetChanged(){stopAudio();const rav=$('dataset').value==='RAVDESS';$('group').replaceChildren();
+ if(rav){for(const actor of ['01','02'])for(const statement of ['01','02']){const o=node('option',`Actor ${actor} · sentence ${statement}`);o.value=actor+'|'+statement;$('group').append(o)}}
+ else{const o=node('option',"Actor 1001 · It's eleven o'clock");o.value='1001|IEO';$('group').append(o)}
+ render()}
+function render(){stopAudio();hide();const [actor,statement]=$('group').value.split('|');current=DATA.clips.filter(c=>c.dataset===$('dataset').value&&c.actor===actor&&c.statement===statement);$('pair').replaceChildren();
+ for(let side=0;side<2;side++){
+  const card=node('article',undefined,'card');card.append(node('h2','Recording '+('AB'[side])));
+  const selector=node('select');selector.setAttribute('aria-label','Recording '+('AB'[side])+' selection');
+  current.forEach((c,i)=>{const o=node('option','Take '+(i+1));o.value=i;selector.append(o)});selector.value=side===0?0:current.length-1;
+  card.append(selector,node('p',current[0].transcript,'quote'));const audio=node('audio');audio.controls=true;audio.preload='metadata';card.append(audio);
+  audio.addEventListener('play',()=>document.querySelectorAll('audio').forEach(other=>{if(other!==audio)other.pause()}));
+  audio.addEventListener('error',()=>{card.querySelector('.status').textContent='Playback failed. Try opening this file in Chrome or Safari.'});
+  const wave=document.createElementNS('http://www.w3.org/2000/svg','svg');wave.setAttribute('viewBox','0 0 360 80');wave.setAttribute('role','img');wave.setAttribute('aria-label','Full-scale waveform envelope');card.append(wave,node('p','Original recording · embedded offline','small status'));
+  function change(){stopAudio();hide();const c=current[Number(selector.value)];audio.src=c.audio;wave.replaceChildren();c.waveform.forEach((v,i)=>{const line=document.createElementNS(wave.namespaceURI,'line');for(const [k,val]of Object.entries({x1:i*2,x2:i*2,y1:40-v*38,y2:40+v*38,stroke:'#7fe0ce','stroke-width':1.3}))line.setAttribute(k,val);wave.append(line)});card.querySelector('.status').textContent=`${c.metrics.duration_s.toFixed(2)} s · ${c.sample_rate_hz/1000} kHz · original recording`}
+  selector.addEventListener('change',change);$('pair').append(card);change();
+ }
+}
+function chosen(){return [...$('pair').querySelectorAll('select')].map(s=>current[Number(s.value)])}
+$('reveal').onclick=()=>{const [a,b]=chosen();revealed=!revealed;$('comparison').hidden=!revealed;$('intensity').hidden=a.dataset!=='CREMA-D';$('reveal').textContent=revealed?'Hide acoustic comparison':'Reveal acoustic comparison';$('reveal').setAttribute('aria-expanded',String(revealed));$('equality').textContent=a.transcript===b.transcript?'Identical supplied transcript for A and B. Each recording retains its own acoustic measurements.':'Different transcripts.';$('values').replaceChildren();
+ for(const [key,label]of specs){const tr=node('tr');tr.append(node('th',label));for(const c of [a,b])tr.append(node('td',c.metrics[key]===null?'Unavailable':c.metrics[key].toFixed(2),'num'));tr.append(node('td',a.metrics[key]===null||b.metrics[key]===null?'Unavailable':(b.metrics[key]-a.metrics[key]).toFixed(2),'num'));$('values').append(tr)}
+ const statements=[];for(const [key,label,unit]of [['duration_s','whole-file duration','s'],['rms_dbfs','recorded RMS level','dB'],['f0_median_hz','estimated median voiced F0','Hz']]){if(a.metrics[key]===null||b.metrics[key]===null){statements.push(`The ${label} comparison is unavailable.`);continue}const d=b.metrics[key]-a.metrics[key];statements.push(Math.abs(d)<.005?`A and B have the same ${label} to the displayed precision.`:key==='duration_s'?`B is ${Math.abs(d).toFixed(2)} s ${d>0?'longer':'shorter'} than A (whole-file duration).`:`B has ${Math.abs(d).toFixed(2)} ${unit} ${d>0?'higher':'lower'} ${label} than A.`)}$('observations').textContent=statements.join(' ');
+ $('provenance').replaceChildren();[a,b].forEach((c,i)=>{$('provenance').append(node('p',`${'AB'[i]} · Dataset acted label: ${c.emotion} · intensity ${c.intensity} · ${c.file}`),node('p','SHA-256: '+c.sha256,'small'))})};
+$('dataset').onchange=datasetChanged;$('group').onchange=render;$('reset').onclick=()=>{stopAudio();render()};
+$('download').onclick=()=>{const clips=chosen().map(({audio,waveform,...rest})=>rest);const url=URL.createObjectURL(new Blob([JSON.stringify({...DATA,clips},null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download='acoustic-comparison.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+datasetChanged();
+</script></html>
