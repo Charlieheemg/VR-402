@@ -11,3 +11,9 @@ th,td{padding:12px;vertical-align:top;border-bottom:1px solid var(--line)}
 thead th{background:#e7eff2;color:#193d4a}tbody th{width:24%;font-weight:650}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 @media(max-width:680px){.table-scroll::before{content:"Scroll sideways to read all columns.";display:block;padding:10px;font:12px system-ui;color:var(--muted)}}
 @media print{.table-scroll{overflow:visible}table{min-width:0;font-size:8pt}tr{break-inside:avoid}}
+
+/* Handover paths use live text so they wrap and remain selectable. */
+.handover{margin:24px 0;padding:18px;background:var(--wash);border:1px solid var(--line)}
+.handover p{margin-bottom:14px}
+.handover-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px;list-style:none;padding:0;margin:0}
+.handover-paths li{background:var(--paper);border-top:3px solid var(--accent);padding:12px 14px}
