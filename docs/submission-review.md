@@ -11,6 +11,8 @@ Completed 11 November 2026 on a dedicated review branch. This document records e
 - Added a responsive, text-based contribution diagram, result/design tables, clear section navigation and an appendix index. Removed unused main-report references; technical depth remains in appendices and historical sources.
 - Replaced stale front-door documentation, labelled superseded plans, removed unused inherited UI helpers and consolidated word-count commands. The evaluated feedback generator and original numerical files remain unchanged.
 
+The refinement pass clarifies metric definitions and model attribution, prevents cross-task F1 comparisons, specifies episode selection and reviewer recall controls for the proposed studies, explains consultant-source labels, and strengthens the synthesis. No results or prototype implementations were changed.
+
 ## Academic coverage
 
 | Assessment area | Evidence in the final report |
@@ -26,7 +28,7 @@ Completed 11 November 2026 on a dedicated review branch. This document records e
 
 - [x] **Academic accuracy:** checked original manuscript §3.3/Table 1 and the official six-page brief; mapped each numerical result to its actual experiment. Completed, preliminary and proposed work remain distinct.
 - [x] **Completeness:** both authors have explicit questions, rationale, methods, results, interpretation and future tests. Confidence, laughter, CREMA-D, Edinburgh/R2SPIN and feedback v0.1 are represented; detailed evidence remains accessible through appendices A–D.
-- [x] **Word limit:** 3,076 words, including references, headings, captions, tables and diagram text. Shared narrative 591; Charlie 1,055; Kang Zhe 998; references 432. Headroom: 924. Masthead/navigation/footer and separate appendices are excluded.
+- [x] **Word limit:** 3,245 words, including references, headings, captions, tables and diagram text. Shared narrative 607; Charlie 1,173; Kang Zhe 1,029; references 436. Headroom: 755. Masthead/navigation/footer and separate appendices are excluded.
 - [x] **Citations:** targeted primary-source/record checks and retained source audits documented. The 26 main-report/speech/source-audit external destinations returned 18 HTTP 200, two 203, one 202 and five 403 responses. No missing/retired destination (404/410) was observed; access-blocked responses are not full-text verification.
 - [x] **Visual presentation:** inspected the complete report and key section captures; six examiner-facing pages tested at 1440×1000 and 390×844. No page overflow, failed images, empty links or JavaScript errors. Tables have horizontal mobile access; scientific figures link to full-size SVGs. Desktop/mobile compatibility redirects preserve section fragments.
 - [x] **Repository integrity:** 56 documentation files and 354 local link checks pass. One authoritative report, separate appendix bibliography, dated historical records and no unused inherited UI helpers.
