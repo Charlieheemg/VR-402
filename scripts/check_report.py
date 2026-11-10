@@ -123,7 +123,7 @@ def check():
     assert 'VR-402' not in ' '.join(p.text), 'Incorrect official code in main text'
     assert counts['charlie'] > 0 and counts['kang_zhe'] > 0
     checked = local_links(path, p)
-    pages = ['docs/evidence.html', 'docs/speech-evidence.html', 'docs/feedback/report-evidence.html', 'docs/feedback/evaluation-v01.html', 'docs/feedback/output-v01.html']
+    pages = ['docs/project-design.html', 'docs/evidence.html', 'docs/speech-evidence.html', 'docs/feedback/report-evidence.html', 'docs/feedback/evaluation-v01.html', 'docs/feedback/output-v01.html']
     for name in pages:
         q = HTMLIds(); q.feed((ROOT/name).read_text())
         assert len(q.ids) == len(set(q.ids)), f'Duplicate IDs: {name}'

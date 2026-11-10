@@ -19,6 +19,7 @@ def check():
     failures=[]; checked=0; external=set()
     paths=[ROOT/'README.md',ROOT/'WORKFLOW.md',ROOT/'index.html',ROOT/'interim-report.html']
     paths+=sorted((ROOT/'docs').rglob('*.md'))+sorted((ROOT/'docs').rglob('*.html'))
+    paths+=sorted((ROOT/'prototype').rglob('*.md'))
     for path in paths:
         text=path.read_text(encoding='utf-8')
         if path.suffix=='.html':
@@ -47,7 +48,7 @@ def check():
     forbidden={'.wav','.mp3','.mp4','.xlsx','.xls','.joblib','.pkl','.pem','.key','.pdf'}
     sensitive=[p for p in tracked if p and (Path(p).suffix.lower() in forbidden or '/private/' in '/'+p or Path(p).name=='.env')]
     failures += ['Prohibited tracked raw/private type: '+p for p in sensitive]
-    result={'documentation_files':len(paths),'local_link_checks':checked,'external_urls':len(external),'failures':failures,'tracked_raw_or_private_files':sensitive,'scope':'Root and docs HTML/Markdown links; tracked prohibited extensions/private paths. No claim of comprehensive content de-identification or external source verification.'}
+    result={'documentation_files':len(paths),'local_link_checks':checked,'external_urls':len(external),'failures':failures,'tracked_raw_or_private_files':sensitive,'scope':'Root/docs HTML and Markdown plus prototype Markdown links; tracked prohibited extensions/private paths. Runtime application HTML/templates are excluded because their server routes/generated outputs are not static documentation. No claim of comprehensive content de-identification or external source verification.'}
     (ROOT/'docs/results/submission-repository-checks.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))
     assert not failures, f'{len(failures)} repository checks failed'

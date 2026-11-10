@@ -16,6 +16,14 @@
     "errors": []
   },
   {
+    "file": "docs/project-design.html",
+    "viewport": "desktop",
+    "overflow": false,
+    "brokenImages": [],
+    "emptyLinks": 0,
+    "errors": []
+  },
+  {
     "file": "docs/speech-evidence.html",
     "viewport": "desktop",
     "overflow": false,
@@ -62,6 +70,14 @@
   },
   {
     "file": "docs/evidence.html",
+    "viewport": "mobile",
+    "overflow": false,
+    "brokenImages": [],
+    "emptyLinks": 0,
+    "errors": []
+  },
+  {
+    "file": "docs/project-design.html",
     "viewport": "mobile",
     "overflow": false,
     "brokenImages": [],

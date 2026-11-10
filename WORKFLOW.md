@@ -12,4 +12,4 @@ The authoritative report is `index.html`; `interim-report.html` preserves older 
 
 Do not upload raw clinical audio, identifiable workbooks, restricted datasets, private model files or the supplied manuscript. Prior report versions remain recoverable through Git history; do not create a second competing report at the root.
 
-Official brief checked: CDE4301 AY2026 interim assessment, page 1, two-person group maximum 4,000 words excluding appendices, due end of Semester 1 Week 13. Confirm the exact calendar deadline and submission mechanism with the course. No deployment, supervisor message or course submission is automatic.
+Official brief checked: CDE4301 AY2026 interim assessment, page 1, two-person group maximum 4,000 words excluding appendices, due end of Semester 1 Week 13. The supplied Canvas instructions require the published website URL, submitted by one group member. Follow the [Canvas handoff](docs/submission.md); confirm the exact calendar deadline and required declarations with the course. No deployment, supervisor message or course submission is automatic.

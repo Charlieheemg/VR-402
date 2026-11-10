@@ -1,3 +1,5 @@
+> Historical intelligibility planning, retained for method and access provenance. The current priority is a within-rubric audio comparison; these older dataset/model choices are not commitments or completed studies. See the [current project design](../project-design.html).
+
 # Method comparison and bounded selection
 
 **Decision for the next experiment:** a small prespecified acoustic feature set with transparent regularised prediction is the primary candidate, conditional on trustworthy human labels and measurement review. Compare simpler baselines first. Nothing here is a new trained model or an observed ranking.

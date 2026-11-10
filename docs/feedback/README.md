@@ -13,11 +13,12 @@ This contribution develops a theory-guided method for translating evidence-linke
 - [Transformation method and prototype development](../../index.html#feedback-method)
 - [Evaluation strategy and current progress](../../index.html#feedback-evaluation)
 - [Appendix B: design concepts and proposed educational evaluation](report-evidence.html)
+- [Appendix E: joint research design and working specifications](../project-design.html)
 - [Original learner and instructor examples](examples/FYP_Feedback_Concept_Examples.docx)
 - [Appendix D: supplied v0.1 output and inspection](output-v01.html)
 - [Redacted generated-output text reading copy](examples/v01-output-redacted.md)
 
-The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and the single A1–A6 evidence map; **D** supplies the redacted output specimen and document-level inspection.
+The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and its Part B A1–A6 evidence map; **D** supplies the redacted output specimen and document-level inspection.
 
 ## Evaluation framework
 

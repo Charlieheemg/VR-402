@@ -1,3 +1,5 @@
+> Historical validation snapshot. Counts, test totals and missing-contribution statements below describe that revision only. Use the [current submission QA](../submission-review.md) and [current word count](report-checks.json) for this report.
+
 # Refinement validation record
 
 ## Branch and preservation

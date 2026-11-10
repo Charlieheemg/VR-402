@@ -19,7 +19,7 @@ Add a dated entry documenting the question, alternatives, evidence reviewed, dec
 
 ## 25 October 2026 — evaluation constructs
 
-Broadened the principal immediate outcomes from gap identification to feedback comprehension, corrective learning-plan quality and instructor debrief preparation quality. Gap recognition remains a component of comprehension. Fidelity and quality are assessed separately; later communication performance addresses learning effectiveness. This is a design decision, not a result or approval. Full unanswered RQ-B1–B3 and status are recorded in the [research scope](problem-and-scope.md#questions) and [evaluation protocol](../report-evidence.html#evaluation).
+Broadened the principal immediate outcomes from gap identification to feedback comprehension, corrective learning-plan quality and instructor debrief preparation quality. Gap recognition remains a component of comprehension. Fidelity and quality are assessed separately; later communication performance addresses learning effectiveness. This is a design decision, not a result or approval. Current RQ-B1–B3 and status are recorded in the [research scope](problem-and-scope.md#questions) and [evaluation protocol](../report-evidence.html#evaluation).
 
 
 ## Version 0.1 progress — 25 October 2026
@@ -29,3 +29,7 @@ The workbook-to-feedback generator is implemented in local deterministic mode. A
 Observed issues are 40/40 unverified AI polarities, default AI display of 14/40 records, a missed ampersand-form category header, generic actions, unverified individual attribution and limited context. Five synthetic characterisation tests pass while preserving the frozen defects. Clinical review, independent full-event fidelity review, user testing, external-model execution and learning-effectiveness results remain outstanding.
 
 See [the reproduced evaluation](../evaluation-v01.html), [source and run commands](../../../prototype/feedback/v0.1/README.md) and [aggregate results](../results/v01-aggregate.json). RQ-B1 is partially examined through mechanical checks; feedback quality, immediate educational usefulness (RQ-B2) and later performance (RQ-B3) remain unanswered.
+
+## 11 November 2026 — comparison baseline and design specifications
+
+The primary proposed educational comparison is the original worksheet versus structured feedback from identical evidence. This tests the value of redesigning the existing workflow. A generic summary is a secondary comparator where feasible; an external LLM is not a prerequisite. Reconciled the current scope, transformation method and Appendix B accordingly. The [joint design matrix](../../project-design.html#specifications) makes traceability, coverage, uncertainty and context requirements inspectable and records partial compliance. These are working specifications and proposed study decisions, not user validation or supervisor approval.

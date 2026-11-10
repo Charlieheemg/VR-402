@@ -1,3 +1,5 @@
+> Historical validation snapshot. Counts, test totals and missing-contribution statements below describe that revision only. Use the [current submission QA](../submission-review.md) and [current word count](report-checks.json) for this report.
+
 # Follow-up validation — 19 October 2026
 
 This extends the review branch; no research model was fitted and the original demo was not rewritten. Existing regression tests may fit temporary synthetic fixtures; those are not new scientific results.

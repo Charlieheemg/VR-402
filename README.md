@@ -2,7 +2,7 @@
 
 NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **Ang Kang Zhe** (educational feedback), supervised by **A/Prof Khoo Eng Tat**.
 
-**[Read the report](index.html)** · **[Appendices and evidence](docs/evidence.html)** · **[Submission QA](docs/submission-review.md)**
+**[Read the report](index.html)** · **[Appendices and evidence](docs/evidence.html)** · **[Submission QA](docs/submission-review.md)** · **[Canvas handoff](docs/submission.md)**
 
 `index.html` is the authoritative report. `interim-report.html` is a compatibility redirect that preserves section links. The official project code is VR-405; `Charlieheemg/VR-402` remains the repository and Pages address. The live [GitHub Pages site](https://Charlieheemg.github.io/VR-402/) serves `main`; review-branch changes appear there only after an approved merge and deployment.
 
@@ -25,7 +25,7 @@ python3 scripts/check_repository.py
 python3 -m unittest discover -s scripts -p 'test_submission.py'
 ```
 
-The report checker includes headings, tables, diagram text, captions, inline citations **and references** in the 4,000-word cap. Appendices are separate. The repository check validates published HTML and Markdown destinations and checks the tracked tree for prohibited raw-data types.
+The report checker includes headings, tables, diagram text, captions, inline citations **and references** in the 4,000-word cap. Appendices are separate. The repository check validates root/docs HTML and Markdown destinations plus prototype Markdown links and checks the tracked tree for prohibited raw-data types.
 
 Additional checks use the project's scientific/feedback dependencies:
 
@@ -41,7 +41,9 @@ python3 prototype/feedback/v0.1/test_generator.py -v
 | Location | Purpose |
 | --- | --- |
 | `index.html`, `index.css` | Authoritative report and shared academic styling |
-| `docs/evidence.html` | Examiner entry point to appendices A–D |
+| `docs/evidence.html` | Examiner entry point to appendices A–E |
+| `docs/project-design.html` | Joint progress, completed/proposed study matrices and working specifications |
+| `docs/submission.md` | Canvas website-URL handoff and deployment checks |
 | `docs/speech-evidence.html`, `docs/results/` | Speech methods, aggregates and diagnostics |
 | `docs/feedback/` | Feedback research, engineering evidence and approved redacted specimen |
 | `prototype/feedback/v0.1/` | Frozen evaluated baseline; do not silently repair it |

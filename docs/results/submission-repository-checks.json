@@ -1,8 +1,8 @@
 {
-  "documentation_files": 56,
-  "local_link_checks": 354,
-  "external_urls": 88,
+  "documentation_files": 68,
+  "local_link_checks": 457,
+  "external_urls": 93,
   "failures": [],
   "tracked_raw_or_private_files": [],
-  "scope": "Root and docs HTML/Markdown links; tracked prohibited extensions/private paths. No claim of comprehensive content de-identification or external source verification."
+  "scope": "Root/docs HTML and Markdown plus prototype Markdown links; tracked prohibited extensions/private paths. Runtime application HTML/templates are excluded because their server routes/generated outputs are not static documentation. No claim of comprehensive content de-identification or external source verification."
 }

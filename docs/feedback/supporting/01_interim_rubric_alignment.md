@@ -1,3 +1,5 @@
+> Earlier feedback working document, retained as design history. The [current report](../../../index.html#part-b), [evaluation protocol](../report-evidence.html#evaluation) and [joint design matrix](../../project-design.html) supersede its proposed schedule, scope and study baselines.
+
 # CDE4301 interim rubric alignment
 
 Source: **CDE4301 assessment brief and rubrics - AY2026 - interim assessment**, six pages, supplied in project files. This is a planning map, not a substitute for the original rubric.
