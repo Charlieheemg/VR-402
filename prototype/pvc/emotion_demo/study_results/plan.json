@@ -1,0 +1,5826 @@
+{
+  "schema": "crema-perception-study-1",
+  "seed": "vr402-perception-v1",
+  "upstream_revision": "1658cd342dff90010aa843eaeebd53610a08b1dc",
+  "policy": "30 speakers; four fixed sentences; six intended expressions per sentence; IEO MD except neutral XX, all others XX. Selection uses filenames only.",
+  "statements": [
+    "IEO",
+    "TIE",
+    "IOM",
+    "IWW"
+  ],
+  "partitions": {
+    "train": [
+      "1056",
+      "1026",
+      "1039",
+      "1030",
+      "1020",
+      "1003",
+      "1080",
+      "1059",
+      "1060",
+      "1070",
+      "1044",
+      "1007",
+      "1014",
+      "1033",
+      "1079",
+      "1008",
+      "1038",
+      "1011",
+      "1042",
+      "1058"
+    ],
+    "validation": [
+      "1065",
+      "1068",
+      "1012",
+      "1018",
+      "1050"
+    ],
+    "test": [
+      "1001",
+      "1063",
+      "1086",
+      "1051",
+      "1074"
+    ]
+  },
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "refit_validation": false,
+  "available_speakers": 91,
+  "eligible_speakers": 89,
+  "speaker_exclusions": {
+    "1064": "Upstream-documented IEO_DIS_MD all-displays presentation anomaly",
+    "1002": "Incomplete prespecified filename cells"
+  },
+  "target": "Unique plurality of independent audio-only votes; tied/zero-vote clips excluded from fitting and single-label metrics, retained in distributions/predictions.",
+  "selected": [
+    {
+      "file": "1056_IEO_ANG_MD.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1056_IEO_DIS_MD.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1056_IEO_FEA_MD.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1056_IEO_HAP_MD.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1056_IEO_NEU_XX.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IEO_SAD_MD.wav",
+      "actor": "1056",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_ANG_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_DIS_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_FEA_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_HAP_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_NEU_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_TIE_SAD_XX.wav",
+      "actor": "1056",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_ANG_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_DIS_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_FEA_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_HAP_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_NEU_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IOM_SAD_XX.wav",
+      "actor": "1056",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_ANG_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_DIS_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_FEA_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_HAP_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_NEU_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1056_IWW_SAD_XX.wav",
+      "actor": "1056",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_ANG_MD.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_DIS_MD.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_FEA_MD.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_HAP_MD.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_NEU_XX.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IEO_SAD_MD.wav",
+      "actor": "1026",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_ANG_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_DIS_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_FEA_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_HAP_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_NEU_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_TIE_SAD_XX.wav",
+      "actor": "1026",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_ANG_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_DIS_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_FEA_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_HAP_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_NEU_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IOM_SAD_XX.wav",
+      "actor": "1026",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_ANG_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_DIS_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_FEA_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_HAP_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_NEU_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1026_IWW_SAD_XX.wav",
+      "actor": "1026",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_ANG_MD.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_DIS_MD.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_FEA_MD.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_HAP_MD.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_NEU_XX.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IEO_SAD_MD.wav",
+      "actor": "1039",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_ANG_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_DIS_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_FEA_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_HAP_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_NEU_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_TIE_SAD_XX.wav",
+      "actor": "1039",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_ANG_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_DIS_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_FEA_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_HAP_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_NEU_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IOM_SAD_XX.wav",
+      "actor": "1039",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_ANG_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_DIS_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_FEA_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_HAP_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_NEU_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1039_IWW_SAD_XX.wav",
+      "actor": "1039",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_ANG_MD.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_DIS_MD.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_FEA_MD.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_HAP_MD.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_NEU_XX.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IEO_SAD_MD.wav",
+      "actor": "1030",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_ANG_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_DIS_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_FEA_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_HAP_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_NEU_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_TIE_SAD_XX.wav",
+      "actor": "1030",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_ANG_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_DIS_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_FEA_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_HAP_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_NEU_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IOM_SAD_XX.wav",
+      "actor": "1030",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_ANG_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_DIS_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_FEA_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_HAP_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_NEU_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1030_IWW_SAD_XX.wav",
+      "actor": "1030",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_ANG_MD.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_DIS_MD.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_FEA_MD.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_HAP_MD.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_NEU_XX.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IEO_SAD_MD.wav",
+      "actor": "1020",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_ANG_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_DIS_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_FEA_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_HAP_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_NEU_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_TIE_SAD_XX.wav",
+      "actor": "1020",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_ANG_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_DIS_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_FEA_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_HAP_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_NEU_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IOM_SAD_XX.wav",
+      "actor": "1020",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_ANG_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_DIS_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_FEA_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_HAP_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_NEU_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1020_IWW_SAD_XX.wav",
+      "actor": "1020",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_ANG_MD.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_DIS_MD.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_FEA_MD.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_HAP_MD.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_NEU_XX.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IEO_SAD_MD.wav",
+      "actor": "1003",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_ANG_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_DIS_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_FEA_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_HAP_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_NEU_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_TIE_SAD_XX.wav",
+      "actor": "1003",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_ANG_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_DIS_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_FEA_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_HAP_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_NEU_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IOM_SAD_XX.wav",
+      "actor": "1003",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_ANG_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_DIS_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_FEA_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_HAP_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_NEU_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1003_IWW_SAD_XX.wav",
+      "actor": "1003",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_ANG_MD.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_DIS_MD.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_FEA_MD.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_HAP_MD.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_NEU_XX.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IEO_SAD_MD.wav",
+      "actor": "1080",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_ANG_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_DIS_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_FEA_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_HAP_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_NEU_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_TIE_SAD_XX.wav",
+      "actor": "1080",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_ANG_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_DIS_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_FEA_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_HAP_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_NEU_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IOM_SAD_XX.wav",
+      "actor": "1080",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_ANG_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_DIS_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_FEA_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_HAP_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_NEU_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1080_IWW_SAD_XX.wav",
+      "actor": "1080",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_ANG_MD.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_DIS_MD.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_FEA_MD.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_HAP_MD.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_NEU_XX.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IEO_SAD_MD.wav",
+      "actor": "1059",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_ANG_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_DIS_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_FEA_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_HAP_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_NEU_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_TIE_SAD_XX.wav",
+      "actor": "1059",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_ANG_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_DIS_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_FEA_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_HAP_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_NEU_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IOM_SAD_XX.wav",
+      "actor": "1059",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_ANG_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_DIS_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_FEA_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_HAP_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_NEU_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1059_IWW_SAD_XX.wav",
+      "actor": "1059",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_ANG_MD.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_DIS_MD.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_FEA_MD.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_HAP_MD.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_NEU_XX.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IEO_SAD_MD.wav",
+      "actor": "1060",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_ANG_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_DIS_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_FEA_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_HAP_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_NEU_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_TIE_SAD_XX.wav",
+      "actor": "1060",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_ANG_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_DIS_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_FEA_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_HAP_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_NEU_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IOM_SAD_XX.wav",
+      "actor": "1060",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_ANG_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_DIS_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_FEA_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_HAP_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_NEU_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1060_IWW_SAD_XX.wav",
+      "actor": "1060",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_ANG_MD.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_DIS_MD.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_FEA_MD.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_HAP_MD.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_NEU_XX.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IEO_SAD_MD.wav",
+      "actor": "1070",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_ANG_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_DIS_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_FEA_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_HAP_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_NEU_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_TIE_SAD_XX.wav",
+      "actor": "1070",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_ANG_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_DIS_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_FEA_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_HAP_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_NEU_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IOM_SAD_XX.wav",
+      "actor": "1070",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_ANG_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_DIS_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_FEA_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_HAP_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_NEU_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1070_IWW_SAD_XX.wav",
+      "actor": "1070",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_ANG_MD.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_DIS_MD.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_FEA_MD.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_HAP_MD.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_NEU_XX.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IEO_SAD_MD.wav",
+      "actor": "1044",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_ANG_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_DIS_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_FEA_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_HAP_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_NEU_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_TIE_SAD_XX.wav",
+      "actor": "1044",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_ANG_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_DIS_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_FEA_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_HAP_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_NEU_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IOM_SAD_XX.wav",
+      "actor": "1044",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_ANG_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_DIS_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_FEA_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_HAP_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_NEU_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1044_IWW_SAD_XX.wav",
+      "actor": "1044",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_ANG_MD.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_DIS_MD.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_FEA_MD.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_HAP_MD.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_NEU_XX.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IEO_SAD_MD.wav",
+      "actor": "1007",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_ANG_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_DIS_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_FEA_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_HAP_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_NEU_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_TIE_SAD_XX.wav",
+      "actor": "1007",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_ANG_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_DIS_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_FEA_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_HAP_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_NEU_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IOM_SAD_XX.wav",
+      "actor": "1007",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_ANG_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_DIS_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_FEA_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_HAP_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_NEU_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1007_IWW_SAD_XX.wav",
+      "actor": "1007",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_ANG_MD.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_DIS_MD.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_FEA_MD.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_HAP_MD.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_NEU_XX.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IEO_SAD_MD.wav",
+      "actor": "1014",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_ANG_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_DIS_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_FEA_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_HAP_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_NEU_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_TIE_SAD_XX.wav",
+      "actor": "1014",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_ANG_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_DIS_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_FEA_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_HAP_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_NEU_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IOM_SAD_XX.wav",
+      "actor": "1014",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_ANG_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_DIS_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_FEA_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_HAP_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_NEU_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1014_IWW_SAD_XX.wav",
+      "actor": "1014",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_ANG_MD.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_DIS_MD.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_FEA_MD.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_HAP_MD.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_NEU_XX.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IEO_SAD_MD.wav",
+      "actor": "1033",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_ANG_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_DIS_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_FEA_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_HAP_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_NEU_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_TIE_SAD_XX.wav",
+      "actor": "1033",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_ANG_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_DIS_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_FEA_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_HAP_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_NEU_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IOM_SAD_XX.wav",
+      "actor": "1033",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_ANG_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_DIS_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_FEA_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_HAP_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_NEU_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1033_IWW_SAD_XX.wav",
+      "actor": "1033",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_ANG_MD.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_DIS_MD.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_FEA_MD.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_HAP_MD.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_NEU_XX.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IEO_SAD_MD.wav",
+      "actor": "1079",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_ANG_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_DIS_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_FEA_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_HAP_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_NEU_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_TIE_SAD_XX.wav",
+      "actor": "1079",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_ANG_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_DIS_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_FEA_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_HAP_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_NEU_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IOM_SAD_XX.wav",
+      "actor": "1079",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_ANG_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_DIS_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_FEA_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_HAP_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_NEU_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1079_IWW_SAD_XX.wav",
+      "actor": "1079",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_ANG_MD.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_DIS_MD.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_FEA_MD.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_HAP_MD.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_NEU_XX.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IEO_SAD_MD.wav",
+      "actor": "1008",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_ANG_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_DIS_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_FEA_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_HAP_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_NEU_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_TIE_SAD_XX.wav",
+      "actor": "1008",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_ANG_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_DIS_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_FEA_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_HAP_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_NEU_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IOM_SAD_XX.wav",
+      "actor": "1008",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_ANG_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_DIS_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_FEA_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_HAP_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_NEU_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1008_IWW_SAD_XX.wav",
+      "actor": "1008",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_ANG_MD.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_DIS_MD.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_FEA_MD.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_HAP_MD.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_NEU_XX.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IEO_SAD_MD.wav",
+      "actor": "1038",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_ANG_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_DIS_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_FEA_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_HAP_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_NEU_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_TIE_SAD_XX.wav",
+      "actor": "1038",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_ANG_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_DIS_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_FEA_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_HAP_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_NEU_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IOM_SAD_XX.wav",
+      "actor": "1038",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_ANG_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_DIS_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_FEA_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_HAP_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_NEU_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1038_IWW_SAD_XX.wav",
+      "actor": "1038",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_ANG_MD.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_DIS_MD.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_FEA_MD.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_HAP_MD.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_NEU_XX.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IEO_SAD_MD.wav",
+      "actor": "1011",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_ANG_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_DIS_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_FEA_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_HAP_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_NEU_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_TIE_SAD_XX.wav",
+      "actor": "1011",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_ANG_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_DIS_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_FEA_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_HAP_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_NEU_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IOM_SAD_XX.wav",
+      "actor": "1011",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_ANG_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_DIS_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_FEA_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_HAP_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_NEU_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1011_IWW_SAD_XX.wav",
+      "actor": "1011",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_ANG_MD.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_DIS_MD.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_FEA_MD.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_HAP_MD.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_NEU_XX.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IEO_SAD_MD.wav",
+      "actor": "1042",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_ANG_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_DIS_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_FEA_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_HAP_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_NEU_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_TIE_SAD_XX.wav",
+      "actor": "1042",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_ANG_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_DIS_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_FEA_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_HAP_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_NEU_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IOM_SAD_XX.wav",
+      "actor": "1042",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_ANG_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_DIS_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_FEA_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_HAP_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_NEU_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1042_IWW_SAD_XX.wav",
+      "actor": "1042",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_ANG_MD.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_DIS_MD.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_FEA_MD.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_HAP_MD.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_NEU_XX.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IEO_SAD_MD.wav",
+      "actor": "1058",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_ANG_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_DIS_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_FEA_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_HAP_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_NEU_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_TIE_SAD_XX.wav",
+      "actor": "1058",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_ANG_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_DIS_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_FEA_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_HAP_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_NEU_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IOM_SAD_XX.wav",
+      "actor": "1058",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_ANG_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_DIS_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_FEA_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_HAP_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_NEU_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1058_IWW_SAD_XX.wav",
+      "actor": "1058",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "train"
+    },
+    {
+      "file": "1065_IEO_ANG_MD.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IEO_DIS_MD.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IEO_FEA_MD.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IEO_HAP_MD.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IEO_NEU_XX.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IEO_SAD_MD.wav",
+      "actor": "1065",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_ANG_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_DIS_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_FEA_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_HAP_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_NEU_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_TIE_SAD_XX.wav",
+      "actor": "1065",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_ANG_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_DIS_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_FEA_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_HAP_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_NEU_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IOM_SAD_XX.wav",
+      "actor": "1065",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_ANG_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_DIS_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_FEA_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_HAP_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_NEU_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1065_IWW_SAD_XX.wav",
+      "actor": "1065",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_ANG_MD.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_DIS_MD.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_FEA_MD.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_HAP_MD.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_NEU_XX.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IEO_SAD_MD.wav",
+      "actor": "1068",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_ANG_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_DIS_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_FEA_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_HAP_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_NEU_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_TIE_SAD_XX.wav",
+      "actor": "1068",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_ANG_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_DIS_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_FEA_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_HAP_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_NEU_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IOM_SAD_XX.wav",
+      "actor": "1068",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_ANG_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_DIS_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_FEA_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_HAP_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_NEU_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1068_IWW_SAD_XX.wav",
+      "actor": "1068",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_ANG_MD.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_DIS_MD.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_FEA_MD.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_HAP_MD.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_NEU_XX.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IEO_SAD_MD.wav",
+      "actor": "1012",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_ANG_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_DIS_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_FEA_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_HAP_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_NEU_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_TIE_SAD_XX.wav",
+      "actor": "1012",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_ANG_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_DIS_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_FEA_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_HAP_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_NEU_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IOM_SAD_XX.wav",
+      "actor": "1012",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_ANG_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_DIS_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_FEA_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_HAP_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_NEU_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1012_IWW_SAD_XX.wav",
+      "actor": "1012",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_ANG_MD.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_DIS_MD.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_FEA_MD.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_HAP_MD.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_NEU_XX.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IEO_SAD_MD.wav",
+      "actor": "1018",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_ANG_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_DIS_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_FEA_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_HAP_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_NEU_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_TIE_SAD_XX.wav",
+      "actor": "1018",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_ANG_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_DIS_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_FEA_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_HAP_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_NEU_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IOM_SAD_XX.wav",
+      "actor": "1018",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_ANG_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_DIS_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_FEA_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_HAP_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_NEU_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1018_IWW_SAD_XX.wav",
+      "actor": "1018",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_ANG_MD.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_DIS_MD.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_FEA_MD.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_HAP_MD.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_NEU_XX.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IEO_SAD_MD.wav",
+      "actor": "1050",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_ANG_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_DIS_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_FEA_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_HAP_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_NEU_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_TIE_SAD_XX.wav",
+      "actor": "1050",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_ANG_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_DIS_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_FEA_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_HAP_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_NEU_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IOM_SAD_XX.wav",
+      "actor": "1050",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_ANG_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_DIS_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_FEA_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_HAP_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_NEU_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1050_IWW_SAD_XX.wav",
+      "actor": "1050",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "validation"
+    },
+    {
+      "file": "1001_IEO_ANG_MD.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1001_IEO_DIS_MD.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1001_IEO_FEA_MD.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1001_IEO_HAP_MD.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1001_IEO_NEU_XX.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IEO_SAD_MD.wav",
+      "actor": "1001",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_ANG_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_DIS_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_FEA_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_HAP_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_NEU_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_TIE_SAD_XX.wav",
+      "actor": "1001",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_ANG_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_DIS_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_FEA_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_HAP_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_NEU_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IOM_SAD_XX.wav",
+      "actor": "1001",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_ANG_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_DIS_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_FEA_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_HAP_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_NEU_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1001_IWW_SAD_XX.wav",
+      "actor": "1001",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_ANG_MD.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_DIS_MD.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_FEA_MD.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_HAP_MD.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_NEU_XX.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IEO_SAD_MD.wav",
+      "actor": "1063",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_ANG_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_DIS_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_FEA_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_HAP_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_NEU_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_TIE_SAD_XX.wav",
+      "actor": "1063",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_ANG_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_DIS_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_FEA_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_HAP_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_NEU_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IOM_SAD_XX.wav",
+      "actor": "1063",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_ANG_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_DIS_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_FEA_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_HAP_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_NEU_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1063_IWW_SAD_XX.wav",
+      "actor": "1063",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_ANG_MD.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_DIS_MD.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_FEA_MD.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_HAP_MD.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_NEU_XX.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IEO_SAD_MD.wav",
+      "actor": "1086",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_ANG_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_DIS_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_FEA_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_HAP_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_NEU_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_TIE_SAD_XX.wav",
+      "actor": "1086",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_ANG_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_DIS_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_FEA_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_HAP_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_NEU_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IOM_SAD_XX.wav",
+      "actor": "1086",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_ANG_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_DIS_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_FEA_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_HAP_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_NEU_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1086_IWW_SAD_XX.wav",
+      "actor": "1086",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_ANG_MD.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_DIS_MD.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_FEA_MD.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_HAP_MD.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_NEU_XX.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IEO_SAD_MD.wav",
+      "actor": "1051",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_ANG_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_DIS_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_FEA_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_HAP_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_NEU_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_TIE_SAD_XX.wav",
+      "actor": "1051",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_ANG_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_DIS_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_FEA_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_HAP_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_NEU_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IOM_SAD_XX.wav",
+      "actor": "1051",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_ANG_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_DIS_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_FEA_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_HAP_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_NEU_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1051_IWW_SAD_XX.wav",
+      "actor": "1051",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_ANG_MD.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "ANG",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_DIS_MD.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "DIS",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_FEA_MD.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "FEA",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_HAP_MD.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "HAP",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_NEU_XX.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IEO_SAD_MD.wav",
+      "actor": "1074",
+      "statement": "IEO",
+      "intended_label": "SAD",
+      "intensity": "MD",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_ANG_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_DIS_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_FEA_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_HAP_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_NEU_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_TIE_SAD_XX.wav",
+      "actor": "1074",
+      "statement": "TIE",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_ANG_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_DIS_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_FEA_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_HAP_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_NEU_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IOM_SAD_XX.wav",
+      "actor": "1074",
+      "statement": "IOM",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_ANG_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "ANG",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_DIS_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "DIS",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_FEA_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "FEA",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_HAP_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "HAP",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_NEU_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "NEU",
+      "intensity": "XX",
+      "split": "test"
+    },
+    {
+      "file": "1074_IWW_SAD_XX.wav",
+      "actor": "1074",
+      "statement": "IWW",
+      "intended_label": "SAD",
+      "intensity": "XX",
+      "split": "test"
+    }
+  ]
+}
