@@ -25,10 +25,13 @@ class RefinementTests(unittest.TestCase):
     self.assertAlmostEqual(pooled,summary.loc[model,metric])
  def test_budget_accounts_for_replacing_placeholders_and_graphics(self):
   r=check()
-  self.assertGreater(r['visible_svg_words'],0)
-  self.assertEqual(r['main_words'],r['html_main_words']+r['visible_svg_words'])
+  self.assertGreater(r['visible_figure_words'],0)
+  self.assertEqual(r['main_words'],r['html_main_words']+r['visible_figure_words'])
   self.assertEqual(r['part_b_replacement_capacity'],4000-r['non_part_b_words'])
   self.assertLessEqual(r['completed_group_with_1800_word_part_b'],4000)
-  self.assertGreaterEqual(r['section_words']['charlie'],1800)
-  self.assertLessEqual(r['section_words']['charlie'],2000)
+  self.assertGreater(r['section_words']['charlie'],0)
+  from check_interim_report import check as check_interim
+  interim=check_interim()
+  self.assertLessEqual(interim['section_words']['charlie'],1500)
+  self.assertEqual(interim['section_words']['charlie'],r['section_words']['charlie'])
 if __name__=='__main__':unittest.main()

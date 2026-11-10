@@ -1,11 +1,11 @@
 {
-  "main_words": 2425,
-  "html_main_words": 2425,
-  "visible_svg_words": 0,
+  "main_words": 3515,
+  "html_main_words": 3441,
+  "visible_figure_words": 74,
   "limit": 4000,
   "section_words": {
     "shared": 936,
-    "charlie": 0,
+    "charlie": 1090,
     "kang_zhe": 1489
   },
   "section_budgets": {
@@ -15,13 +15,13 @@
   },
   "html_section_words": {
     "shared": 936,
-    "charlie": 0,
+    "charlie": 1016,
     "kang_zhe": 1489
   },
-  "method": "Whitespace tokens inside main plus visible SVG text labels, including headings, citations, tables and captions",
+  "method": "Whitespace tokens inside main plus visible SVG text labels or raster text transcripts, including headings, citations, tables and captions",
   "local_links": "passed",
   "duplicate_ids": "none",
   "image_alt": "passed",
   "metadata": "passed",
-  "figures": 0
+  "figures": 1
 }

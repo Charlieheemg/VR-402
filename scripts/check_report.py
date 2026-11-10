@@ -32,7 +32,7 @@ def check():
   else:
    target=(ROOT/unquote(u.path)).resolve();assert target.is_relative_to(ROOT) and (target.exists() or u.path=='docs/results/report-checks.json'),link
  text=' '.join(p.text)
- # Count all whitespace words including section headings, citations, figure captions and draft Part B.
+ # Count all whitespace words including section headings, citations, figure captions and authored Part B.
  words=re.findall(r"\S+",text)
  assert len(words)<=4000,f'{len(words)} main words exceeds 4000'
  assert all(s in html for s in ['Paediatric VR Speech Analysis and Feedback','VR-405','Charlie Hee Ming Guan','Ang Kang Zhe','A/Prof Khoo Eng Tat'])
@@ -46,10 +46,15 @@ def check():
    root=ET.parse(ROOT/a['src']).getroot()
    n=sum(len(re.findall(r"\S+",''.join(e.itertext()))) for e in root.iter() if e.tag.endswith('}text'))
    counts[bucket]+=n;figure_words+=n
+  elif bucket:
+   transcript=(ROOT/a['src']).with_suffix('.txt')
+   assert transcript.exists(),f'Raster figure needs visible-text transcript: {a["src"]}'
+   n=len(re.findall(r'\S+',transcript.read_text()))
+   counts[bucket]+=n;figure_words+=n
  assert len(words)+figure_words<=4000,'Main report including visible figure labels exceeds 4000 words'
  non_b=counts['shared']+counts['charlie']
  assert sum(counts.values())==len(words)+figure_words
  assert non_b+1800<=4000,'Insufficient room for a substantive 1800-word Part B'
- result=dict(main_words=len(words)+figure_words,html_main_words=len(words),visible_svg_words=figure_words,limit=4000,section_words=counts,html_section_words=html_counts,non_part_b_words=non_b,part_b_replacement_capacity=4000-non_b,completed_group_with_1500_word_part_b=non_b+1500,completed_group_with_1800_word_part_b=non_b+1800,method='Whitespace tokens inside main plus visible SVG text labels; includes tables, headings, captions and draft Part B; excludes masthead/navigation/references/appendices and SVG accessibility titles',part_b_status='Awaiting author evidence; replace draft with substantive 1500–1800-word contribution',local_links='passed',duplicate_ids='none',image_alt='passed',metadata='passed',figures=len(p.images))
+ result=dict(main_words=len(words)+figure_words,html_main_words=len(words),visible_figure_words=figure_words,limit=4000,section_words=counts,html_section_words=html_counts,non_part_b_words=non_b,part_b_replacement_capacity=4000-non_b,completed_group_with_1500_word_part_b=non_b+1500,completed_group_with_1800_word_part_b=non_b+1800,method='Whitespace tokens inside main plus visible SVG text labels or raster text transcripts; includes tables, headings, captions and authored Part B; excludes masthead/navigation/references/appendices and SVG accessibility titles',part_b_status='Existing authored contribution preserved; newer Part B is in interim-report.html',local_links='passed',duplicate_ids='none',image_alt='passed',metadata='passed',figures=len(p.images))
  out=ROOT/'docs/results/report-checks.json';out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2));return result
 if __name__=='__main__':check()

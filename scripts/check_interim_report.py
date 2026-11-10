@@ -32,7 +32,7 @@ def check():
   else:
    target=(ROOT/unquote(u.path)).resolve();assert target.is_relative_to(ROOT) and (target.exists() or u.path=='docs/results/interim-report-checks.json'),link
  text=' '.join(p.text)
- # Count all whitespace words including section headings, citations, figure captions and draft Part B.
+ # Count all whitespace words including section headings, citations, figure captions and authored Part B.
  words=re.findall(r"\S+",text)
  assert len(words)<=4000,f'{len(words)} main words exceeds 4000'
  assert all(s in html for s in ['Paediatric VR Speech Analysis and Feedback','VR-405','Charlie Hee Ming Guan','Ang Kang Zhe','A/Prof Khoo Eng Tat'])
@@ -46,12 +46,17 @@ def check():
    root=ET.parse(ROOT/a['src']).getroot()
    n=sum(len(re.findall(r"\S+",''.join(e.itertext()))) for e in root.iter() if e.tag.endswith('}text'))
    counts[bucket]+=n;figure_words+=n
+  elif bucket:
+   transcript=(ROOT/a['src']).with_suffix('.txt')
+   assert transcript.exists(),f'Raster figure needs visible-text transcript: {a["src"]}'
+   n=len(re.findall(r'\S+',transcript.read_text()))
+   counts[bucket]+=n;figure_words+=n
  assert len(words)+figure_words<=4000,'Main report including visible figure labels exceeds 4000 words'
  assert sum(counts.values())==len(words)+figure_words
  budgets=dict(shared=1000,charlie=1500,kang_zhe=1500)
  assert sum(budgets.values())==4000
  for section, budget in budgets.items():
    assert counts[section]<=budget,f'{section} exceeds its {budget}-word allocation'
- result=dict(main_words=len(words)+figure_words,html_main_words=len(words),visible_svg_words=figure_words,limit=4000,section_words=counts,section_budgets=budgets,html_section_words=html_counts,method='Whitespace tokens inside main plus visible SVG text labels, including headings, citations, tables and captions',local_links='passed',duplicate_ids='none',image_alt='passed',metadata='passed',figures=len(p.images))
+ result=dict(main_words=len(words)+figure_words,html_main_words=len(words),visible_figure_words=figure_words,limit=4000,section_words=counts,section_budgets=budgets,html_section_words=html_counts,method='Whitespace tokens inside main plus visible SVG text labels or raster text transcripts, including headings, citations, tables and captions',local_links='passed',duplicate_ids='none',image_alt='passed',metadata='passed',figures=len(p.images))
  out=ROOT/'docs/results/interim-report-checks.json';out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2));return result
 if __name__=='__main__':check()

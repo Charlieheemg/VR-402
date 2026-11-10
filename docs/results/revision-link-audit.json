@@ -1,0 +1,242 @@
+[
+  {
+    "url": "https://claritychallenge.org/docs/cpc1/cpc1_intro",
+    "status": 200,
+    "final_url": "https://claritychallenge.org/docs/cpc1/cpc1_intro",
+    "error": ""
+  },
+  {
+    "url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+    "status": 200,
+    "final_url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1007/s40670-025-02621-3",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s40670-025-02621-3?error=cookies_not_supported&code=66155563-d1ba-4d0f-bd6d-c9e2bea964d2",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1016/j.ecns.2025.101715",
+    "status": 200,
+    "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1876139925000325",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1016/j.specom.2017.01.011",
+    "status": 200,
+    "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0167639316301509",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1080/02602938.2018.1463354",
+    "status": 403,
+    "final_url": "https://www.tandfonline.com/doi/full/10.1080/02602938.2018.1463354",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1080/02602938.2023.2177613",
+    "status": 403,
+    "final_url": "https://www.tandfonline.com/doi/full/10.1080/02602938.2023.2177613",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1080/03075070600572090",
+    "status": 403,
+    "final_url": "https://www.tandfonline.com/doi/full/10.1080/03075070600572090",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1097/SIH.0000000000000765",
+    "status": 403,
+    "final_url": "https://journals.lww.com/10.1097/SIH.0000000000000765",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1109/TAFFC.2015.2457417",
+    "status": 202,
+    "final_url": "https://ieeexplore.ieee.org/document/7160715/",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1145/1873951.1874246",
+    "status": 403,
+    "final_url": "https://dl.acm.org/doi/10.1145/1873951.1874246",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.1186/s41077-026-00447-6",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1186/s41077-026-00447-6?error=cookies_not_supported&code=3749caff-f40d-4998-9011-7e9df49848e9",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.3102/003465430298487",
+    "status": 403,
+    "final_url": "https://journals.sagepub.com/doi/10.3102/003465430298487",
+    "error": ""
+  },
+  {
+    "url": "https://doi.org/10.3928/01484834-20180618-03",
+    "status": 403,
+    "final_url": "https://journals.healio.com/doi/10.3928/01484834-20180618-03",
+    "error": ""
+  },
+  {
+    "url": "https://github.com/Charlieheemg/VR-402",
+    "status": 200,
+    "final_url": "https://github.com/Charlieheemg/VR-402",
+    "error": ""
+  },
+  {
+    "url": "https://github.com/bbc/r2spin",
+    "status": 200,
+    "final_url": "https://github.com/bbc/r2spin",
+    "error": ""
+  },
+  {
+    "url": "https://journals.sagepub.com/doi/10.1177/0265532212455394",
+    "status": 403,
+    "final_url": "https://journals.sagepub.com/doi/10.1177/0265532212455394",
+    "error": ""
+  },
+  {
+    "url": "https://link.springer.com/article/10.1007/s44186-024-00239-4",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s44186-024-00239-4?error=cookies_not_supported&code=9abd9b10-ca4f-4113-9750-e711030dc0b7",
+    "error": ""
+  },
+  {
+    "url": "https://link.springer.com/article/10.1186/s12909-021-02722-8",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1186/s12909-021-02722-8?error=cookies_not_supported&code=cc3b3993-302d-459c-9ae6-5374a5dc464d",
+    "error": ""
+  },
+  {
+    "url": "https://link.springer.com/article/10.1186/s41077-026-00447-6",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1186/s41077-026-00447-6?error=cookies_not_supported&code=4ddf0b98-8417-4357-bee2-c3d4b11d9ade",
+    "error": ""
+  },
+  {
+    "url": "https://opus.lib.uts.edu.au/handle/10453/179199",
+    "status": 200,
+    "final_url": "https://opus.lib.uts.edu.au/handle/10453/179199",
+    "error": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5806296/",
+    "status": 200,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5806296/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16642851/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/16642851/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20046964/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/20046964/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20661008/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/20661008/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22411282/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/22411282/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25710312/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/25710312/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35649935/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/35649935/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38240623/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/38240623/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41925881/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/41925881/",
+    "error": ""
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41939019/",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/41939019/",
+    "error": ""
+  },
+  {
+    "url": "https://pubs.asha.org/doi/10.1044/2023_AJSLP-23-00030",
+    "status": 403,
+    "final_url": "https://pubs.asha.org/doi/10.1044/2023_AJSLP-23-00030",
+    "error": ""
+  },
+  {
+    "url": "https://sites.google.com/nau.edu/applied-ling-speech-lab-nau/projects/osim-project/slusi-corpus",
+    "status": 200,
+    "final_url": "https://sites.google.com/nau.edu/applied-ling-speech-lab-nau/projects/osim-project/slusi-corpus",
+    "error": ""
+  },
+  {
+    "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/checkback.html",
+    "status": 403,
+    "final_url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/checkback.html",
+    "error": ""
+  },
+  {
+    "url": "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+    "status": 200,
+    "final_url": "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+    "error": ""
+  },
+  {
+    "url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+    "status": 200,
+    "final_url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+    "error": ""
+  },
+  {
+    "url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+    "status": 200,
+    "final_url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+    "error": ""
+  },
+  {
+    "url": "https://www.kirkpatrickpartners.com/the-kirkpatrick-model/",
+    "status": 200,
+    "final_url": "https://www.kirkpatrickpartners.com/the-kirkpatrick-model/",
+    "error": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1876139925000325",
+    "status": 403,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S1876139925000325",
+    "error": ""
+  }
+]
