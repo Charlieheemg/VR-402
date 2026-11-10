@@ -1,5 +1,7 @@
 # VR-405 evidence audit — 19 October 2026
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 Official title: **Paediatric VR Speech Analysis and Feedback**. Charlie Hee Ming Guan: speech analysis. Ang Kang Zhe: feedback presentation. Supervisor: A/Prof Khoo Eng Tat. The repository and Pages URLs retain `VR-402` as a technical address, not the official project code.
 
 ## Repository before consolidation

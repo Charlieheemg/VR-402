@@ -3,7 +3,7 @@
 ## Research evidence and provenance
 
 - The supplied manuscript [P1] describes the upstream workbook and reference consultant annotations. Its publication status and current deployment are unverified. The seven categories described in [P1] are Roles & Responsibilities, Closed Loop Communication, Clear Messages, Knowing One's Limitations, Constructive Intervention, Summarisation & Re-evaluation, and Knowledge Sharing. They were expert-refined and informed by teamwork instruments.
-- The active report reserves Part A for Charlie. The previous authored text and research evidence remain in Git history and the supporting repository documents.
+- The authoritative report includes both authored contributions. This document retains the feedback design rationale and proposed concepts; earlier full drafts remain in Git history.
 - [Appendix C](evaluation-v01.html) records Part B's reproduced engineering checks. [Appendix D](output-v01.html) inspects the author-supplied redacted specimen. The frozen prototype and both evidence records are preserved.
 - Published research informs design and proposed outcomes. The concepts, milestones and educational studies below describe proposed work.
 
@@ -53,7 +53,7 @@ The [existing rubric summary](supporting/01_interim_rubric_alignment.md) specifi
 
 ## Author review
 
-- Charlie: confirm whether intelligibility remains the active endpoint and approve the shared handover wording.
+- Charlie and supervisor: confirm the selected existing rubric criterion for the proposed audio-assisted comparison. Intelligibility remains exploratory groundwork, not an assumed rubric indicator.
 - Research team: confirm manuscript status, deployed workflow, AI-only data access, polarity conventions and evidence-span and role definitions.
 - Supervisor and educators: confirm the candidate behavioural standard, permissible examples, recruitment and approvals, pilot scoring, and schedule dependencies before setting dates.
 - Check the original course brief if post-interim assessment requirements differ. The proposed August 2026 to April 2027 schedule has not been confirmed.

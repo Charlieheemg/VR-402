@@ -1,27 +1,5 @@
 {
-  "main_words": 3515,
-  "html_main_words": 3441,
-  "visible_figure_words": 74,
-  "limit": 4000,
-  "section_words": {
-    "shared": 936,
-    "charlie": 1090,
-    "kang_zhe": 1489
-  },
-  "section_budgets": {
-    "shared": 1000,
-    "charlie": 1500,
-    "kang_zhe": 1500
-  },
-  "html_section_words": {
-    "shared": 936,
-    "charlie": 1016,
-    "kang_zhe": 1489
-  },
-  "method": "Whitespace tokens inside main plus visible SVG text labels or raster text transcripts, including headings, citations, tables and captions",
-  "local_links": "passed",
-  "duplicate_ids": "none",
-  "image_alt": "passed",
-  "metadata": "passed",
-  "figures": 1
+  "authoritative_report": "index.html",
+  "checks": "report-checks.json",
+  "status": "Compatibility page only; no independent report word count"
 }

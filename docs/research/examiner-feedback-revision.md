@@ -1,5 +1,7 @@
 # Examiner feedback and research revision
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 10 November 2026. Review proposal; supervisor approval remains pending. Prepared against main `2b31707f023bc8b5a5258edee57b902d7b68bbfe`. The contemporary interim page had an empty Part A and a newer authored Part B. Both report pages now share the revised Part A; each existing Part B and all `docs/feedback/` files are preserved byte-for-byte. Open PR #2 concerns a separate emotional-delivery study and is not incorporated here.
 
 ## Decision and provenance

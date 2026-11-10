@@ -1,0 +1,424 @@
+{
+  "schema": "crema-perception-study-1",
+  "labels": [
+    "A",
+    "D",
+    "F",
+    "H",
+    "N",
+    "S"
+  ],
+  "selected_C": 10.0,
+  "upstream_revision": "1658cd342dff90010aa843eaeebd53610a08b1dc",
+  "majority_training_class": "N",
+  "predictor_count": 88,
+  "evidence_commit": "276b179479be5fdf3a5cf8d09edc36d95c79643b",
+  "partitions": {
+    "train": {
+      "speaker_count": 20,
+      "selected_clips": 480,
+      "scored_clips": 432,
+      "excluded_ties": 48,
+      "excluded_zero_votes": 0,
+      "model": {
+        "n": 432,
+        "class_counts": {
+          "A": 78,
+          "D": 44,
+          "F": 43,
+          "H": 30,
+          "N": 212,
+          "S": 25
+        },
+        "macro_f1": 0.8863213847705368,
+        "balanced_accuracy": 0.9528521792672736,
+        "accuracy": 0.8819444444444444,
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            43,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            43,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0
+          ],
+          [
+            8,
+            15,
+            13,
+            4,
+            165,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            25
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 432,
+        "class_counts": {
+          "A": 78,
+          "D": 44,
+          "F": 43,
+          "H": 30,
+          "N": 212,
+          "S": 25
+        },
+        "macro_f1": 0.10973084886128365,
+        "balanced_accuracy": 0.16666666666666666,
+        "accuracy": 0.49074074074074076,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            78,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            44,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            43,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            212,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            25,
+            0
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "speaker_count": 5,
+      "selected_clips": 120,
+      "scored_clips": 113,
+      "excluded_ties": 7,
+      "excluded_zero_votes": 0,
+      "model": {
+        "n": 113,
+        "class_counts": {
+          "A": 19,
+          "D": 14,
+          "F": 11,
+          "H": 4,
+          "N": 61,
+          "S": 4
+        },
+        "macro_f1": 0.3548062138226073,
+        "balanced_accuracy": 0.37568679522950443,
+        "accuracy": 0.5486725663716814,
+        "confusion_matrix": [
+          [
+            10,
+            3,
+            1,
+            2,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            2,
+            0,
+            7,
+            2
+          ],
+          [
+            1,
+            2,
+            4,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            2,
+            4,
+            3,
+            3,
+            44,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 113,
+        "class_counts": {
+          "A": 19,
+          "D": 14,
+          "F": 11,
+          "H": 4,
+          "N": 61,
+          "S": 4
+        },
+        "macro_f1": 0.11685823754789272,
+        "balanced_accuracy": 0.16666666666666666,
+        "accuracy": 0.5398230088495575,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            61,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ]
+        ]
+      }
+    },
+    "test": {
+      "speaker_count": 5,
+      "selected_clips": 120,
+      "scored_clips": 113,
+      "excluded_ties": 7,
+      "excluded_zero_votes": 0,
+      "model": {
+        "n": 113,
+        "class_counts": {
+          "A": 19,
+          "D": 10,
+          "F": 13,
+          "H": 7,
+          "N": 61,
+          "S": 3
+        },
+        "macro_f1": 0.3672816234779392,
+        "balanced_accuracy": 0.3945509528339554,
+        "accuracy": 0.45132743362831856,
+        "confusion_matrix": [
+          [
+            6,
+            6,
+            2,
+            2,
+            3,
+            0
+          ],
+          [
+            2,
+            3,
+            0,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            5,
+            1,
+            3,
+            1
+          ],
+          [
+            2,
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          [
+            4,
+            8,
+            3,
+            10,
+            34,
+            2
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 113,
+        "class_counts": {
+          "A": 19,
+          "D": 10,
+          "F": 13,
+          "H": 7,
+          "N": 61,
+          "S": 3
+        },
+        "macro_f1": 0.11685823754789272,
+        "balanced_accuracy": 0.16666666666666666,
+        "accuracy": 0.5398230088495575,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            61,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "scope": "Aggregate snapshot of completed exploratory study; no new fitting or clinical validation. Source methods and licensing are linked in docs/speech-evidence.html."
+}

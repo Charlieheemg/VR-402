@@ -1,27 +1,21 @@
 {
-  "main_words": 2880,
-  "html_main_words": 2806,
-  "visible_figure_words": 74,
+  "authoritative_report": "index.html",
+  "main_words": 3076,
+  "html_main_words": 3076,
+  "visible_figure_words": 0,
   "limit": 4000,
   "section_words": {
-    "shared": 167,
-    "charlie": 1090,
-    "kang_zhe": 1623
+    "shared": 591,
+    "charlie": 1055,
+    "kang_zhe": 998,
+    "references": 432
   },
-  "html_section_words": {
-    "shared": 167,
-    "charlie": 1016,
-    "kang_zhe": 1623
-  },
-  "non_part_b_words": 1257,
-  "part_b_replacement_capacity": 2743,
-  "completed_group_with_1500_word_part_b": 2757,
-  "completed_group_with_1800_word_part_b": 3057,
-  "method": "Whitespace tokens inside main plus visible SVG text labels or raster text transcripts; includes tables, headings, captions and authored Part B; excludes masthead/navigation/references/appendices and SVG accessibility titles",
-  "part_b_status": "Existing authored contribution preserved; newer Part B is in interim-report.html",
+  "headroom": 924,
+  "method": "Whitespace tokens inside main, including references, headings, tables, HTML diagrams and captions, plus visible embedded-image labels; excludes masthead/navigation/footer and separate appendices",
   "local_links": "passed",
+  "local_link_checks": 136,
   "duplicate_ids": "none",
   "image_alt": "passed",
   "metadata": "passed",
-  "figures": 1
+  "compatibility_page": "interim-report.html preserves query and fragment"
 }
