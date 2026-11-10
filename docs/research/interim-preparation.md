@@ -1,5 +1,7 @@
 # VR-405 interim preparation and Part B handover
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 ## Assessment map
 
 Requirements were checked against the supplied six-page CDE4301 assessment brief and rubrics, AY2026 interim assessment. Confirm exact dates and final submission arrangements with the course. See the [completed follow-up work](follow-up-work.md) and [meeting decision sheet](supervisor-decisions.md).

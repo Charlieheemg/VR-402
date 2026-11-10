@@ -1,0 +1,34 @@
+[
+  {
+    "file": "index.html",
+    "label": "desktop",
+    "pageOverflow": false,
+    "brokenImages": [],
+    "tables": 5,
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "label": "mobile",
+    "pageOverflow": false,
+    "brokenImages": [],
+    "tables": 5,
+    "errors": []
+  },
+  {
+    "file": "interim-report.html",
+    "label": "desktop",
+    "pageOverflow": false,
+    "brokenImages": [],
+    "tables": 2,
+    "errors": []
+  },
+  {
+    "file": "interim-report.html",
+    "label": "mobile",
+    "pageOverflow": false,
+    "brokenImages": [],
+    "tables": 2,
+    "errors": []
+  }
+]

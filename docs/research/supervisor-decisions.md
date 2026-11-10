@@ -1,5 +1,7 @@
 # Charlie's interim meeting sheet
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 ## What I can show now
 
 An operational matched-audio Edinburgh demo and reproduced one-speaker acoustic contrasts; existing R2SPIN human keyword-recognition benchmark with its two-speaker/list-fold limitations. A new 12-recording independent pitch check finds tracker/parameter sensitivity, so pitch remains an automated estimate. Two TextGrid end gaps remain explicit and unrepaired. No direct speaker-side intelligibility improvement, feedback efficacy or clinical transfer has been demonstrated.

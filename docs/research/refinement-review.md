@@ -1,5 +1,7 @@
 # Focused academic refinement review
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 Base main: `668000db0c78ed59d672a2b588c88e48bcf68572`. Dedicated branch: `refine-interim-evidence-and-word-budget`. Initial checkout clean; fetch/pull found no new main commits, remote collaborator branches or open PRs. No Kang Zhe deliverables were found; his work was not edited or invented. Main/Pages must remain on the consolidation until PR review. Existing source/data/prototypes/history are preserved.
 
 ## Review decisions

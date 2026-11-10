@@ -1,5 +1,7 @@
 # Proposed listener validation and feedback study
 
+> Historical intelligibility study proposal; no recruitment, approved sample size or completed listener experiment is implied. The [current report](../../index.html#questions) sets out the proposed within-rubric comparison.
+
 **Status: proposal only; no recruitment, ethics approval or intervention result claimed.**
 
 ## Decision before recruitment

@@ -1,4 +1,4 @@
-> Historical PVC implementation retained within **VR-405 — Paediatric VR Speech Analysis and Feedback**. Current research focuses on speech intelligibility; the code below is not a validated clinical score. See the [current report](../../index.html).
+> Historical PVC implementation retained within **VR-405 — Paediatric VR Speech Analysis and Feedback**. Current research examines acoustic evidence within the existing seven-category communication rubric; the code below is not a validated clinical score. See the [current report](../../index.html).
 
 # PVC v0.1 — acoustic evidence and supervised modelling scaffold
 
@@ -6,7 +6,7 @@
 
 Working now: local WAV → 88 openSMILE eGeMAPSv02 functionals + transparent temporal measurements → JSON/CSV/terminal summary. A separate training/prediction pipeline implements mean, Ridge and Random Forest regression. **No real PVC model has been trained; no confidence score is fabricated.** Tests use explicitly synthetic fixtures to verify mechanics only.
 
-Also working: an **external perceived-reading-confidence benchmark** trained on 600 genuinely labelled children's reading recordings, with original Low/Medium/High classes. This separate classifier does not validate adult/domain-specific PVC or convert labels to 1–5. Read the [provenance and evaluation limits](../../docs/reading_confidence_benchmark.md), [aggregate results](results/reading_confidence/README.md), and [microphone/WAV demo instructions](../../docs/live_confidence_demo.md). Raw data, per-recording derived tables and models stay local; model files are not downloaded automatically.
+Also working: an **external perceived-reading-confidence benchmark** trained on 600 genuinely labelled children's reading recordings, with numeric labels interpreted as Low/Medium/High from matching published counts. The explicit numeric legend remains unconfirmed. This separate classifier does not validate adult/domain-specific PVC or convert labels to 1–5. Read the [provenance and evaluation limits](../../docs/reading_confidence_benchmark.md), [aggregate results](results/reading_confidence/README.md), and [microphone/WAV demo instructions](../../docs/live_confidence_demo.md). Raw data, per-recording derived tables and models stay local; model files are not downloaded automatically.
 
 ```sh
 # From the repository root, on the prepared Mac:

@@ -1,5 +1,7 @@
 # Follow-up work completed for Charlie's interim contribution
 
+> Historical record. Scope, word counts and author-status statements describe this dated revision. The [current report](../../index.html) and [history register](../history.md) supersede its forward-looking plans.
+
 19 October 2026. This extends the existing review branch/PR; it is not a new deployment or a new efficacy study.
 
 ## Completed

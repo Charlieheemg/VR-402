@@ -1,37 +1,58 @@
-# VR-405 — Paediatric VR Speech Analysis and Feedback
+# VR-405 · Paediatric VR Speech Analysis and Feedback
 
-NUS CDE4301 Innovation & Design Capstone, group interim working report.
+NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **Ang Kang Zhe** (educational feedback), supervised by **A/Prof Khoo Eng Tat**.
 
-- **Charlie Hee Ming Guan** (`Charlieheemg`): speech analysis and assessment.
-- **Ang Kang Zhe** (`KayZzee17`): feedback presentation and end-user debriefing.
-- **Supervisor:** A/Prof Khoo Eng Tat.
+**[Read the report](index.html)** · **[Appendices and evidence](docs/evidence.html)** · **[Submission QA](docs/submission-review.md)** · **[Canvas handoff](docs/submission.md)**
 
-[Research report](https://Charlieheemg.github.io/VR-402/) · [Repository](https://github.com/Charlieheemg/VR-402)
+`index.html` is the authoritative report. `interim-report.html` is a compatibility redirect that preserves section links. The official project code is VR-405; `Charlieheemg/VR-402` remains the repository and Pages address. The live [GitHub Pages site](https://Charlieheemg.github.io/VR-402/) serves `main`; review-branch changes appear there only after an approved merge and deployment.
 
-**Official code is VR-405.** The repository name, local folder and Pages URL retain `VR-402` to preserve links/remotes; this is a technical address, not a separate project. The report has consecutive contributions; integration is not claimed. Part B is an explicitly incomplete handover awaiting Kang Zhe's authored materials.
+## What was investigated
 
-## Read and reproduce
+- **Charlie:** whether acoustic evidence could support interpretation within the existing seven-category rubric. Completed work includes reading-confidence classification, private laughter-event demonstrations, emotional-delivery perception, Edinburgh production analysis and the R2SPIN recognition precursor. Their evaluation scopes differ; none establishes clinical rubric improvement.
+- **Kang Zhe:** transformation of existing assessment worksheets into learner/instructor feedback. A frozen deterministic v0.1 and engineering evaluation establish extraction/report feasibility and identify fidelity/coverage defects. Educational benefit remains to be tested.
 
-- [Evidence inventory and privacy](docs/research/evidence-audit.md)
-- [Measurement definitions and reproduction](docs/methodology/reproduction.md)
-- [Human-listener validation proposal and ethics](docs/methodology/listener-validation.md)
-- [Rubric map / presentation / Part B handover](docs/research/interim-preparation.md)
-- [Sources and claim boundaries](docs/references/source-audit.md)
-- [Local Edinburgh demo](prototype/pvc/edinburgh/README.md)
+The feedback prototype does not consume speech-model predictions. Both contributions and their limitations are presented in the report; historical hypotheses are labelled in the [history register](docs/history.md).
 
-Static HTML/CSS; no frontend framework or build step. Preview with `python3 -m http.server 8000 --bind 127.0.0.1` from this folder. Main report: `index.html`; style: `index.css`. `python3 scripts/check_report.py` checks local references, metadata and a conservative ≤4,000-word limit. Aggregate results are in `docs/results/`; three main-report figures (plus retained supplementary assets) have sources/renderers in `scripts/make_figures.py` (pandas/matplotlib needed only to regenerate figures).
+## Preview and verify
 
-Retain earlier PVC code and documents as historical evidence. Current direction: acoustic measurements and human speech intelligibility, with no clinical or intervention effectiveness established. Raw recordings, participant rows, model binaries, archives and phonetic annotations stay in ignored local locations. Public aggregates do not authorize raw corpus redistribution.
-
-See [WORKFLOW.md](WORKFLOW.md) for collaboration and publishing. Pages publishes `main` at `/`; verify a successful deployment separately from a successful push.
-
-## Focused refinement (review branch)
-
-The refinement is proposed in a separate PR; `main` and the published report remain unchanged until review/merge. It adds construct/research-design matrices, conservative per-contribution word budgets, an annotation-coverage discrepancy audit and per-list summaries of existing OOF predictions. No model fitting is needed for this review:
+No frontend installation or build is required. From this directory:
 
 ```sh
-prototype/pvc/.venv/bin/python scripts/audit_refinement.py
+python3 -m http.server 8000 --bind 127.0.0.1
+# Open http://127.0.0.1:8000/
 python3 scripts/check_report.py
+python3 scripts/check_repository.py
+python3 -m unittest discover -s scripts -p 'test_submission.py'
 ```
 
-See [measurement audit](docs/results/measurement-audit.md) and [refinement review](docs/research/refinement-review.md). The older `reproduce_evidence.py` is retained for full historical reproduction and does train models; it was **not** run during this refinement.
+The report checker includes headings, tables, diagram text, captions, inline citations **and references** in the 4,000-word cap. Appendices are separate. The repository check validates root/docs HTML and Markdown destinations plus prototype Markdown links and checks the tracked tree for prohibited raw-data types.
+
+Additional checks use the project's scientific/feedback dependencies:
+
+```sh
+python3 scripts/test_refinement.py
+python3 prototype/feedback/v0.1/test_generator.py -v
+```
+
+`test_refinement.py` requires pandas/numpy; feedback tests require openpyxl. These inspect committed aggregates and synthetic inputs. They do not require clinical data or fit research models. Full historical tests/reproduction that need private data are documented separately in [speech reproduction](docs/methodology/reproduction.md) and the [frozen feedback README](prototype/feedback/v0.1/README.md). Do not interpret an unavailable private-data rerun as a completed check.
+
+## Repository map
+
+| Location | Purpose |
+| --- | --- |
+| `index.html`, `index.css` | Authoritative report and shared academic styling |
+| `docs/evidence.html` | Examiner entry point to appendices A–E |
+| `docs/project-design.html` | Joint progress, completed/proposed study matrices and working specifications |
+| `docs/submission.md` | Canvas website-URL handoff and deployment checks |
+| `docs/speech-evidence.html`, `docs/results/` | Speech methods, aggregates and diagnostics |
+| `docs/feedback/` | Feedback research, engineering evidence and approved redacted specimen |
+| `prototype/feedback/v0.1/` | Frozen evaluated baseline; do not silently repair it |
+| `prototype/pvc/` | Retained speech implementations; PVC naming is historical |
+| `scripts/` | Checks and historical analysis/reproduction tools |
+| `docs/history.md` | Superseded plans, prior report revisions and immutable study links |
+
+## Data and publication
+
+No clinical recordings, identifiable workbooks, restricted reading audio, private feature rows or fitted models should be committed. `.gitignore` is not an access-control system. Clinical event demonstrations remain private; public aggregate evidence does not make the underlying recordings redistributable. The CREMA-D study is cited at its existing immutable commit; its separate software PR is not implicitly merged.
+
+Use a dedicated branch and review PR. See [WORKFLOW.md](WORKFLOW.md). This submission-preparation branch does not merge, deploy or submit on behalf of the authors.

@@ -1,0 +1,16 @@
+REVISED ASSESSMENT CONCEPT
+Audio adds evidence to the established rubric — not new categories
+VR training session
+Recorded team communication
+Transcript
+Existing processing
+Audio review
+Speaker activity · acoustic cues
+Relevant event timestamps
+Evidence alignment
+Match utterance, role and clinical context
+EXISTING SEVEN
+Rubric-based judgements and feedback
+Proposed audio augmentation (not yet validated)
+Interpretation must be checked against the existing rubric and human reviewers.
+No eighth/ninth construct · No automatic “laughter = unprofessional” rule

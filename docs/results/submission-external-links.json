@@ -1,0 +1,161 @@
+{
+  "scope": "Main-report, speech appendix and submission source-audit external destinations; HTTP reachability is not source-content verification.",
+  "results": [
+    {
+      "url": "https://advancesinsimulation.biomedcentral.com/articles/10.1186/s41077-016-0033-y",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1186/s41077-016-0033-y?error=cookies_not_supported&code=a10ddafa-4434-4edb-961b-439524ed9939",
+      "error": ""
+    },
+    {
+      "url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+      "status": 200,
+      "final_url": "https://datashare.ed.ac.uk/items/e0d78c30-c38d-41a5-947c-b03186a50a97",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1007/s40670-025-02621-3",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s40670-025-02621-3?error=cookies_not_supported&code=04a749db-50e7-4f1f-811b-79ebe4ef890b",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1080/02602938.2023.2177613",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/02602938.2023.2177613",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1080/03075070600572090",
+      "status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1080/03075070600572090",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1097/SIH.0000000000000765",
+      "status": 403,
+      "final_url": "https://journals.lww.com/10.1097/SIH.0000000000000765",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1109/TAFFC.2015.2457417",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/7160715/",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1145/1873951.1874246",
+      "status": 403,
+      "final_url": "https://dl.acm.org/doi/10.1145/1873951.1874246",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.1186/s41077-026-00447-6",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1186/s41077-026-00447-6?error=cookies_not_supported&code=dc555211-8cf2-4a15-b9c0-c10bc5cbd5c4",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.3102/003465430298487",
+      "status": 403,
+      "final_url": "https://journals.sagepub.com/doi/10.3102/003465430298487",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Charlieheemg/VR-402",
+      "status": 200,
+      "final_url": "https://github.com/Charlieheemg/VR-402",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study.py",
+      "status": 200,
+      "final_url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study.py",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study_results/DATA_LICENSE.md",
+      "status": 200,
+      "final_url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study_results/DATA_LICENSE.md",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study_results/METHODS.md",
+      "status": 200,
+      "final_url": "https://github.com/Charlieheemg/VR-402/blob/276b179479be5fdf3a5cf8d09edc36d95c79643b/prototype/pvc/emotion_demo/study_results/METHODS.md",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "status": 200,
+      "final_url": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/bbc/r2spin",
+      "status": 200,
+      "final_url": "https://github.com/bbc/r2spin",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/tensorflow/models/tree/master/research/audioset/yamnet",
+      "status": 200,
+      "final_url": "https://github.com/tensorflow/models/tree/master/research/audioset/yamnet",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/uhstray-io/zerds-public/tree/main/models/yamnet",
+      "status": 200,
+      "final_url": "https://github.com/uhstray-io/zerds-public/tree/main/models/yamnet",
+      "error": ""
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s00431-026-06898-3",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s00431-026-06898-3?error=cookies_not_supported&code=7c66955a-bfe2-43c6-b351-8338a9ff571a",
+      "error": ""
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s40670-025-02621-3",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s40670-025-02621-3?error=cookies_not_supported&code=a0335f77-3d47-4ef2-a999-d2512badc608",
+      "error": ""
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s41077-026-00447-6",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1186/s41077-026-00447-6?error=cookies_not_supported&code=9e1a42d5-8174-47bd-9f35-4e9617c47e74",
+      "error": ""
+    },
+    {
+      "url": "https://opus.lib.uts.edu.au/handle/10453/179199",
+      "status": 200,
+      "final_url": "https://opus.lib.uts.edu.au/handle/10453/179199",
+      "error": ""
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/14759028/",
+      "error": ""
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38240623/",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/38240623/",
+      "error": ""
+    },
+    {
+      "url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+      "status": 200,
+      "final_url": "https://www.isca-archive.org/interspeech_2019/ward19b_interspeech.html",
+      "error": ""
+    },
+    {
+      "url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+      "status": 200,
+      "final_url": "https://www.isca-archive.org/interspeech_2020/sabu20_interspeech.html",
+      "error": ""
+    }
+  ]
+}

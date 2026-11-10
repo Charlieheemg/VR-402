@@ -2,7 +2,7 @@
 
 # External perceived-reading-confidence benchmark
 
-This is a separate three-class external benchmark, not validated ground truth for adult paediatric PVC v0.1. Original codes remain **−1 = Low, 0 = Medium, 1 = High**. There is no conversion to a PVC 1–5 value.
+This is a separate three-class external benchmark, not validated ground truth for adult paediatric PVC v0.1. The implementation interprets the original codes as **−1 = Low, 0 = Medium, 1 = High**, inferred from matching published class counts. The source does not supply an explicit numeric-code legend; these names are provisional interpretations, not an author-confirmed mapping. There is no conversion to a PVC 1–5 value.
 
 ## Provenance and release verification
 

@@ -1,3 +1,5 @@
+> Earlier feedback working document, retained as design history. The [current report](../../../index.html#part-b), [evaluation protocol](../report-evidence.html#evaluation) and [joint design matrix](../../project-design.html) supersede its proposed schedule, scope and study baselines.
+
 # Interim presentation outline
 
 ## Research narrative

@@ -1,3 +1,5 @@
+> Historical intelligibility planning, retained for method and access provenance. The current priority is a within-rubric audio comparison; these older dataset/model choices are not commitments or completed studies. See the [current project design](../project-design.html).
+
 # Human-labelled data decision — 19 October 2026
 
 **Decision:** pursue SLUSI/L2-USI as the preferred secondary source for speaker-side recognition research, conditional on institutional access and an exact scored-excerpt audit. Keep the existing R2SPIN result as the operational audibility/context benchmark. Clarity CPC1 is an accessible secondary option only if we explicitly accept a hearing-aid/listener-conditioned prediction question. No new corpus is yet ready for our proposed speaker-side prediction experiment; no new model has been trained.
