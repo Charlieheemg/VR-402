@@ -1,16 +1,16 @@
 {
   "authoritative_report": "index.html",
-  "main_words": 3803,
-  "html_main_words": 3803,
+  "main_words": 3772,
+  "html_main_words": 3772,
   "visible_figure_words": 0,
   "limit": 4000,
   "section_words": {
     "shared": 718,
     "charlie": 1225,
-    "kang_zhe": 1424,
+    "kang_zhe": 1393,
     "references": 436
   },
-  "headroom": 197,
+  "headroom": 228,
   "method": "Whitespace tokens inside main, including references, headings, tables, HTML diagrams and captions, plus visible embedded-image labels; excludes masthead/navigation/footer and separate appendices",
   "local_links": "passed",
   "local_link_checks": 171,
