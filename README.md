@@ -4,7 +4,7 @@ NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **
 
 **[Read the report](index.html)** · **[Appendices and evidence](docs/evidence.html)** · **[Submission QA](docs/submission-review.md)** · **[Canvas handoff](docs/submission.md)**
 
-`index.html` is the authoritative report. `interim-report.html` is a compatibility redirect that preserves section links. The official project code is VR-405; `Charlieheemg/VR-402` remains the repository and Pages address. The live [GitHub Pages site](https://Charlieheemg.github.io/VR-402/) serves `main`; review-branch changes appear there only after an approved merge and deployment.
+`index.html` is the authoritative report. `interim-report.html` is a compatibility redirect that preserves section links. The official project code and repository name are VR-405. The live [GitHub Pages site](https://Charlieheemg.github.io/VR-405/) serves `main`; review-branch changes appear there only after an approved merge and deployment.
 
 ## What was investigated
 

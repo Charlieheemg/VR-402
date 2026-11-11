@@ -30,7 +30,7 @@ Keep WAVs, TextGrids, participant rows/demographics, named children's recordings
 
 ## Collaboration
 
-GitHub API initially reported KayZzee17 read-only. A `permission=push` invitation was created successfully, invitation ID `338478568`, normal write permission. Acceptance remains pending; no administrator permission granted. Settings: https://github.com/Charlieheemg/VR-402/settings/access
+GitHub API initially reported KayZzee17 read-only. A `permission=push` invitation was created successfully, invitation ID `338478568`, normal write permission. Acceptance remains pending; no administrator permission granted. Settings: https://github.com/Charlieheemg/VR-405/settings/access
 
 ## Assessment basis
 
