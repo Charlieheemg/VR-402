@@ -15,10 +15,10 @@ This contribution develops a theory-guided method for translating evidence-linke
 - [Appendix B: design concepts and proposed educational evaluation](report-evidence.html)
 - [Appendix E: joint research design and working specifications](../project-design.html)
 - [Concepts and publication status](report-evidence.html#provenance)
-- [Appendix D: supplied v0.1 output and inspection](output-v01.html)
+- [Appendix D: output inspection and synthetic illustrations](output-v01.html)
 - [Output publication-status note](examples/v01-output-redacted.md)
 
-The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and its Part B A1–A6 evidence map; **D** supplies the redacted output specimen and document-level inspection.
+The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and its Part B A1–A6 evidence map; **D** records aggregate inspection of supplied output and provides synthetic illustrations of the proposed redesign.
 
 ## Evaluation framework
 

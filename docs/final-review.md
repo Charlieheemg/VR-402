@@ -28,10 +28,18 @@ Reading, Edinburgh, R2SPIN and feedback code/results remain accessible through A
 
 Current word count and link counts are in [report-checks.json](results/report-checks.json) and [repository checks](results/submission-repository-checks.json). Main count includes references, headings, tables and captions. The original numerical evidence and research implementations were preserved. Existing citation audits support unchanged literature claims; the new rubric discussion was checked against the supplied manuscript, not inferred from category names.
 
-All 12 README submission, aggregate and frozen-feedback tests passed. Main report: 3,603 words including references; 397 below the cap. Repository: 69 documentation files and 459 local link checks passed. Desktop/mobile checks and screenshots cover the report, evidence index and appendices A–E; the print preview is inspected separately. No private-data model refitting or participant evaluation is represented as part of this editorial pass.
+All 12 README submission, aggregate and frozen-feedback tests passed. Main report: 3,598 words including references; 402 below the cap. Repository: 69 documentation files and 459 local link checks passed. Desktop/mobile checks and screenshots cover the report, evidence index and appendices A–E; the print preview is inspected separately. No private-data model refitting or participant evaluation is represented as part of this editorial pass.
 
 ## Human confirmations
 
 1. Both authors approve the final representation of their work. Confirm the first rubric criterion and available clinical reviewers for the proposed pilot.
 2. Source owner: confirm redistribution permission for previous source-derived examples and whether Git-history removal is required. Current public replacement examples are synthetic.
 3. Confirm manuscript publication/citation status, the exact Canvas deadline and applicable declaration. One group member submits the deployed website URL.
+
+## Focused pre-submission check — 11 November 2026
+
+Corrected the introduction to state the intended study rather than implying a completed tested account. Reconciled Appendix D's title, navigation and descriptions across the feedback guide, appendices, source audit and main report: aggregate inspection of supplied output plus synthetic illustrations. Removed duplicated description text and explicitly corrected the unsupported historical “approved” label. Research results, methods and authorship are unchanged.
+
+Publication status was checked: PR #5 is open, while Pages still serves merged PR #4 (`111793a`). Merging and successfully deploying PR #5 will replace the current-page excerpts; it will not remove earlier commits, PR diffs, clones, forks or cached copies. The source owner must establish the permission/sensitivity of the previously published material and decide whether removal is necessary. The repository owner must explicitly authorise and coordinate any history rewrite or other destructive cleanup. No such action was taken. GitHub describes the limitations and coordination required in its [sensitive-data removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+
+The report is editorially ready for merge. Public-history clearance remains a distinct owner decision; the replacement illustrations do not imply that permission has been granted for earlier source material.

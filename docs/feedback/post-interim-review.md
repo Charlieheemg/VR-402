@@ -4,7 +4,7 @@
 
 - The supplied manuscript [P1] describes the upstream workbook and reference consultant annotations. Its publication status and current deployment are unverified. The seven categories described in [P1] are Roles & Responsibilities, Closed Loop Communication, Clear Messages, Knowing One's Limitations, Constructive Intervention, Summarisation & Re-evaluation, and Knowledge Sharing. They were expert-refined and informed by teamwork instruments.
 - The authoritative report includes both authored contributions. This document retains the feedback design rationale and proposed concepts; earlier full drafts remain in Git history.
-- [Appendix C](evaluation-v01.html) records Part B's reproduced engineering checks. [Appendix D](output-v01.html) inspects the author-supplied redacted specimen. The frozen prototype and both evidence records are preserved.
+- [Appendix C](evaluation-v01.html) records Part B's reproduced engineering checks. [Appendix D](output-v01.html) records aggregate inspection of supplied output; its public illustrations are synthetic. The frozen prototype and both evidence records are preserved.
 - Published research informs design and proposed outcomes. The concepts, milestones and educational studies below describe proposed work.
 
 ## Literature evidence matrix
