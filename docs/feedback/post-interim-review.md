@@ -23,20 +23,7 @@ Full bibliographic entries are in the [feedback reference register](references.m
 
 ## Proposed report concepts
 
-Both concepts use the existing [redacted CT example](examples/v01-output-redacted.md) as an illustration. The consultant observation and evidence pointer are source evidence. The prompts, candidate standard and practice actions are proposed design content and require clinical review. Operational Part B input is the AI worksheet.
-
-### Learner report
-
-- **Overview.** Show evidence-supported strengths and improvement areas across the available categories. Use team or role framing where individual responsibility is unverified.
-- **Clear Messages.** Candidate standard: direct a specific instruction to its intended receiver. The consultant flagged an oxygen instruction. See `Summary!D71` and the approved nearby excerpt in the redacted example. The excerpt leaves speaker responsibility and full context uncertain.
-- **Reflect.** How could the team identify the intended receiver and specify the request more clearly?
-- **Practise.** In a comparable scenario, address the receiver explicitly and state the required action and parameters. Candidate communication practice for clinical approval.
-
-### Instructor report
-
-- **Overview.** Summarise evidence-supported strengths and team patterns, with access to each category. Keep observations, interpretation and recommendations separate.
-- **Debrief focus.** Review the oxygen instruction using `Summary!D71` and linked context. Discuss how the team interpreted the request and what additional specificity would help.
-- **Group practice.** An educator can approve or adapt a practice goal involving directed, specific requests. Annotation counts do not establish competence or clinical priority.
+The [synthetic examples in Appendix B](report-evidence.html#examples) illustrate learner reflection and instructor discussion using the same invented request. They replace source-derived excerpts for which public redistribution permission was not established. The intended design improvement is case-specific interpretation and practice, while the [aggregate inspection](output-v01.html#inspection) retains the evidence that v0.1 repeated generic prompts.
 
 ## CDE4301 rubric map
 

@@ -1,3 +1,5 @@
+> Prior revision QA. See the [final academic review](final-review.md) and current machine-readable checks for the latest branch. Counts and publication statements below describe the PR #4 preparation snapshot.
+
 # Submission review and quality assurance
 
 Completed 11 November 2026 on a dedicated review branch. This document records editorial and technical readiness; it does not certify supervisor approval, live deployment or course submission.

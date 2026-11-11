@@ -6,7 +6,7 @@ The supplied CDE4301 AY2026 brief and Canvas instructions require a **GitHub web
 
 Submit the published report URL: **[https://Charlieheemg.github.io/VR-402/](https://Charlieheemg.github.io/VR-402/)**.
 
-The repository retains VR-402 in its address; the official project code and report title use VR-405. The review branch is not the published site. [PR #4](https://github.com/Charlieheemg/VR-402/pull/4) contains the submission revision; the URL above serves `main` and will show the revision only after an authorised merge and successful Pages deployment. Do not submit a PR, repository tree or local preview URL instead of the website.
+The repository retains VR-402 in its address; the official project code and report title use VR-405. [PR #4](https://github.com/Charlieheemg/VR-402/pull/4) was merged at `111793a` and deployed. The later academic-review branch contains further revisions; verify its merge and deployment before submitting that version. The URL above serves `main`. Do not submit a PR, repository tree or local preview URL instead of the website.
 
 ## Final handoff steps
 
@@ -16,7 +16,7 @@ The repository retains VR-402 in its address; the official project code and repo
 4. The chosen group submitter enters the website URL in the Canvas assignment and completes any required declaration. Check Canvas for the exact calendar deadline, time zone and any updated course instructions.
 5. Retain the Canvas submission receipt and the deployed SHA privately. The other group member need not make a duplicate submission under the supplied instructions.
 
-No merge, deployment or Canvas submission has been performed by this editorial pass. The exact submitter and completion receipt are intentionally not recorded as completed actions.
+PR #4 was merged and deployed; no Canvas submission has been performed. The subsequent academic review remains a separate review proposal. The exact submitter and completion receipt are intentionally not recorded as completed actions.
 
 ## Assessment requirements used
 

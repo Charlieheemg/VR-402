@@ -22,6 +22,7 @@ class SubmissionTests(unittest.TestCase):
             for label in ('model','majority_baseline'):
                 v=split[label];m=v['confusion_matrix'];f1=[];recall=[]
                 self.assertEqual(sum(map(sum,m)),split['scored_clips'])
+                self.assertAlmostEqual(sum(m[i][i] for i in range(len(m)))/split['scored_clips'],v['accuracy'])
                 for i,row in enumerate(m):
                     col=sum(x[i] for x in m);den=sum(row)+col
                     f1.append(2*row[i]/den if den else 0)
