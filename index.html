@@ -67,7 +67,20 @@
 </section>
 <section id="feedback-method" data-part="kang_zhe"><h3>Proposed reports and implemented prototype</h3>
 <p>The learner report would show relevant strengths and improvement areas, connect an observation to an expected behaviour, and invite reflection before suggesting a practice goal. The instructor report would use the same evidence to describe team patterns, prepare discussion questions and propose a group objective. All seven categories should remain accessible. The instructor would select the teaching emphasis, with annotation counts presented separately from judgements about competence or clinical priority.</p>
-<p>The redacted consultant specimen illustrates the design using an oxygen request at <code>Summary!D71</code>. Its nearby transcript includes “Can we go up on the O2?” and the annotation identifies an unclear receiver and flow rate. A proposed learner question is “How could the team make the recipient and required parameters clear?” A possible practice action is to address the receiver and specify the action and parameters in a comparable scenario. The instructor could ask how the team interpreted the request. These proposed additions require clinical approval and retain team framing while responsibility is uncertain. This consultant example illustrates the design. Normal report generation would use the AI worksheet. <a href="docs/feedback/output-v01.html">Appendix D</a>.</p>
+<p>The following example shows how the design rationale would shape each report. It uses the approved redacted consultant specimen at <code>Summary!D71</code>, where the oxygen request was flagged for an unclear receiver and flow rate. The proposed wording requires clinical review. Normal generation would use the AI assessment worksheet. <a href="docs/feedback/output-v01.html">Appendix D</a>.</p>
+<figure id="feedback-format" aria-labelledby="feedback-format-caption">
+<div class="evidence-grid">
+<article class="evidence-card"><p class="eyebrow">Proposed learner view</p><h3>Clear Messages</h3>
+<p><strong>Understand</strong><br>Expected behaviour is a directed, specific request. The source exchange includes “Can we go up on the O2?” (<code>Summary!D71</code>). The consultant flagged missing recipient and flow-rate detail.</p>
+<p><strong>Reflect</strong><br>How could the team make the receiver and required parameters clear?</p>
+<p><strong>Practise</strong><br>In a comparable scenario, address the receiver and specify the action and parameters, following educator approval.</p></article>
+<article class="evidence-card"><p class="eyebrow">Proposed instructor view</p><h3>Prepare the team debrief</h3>
+<p><strong>Review</strong><br>Locate the oxygen request at <code>Summary!D71</code> and inspect the surrounding exchange before choosing it as a discussion focus.</p>
+<p><strong>Discuss</strong><br>How did the team interpret this request? What information would have made it more specific?</p>
+<p><strong>Guide practice</strong><br>Agree an educator-approved group goal involving directed, specific requests.</p></article>
+</div>
+<figcaption id="feedback-format-caption">Figure 2. Illustrative intended format. Each report would also retain strengths, other competency observations and access to their evidence. The example keeps team framing while individual responsibility is uncertain. These are proposed design features requiring evaluation.</figcaption>
+</figure>
 <p>The frozen Python v0.1 implements the initial structure through deterministic templates. It produces learner and instructor Markdown drafts, source-record JSON and an audit template, retaining cell pointers and nearby dialogue. Learner material is grouped by competency, while instructor material contains counts and selected excerpts. Individual routing, full-episode interpretation and specific coaching remain development tasks. The optional external-model route was not evaluated. <a href="prototype/feedback/v0.1/README.md">Frozen implementation</a>.</p>
 </section>
 <section id="feedback-evaluation" data-part="kang_zhe"><h3>Preliminary findings against educational requirements</h3>

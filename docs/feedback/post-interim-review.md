@@ -109,3 +109,9 @@ Headless Chrome checked 1440×1000 and 390×844 layouts. Both had no document ov
 [Desktop findings preview](../research/review/partb-revision-desktop.png) · [Mobile Part B preview](../research/review/partb-revision-mobile.png) · [A4 theory page](../research/review/partb-revision-print.png)
 
 The browser and print files contain public report material only. The full PDF and scratch scripts remain outside the repository.
+
+## Author-requested format illustration
+
+Following Kang Zhe's review, Figure 2 now shows the intended learner and instructor formats before the frozen v0.1 description. It reuses the approved redacted oxygen-request example at Summary!D71, with proposed understand/reflect/practise and review/discuss/guide-practice fields. The caption identifies the proposed status, clinical review requirement, team attribution and access to the wider assessment.
+
+This replaces the prose-only worked example, adding 94 main-report words. The current total is 3,786, including references, with Part B at 1,407 and 214 words of headroom. Shared content, Charlie's contribution and the main bibliography retain their earlier counts. The report and repository checks pass. The example uses the existing card styling, arranged side by side on desktop and stacked on mobile.
