@@ -4,6 +4,9 @@
 
 ## Input and evidence contract
 
+The intended operational input is the existing AI-generated seven-competency worksheet. CT/NN annotations may support reference review and the approved redacted illustration. They are not required inputs to ordinary learner or instructor report generation.
+
+
 The existing research-team manuscript [P1] describes rubric category, positive/negative assessment and evidence-linked utterance spans; role/timestamped speech and thread structure underpin the pipeline. The **actual export schema, reliability fields, permissions and availability of audio replay remain to be verified**. Do not assume confidence values, clinical-severity ratings or stable playback URLs exist.
 
 For each feedback instance, preserve where available: source reference, approved category/definition, observed polarity, supporting utterance IDs/span, timestamp, speaker/role, team context, evidence status and any explicit ambiguity. A generated explanation must never replace or silently alter source evidence.
@@ -41,7 +44,7 @@ RQ-B1 has partial mechanical evidence; quality, RQ-B2 and RQ-B3 remain untested.
 2. **Immediate educational usefulness:** learner comprehension (including gap recognition) and corrective learning-plan quality; instructor accuracy, usefulness and quality of debrief preparation. Compare the original worksheet and theory-guided outputs from identical evidence; add a generic summary as a secondary comparator if feasible. A generic summary need not use an external model; any such use requires a frozen generation procedure and permitted inputs. Time is secondary. A plan or intention is not observed uptake.
 3. **Subsequent learning effectiveness:** independently assessed communication in comparable later scenarios using the seven competencies. Candidate balance rate B=(G-R)/(G+R) is undefined at G+R=0 and depends on event definitions, annotation practices, team dependence and comparable behavioural opportunities. Later VR performance does not establish retention, workplace transfer or patient benefit.
 
-This hierarchy is a project-specific synthesis. Design pedagogies remain Hattie–Timperley and Nicol–Macfarlane-Dick. Evaluation draws on Carless–Boud (feedback literacy), Cook–Hatala (validity), Johnson et al. (FQI), Kirkpatrick and digital-feedback assessment literature; see the [reference register](../references.md#evaluation-literature). The FQI concerns conversations and is not validated for a static AI report.
+This hierarchy is a project-specific synthesis. Design pedagogies remain Hattie–Timperley and Nicol–Macfarlane-Dick. Alnazawi and Almarhabi (2026) provide contemporary simulation-debriefing context for the two audiences and the remaining objective-evaluation gap. Evaluation draws on Carless–Boud (feedback literacy), Cook–Hatala (validity), Johnson et al. (FQI), Kirkpatrick and digital-feedback assessment literature; see the [reference register](../references.md#evaluation-literature). The FQI concerns conversations and is not validated for a static AI report.
 
 **Progress:** local v0.1 implementation and reproducible engineering checks are documented in the [evaluation](../evaluation-v01.html). Source-span fidelity, clinical expert review, external-model generation, user testing and educational outcomes remain pending.
 
