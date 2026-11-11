@@ -4,9 +4,9 @@ The supplied CDE4301 AY2026 brief and Canvas instructions require a **GitHub web
 
 ## URL and review status
 
-Submit the published report URL: **[https://Charlieheemg.github.io/VR-402/](https://Charlieheemg.github.io/VR-402/)**.
+Submit the published report URL: **[https://Charlieheemg.github.io/VR-405/](https://Charlieheemg.github.io/VR-405/)**.
 
-The repository retains VR-402 in its address; the official project code and report title use VR-405. [PR #4](https://github.com/Charlieheemg/VR-402/pull/4) was merged at `111793a` and deployed. The later academic-review branch contains further revisions; verify its merge and deployment before submitting that version. The URL above serves `main`. Do not submit a PR, repository tree or local preview URL instead of the website.
+The repository, website address and report use the official project code VR-405. [PR #4](https://github.com/Charlieheemg/VR-405/pull/4) was merged at `111793a` and deployed. The later academic-review branch contains further revisions; verify its merge and deployment before submitting that version. The URL above serves `main`. Do not submit a PR, repository tree or local preview URL instead of the website.
 
 ## Final handoff steps
 

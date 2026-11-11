@@ -1,6 +1,6 @@
 # Editing and publishing VR-405
 
-The authoritative report is `index.html`; `interim-report.html` preserves older links. The official code is VR-405, while the remote remains `Charlieheemg/VR-402`.
+The authoritative report is `index.html`; `interim-report.html` preserves older links. The official code and repository name are VR-405; the remote is `Charlieheemg/VR-405`.
 
 1. Inspect `git status`, recent remote commits and open PRs. Preserve collaborators' uncommitted work.
 2. Fetch `origin` and create a dedicated branch from the agreed base. Never force-push or reset shared work.
