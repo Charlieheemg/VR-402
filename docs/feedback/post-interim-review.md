@@ -115,3 +115,7 @@ The browser and print files contain public report material only. The full PDF an
 Following Kang Zhe's review, Figure 2 now shows the intended learner and instructor formats before the frozen v0.1 description. It reuses the approved redacted oxygen-request example at Summary!D71, with proposed understand/reflect/practise and review/discuss/guide-practice fields. The caption identifies the proposed status, clinical review requirement, team attribution and access to the wider assessment.
 
 This replaces the prose-only worked example, adding 94 main-report words. The current total is 3,786, including references, with Part B at 1,407 and 214 words of headroom. Shared content, Charlie's contribution and the main bibliography retain their earlier counts. The report and repository checks pass. The example uses the existing card styling, arranged side by side on desktop and stacked on mobile.
+
+## Appendix D clarification after author review
+
+Linked the main findings sentence directly to Appendix D and identified it as the actual learner and instructor output of the current deterministic v0.1 prototype. Updated Appendix D's title, introduction and examiner-facing navigation labels consistently. The output run used CT-only input, while the intended operational input remains the AI worksheet. Generated report contents and recorded results are preserved. Output inspection and an independently reproduced workbook run remain separate evidence records.

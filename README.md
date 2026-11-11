@@ -45,7 +45,7 @@ python3 prototype/feedback/v0.1/test_generator.py -v
 | `docs/project-design.html` | Joint progress, completed/proposed study matrices and working specifications |
 | `docs/submission.md` | Canvas website-URL handoff and deployment checks |
 | `docs/speech-evidence.html`, `docs/results/` | Speech methods, aggregates and diagnostics |
-| `docs/feedback/` | Feedback research, engineering evidence and approved redacted specimen |
+| `docs/feedback/` | Feedback research, engineering evidence and redacted current v0.1 output |
 | `prototype/feedback/v0.1/` | Frozen evaluated baseline; do not silently repair it |
 | `prototype/pvc/` | Retained speech implementations; PVC naming is historical |
 | `scripts/` | Checks and historical analysis/reproduction tools |
