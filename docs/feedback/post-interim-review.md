@@ -1,5 +1,9 @@
 # VR-405 post-interim review
 
+## 13 November 2026 Part B clarity and significance revision
+
+Review branch `revise/part-b-clarity`, based on `95b44bc`. Editorial only: Part B of `index.html` was revised for first-time readers. The unexplained `H-B (proposed)` label was replaced by a plain statement of the planned worksheet comparison; RQ-B1–B3 are stated as questions and cross-referenced to Appendix E; assessment fidelity, attribution and deterministic generation are defined in the text. The educational gap now describes the concrete work the worksheet leaves to learners and instructors, labelled as a plausible design gap inferred from worksheet organisation and developer inspection, not measured user behaviour. Findings lead with educational requirements; the engineering result (21 workbooks, 371 cells, three repeatable pairs) is retained and bounded as cells rather than events. Section anchors, citation IDs, Figure 2, Tables 2–3, appendices, Charlie's contribution, shared sections, references and frozen prototype/results are unchanged. Part B is 1,367 words (previously 1,393); group main-report total 3,746 of 4,000. Author approval pending.
+
 ## 11 November 2026 Part B editorial revision
 
 Starting commit is `919ad34031451131299cb04185662f898bc7246d`. The review branch is `revise/part-b-educational-gap`.
