@@ -13,6 +13,10 @@ NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **
 
 The feedback prototype does not consume speech-model predictions. Both contributions and their limitations are presented in the report; historical hypotheses are labelled in the [history register](docs/history.md).
 
+## Start here
+
+Read the report for the argument and findings, then follow its appendix links for supporting evidence. For implementation and reproduction, use the [speech methods](docs/methodology/reproduction.md) and [feedback prototype guide](prototype/feedback/v0.1/README.md). Historical working notes are identified in the [history register](docs/history.md).
+
 ## Preview and verify
 
 No frontend installation or build is required. From this directory:
@@ -45,7 +49,7 @@ python3 prototype/feedback/v0.1/test_generator.py -v
 | `docs/project-design.html` | Joint progress, completed/proposed study matrices and working specifications |
 | `docs/submission.md` | Canvas website-URL handoff and deployment checks |
 | `docs/speech-evidence.html`, `docs/results/` | Speech methods, aggregates and diagnostics |
-| `docs/feedback/` | Feedback research, engineering evidence and aggregate output inspection and synthetic examples |
+| `docs/feedback/` | Feedback research, engineering evidence, aggregate output inspection and synthetic examples |
 | `prototype/feedback/v0.1/` | Frozen evaluated baseline; do not silently repair it |
 | `prototype/pvc/` | Retained speech implementations; PVC naming is historical |
 | `scripts/` | Checks and historical analysis/reproduction tools |

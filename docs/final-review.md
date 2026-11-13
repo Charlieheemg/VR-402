@@ -52,3 +52,10 @@ Merged the latest main history into this review branch, preserving Kang Zhe’s 
 Part A now introduces the three questions connecting its exploratory work, separates event retrieval with a heading, and closes with the completed technical contributions and their implications for the next pilot. Reduced repeated general disclaimers while preserving dataset-specific limitations, the unchanged rubric, and distinctions between completed and proposed evaluation. No research data, numerical results or frozen implementation changed.
 
 Verification: 3,777 main-report words including references (223 below the limit); all 12 existing tests passed. Browser checks passed for the report and six appendix/index pages at desktop and mobile widths, including the legacy redirect, with no overflow, broken images or page errors. Report sections and the synthetic figure were visually inspected; the print figure was checked separately. Updated link totals are in the generated check files. PR #5 remains the review vehicle; this update does not publish the report or rewrite Git history.
+
+
+## Final consistency check — 14 November 2026
+
+Checked figure/table numbering, Appendix D descriptions, completed-versus-proposed status, source pointers, README navigation and the submission handoff against the reconciled report. Removed three now-uncited entries from the main bibliography (Little, Duff and Kıyak), retaining them in the supplementary bibliography and source audit. Renumbered remaining citations and their source-audit entries; every main bibliography entry is cited and every numeric citation matches its entry. No research prose or results were cut in this check.
+
+The final main count is **3,665 words including references**, 335 below the limit. The 112-word reduction consists entirely of the three bibliography entries; contribution counts remain Charlie 1,289 and Kang Zhe 1,349. Current link results are in the generated repository check. Added a brief README reading route and updated the Canvas handoff to the current QA record and revision date. Both authors’ factual read-through remains outstanding; PR #5 has not been merged or submitted to Canvas.
