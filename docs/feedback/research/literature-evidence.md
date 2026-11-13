@@ -12,6 +12,14 @@
 | Cooper et al. (2010) [6] and Malec et al. (2007) [7] | Teamwork measurement instruments relevant to clinical simulation. | Background for the project's SME-derived teamwork categories. | Neither is a validated scoring algorithm for our redesigned feedback. |
 | Project manuscript [P1] | Existing rubric-labelled, utterance-linked assessment and worksheet; preliminary descriptive study. | Define available input evidence and a baseline presentation. | Publication status unverified; do not claim that this workstream generated its findings. |
 
+## Central rationale in the current report
+
+Hattie and Timperley explain the link between expected behaviour, observed performance and a next practice action. Nicol and Macfarlane-Dick explain the learner's role in self-assessment and dialogue. Alnazawi and Almarhabi (2026) map recent AI support for healthcare-simulation debriefing, including structured instructor reports and learner reflection. Their seven-study review reports mainly exploratory feasibility, accuracy, usability and perceived-value outcomes, with limited objective learning evidence. This supports evaluating the two report uses in context.
+
+Traceability, coverage, uncertainty and attribution are constraints on faithful interpretation. They require source review independently of the pedagogical rationale. The two foundational frameworks and the recent review do not validate the particular report format. Other literature in this matrix supports targeted methodological claims and comparison with related work.
+
+See [Alnazawi and Almarhabi's publisher record](https://link.springer.com/article/10.1186/s41077-026-00447-6) and the [bibliographic register](../references.md).
+
 ## Theory-to-design map (hypotheses)
 
 | Construct | Candidate element | Evidence check needed |

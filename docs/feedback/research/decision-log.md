@@ -7,7 +7,7 @@ A record of **working decisions**, not approvals or test outcomes. Update this f
 | Educational framing | Use goal → evidence → next step, plus self-reflection and instructor dialogue | Hattie & Timperley [1]; Nicol & Macfarlane-Dick [2] | Test fit with intended users |
 | Primary audience | Distinct learner and instructor views, linked to the same source evidence | Existing worksheet and project needs [P1]; proposed design | Confirm users and use cases |
 | Unit of attribution | Retain team-level attribution unless source evidence supports individual role attribution | Risk of false individual blame | Confirm role and SME rules |
-| Feedback presentation | Compare raw worksheet, generic summary and theory-structured views | Alternative-method rationale | Prototype and empirical comparison pending |
+| Feedback presentation | Primary comparison is original worksheet versus structured reports with identical AI evidence; generic summary optional | 11 November comparison decision | Fidelity/expert gates and user comparison pending |
 | Priority | No automatic clinical severity score or fixed top-three ranking | No validated prioritisation rule available | Clinical expert review |
 | Evidence | Keep traceable spans, category, polarity and uncertainty | Existing manuscript [P1] | Inspect real export schema and permissions |
 | Validation | Start with source-fidelity checks before learner-effectiveness studies | Research design logic | Mechanical v0.1 checks reproduced; independent fidelity/quality and user studies pending |
