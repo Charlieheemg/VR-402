@@ -14,11 +14,11 @@ This contribution develops a theory-guided method for translating evidence-linke
 - [Evaluation strategy and current progress](../../index.html#feedback-evaluation)
 - [Appendix B: design concepts and proposed educational evaluation](report-evidence.html)
 - [Appendix E: joint research design and working specifications](../project-design.html)
-- [Original learner and instructor examples](examples/FYP_Feedback_Concept_Examples.docx)
-- [Appendix D: supplied v0.1 output and inspection](output-v01.html)
-- [Redacted generated-output text reading copy](examples/v01-output-redacted.md)
+- [Concepts and publication status](report-evidence.html#provenance)
+- [Appendix D: output inspection and synthetic illustrations](output-v01.html)
+- [Output publication-status note](examples/v01-output-redacted.md)
 
-The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and its Part B A1–A6 evidence map; **D** supplies the redacted output specimen and document-level inspection.
+The appendices have distinct roles: **B** holds conceptual formats and the future educational protocol; **C** records the frozen engineering baseline and its Part B A1–A6 evidence map; **D** records aggregate inspection of supplied output and provides synthetic illustrations of the proposed redesign.
 
 ## Evaluation framework
 
@@ -30,7 +30,7 @@ The research questions address **RQ-B1: feedback fidelity and quality**, **RQ-B2
 - [Appendix C: frozen v0.1 engineering tests, limitations and assessment map](evaluation-v01.html)
 - [Aggregate results](results/v01-aggregate.json)
 
-The original generator is retained unchanged. Twenty-one workbooks yielded 371 annotation cells with zero extraction-count mismatches; default display, polarity and header defects are documented. Private inputs, unredacted transcript-derived drafts, the upstream prompt library/manuscript and supplied conversation records are not redistributed. The author-supplied output in Appendix D is a separately identified copy with direct name, session and workbook identifiers redacted; source meaning and clinical review remain pending.
+The original generator is retained unchanged. Twenty-one workbooks yielded 371 annotation cells with zero extraction-count mismatches; default display, polarity and header defects are documented. Private inputs, unredacted transcript-derived drafts, the upstream prompt library/manuscript and supplied conversation records are not redistributed. Appendix D retains aggregate findings from the supplied output and uses synthetic public illustrations. Source-derived excerpts are withheld pending publication permission.
 
 ## Research documentation
 

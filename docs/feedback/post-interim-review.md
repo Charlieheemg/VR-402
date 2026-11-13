@@ -39,7 +39,7 @@ Kang Zhe's author approval of the revised Part B is pending. Clinical review of 
 
 - The supplied manuscript [P1] describes the upstream workbook and reference consultant annotations. Its publication status and current deployment are unverified. The seven categories described in [P1] are Roles & Responsibilities, Closed Loop Communication, Clear Messages, Knowing One's Limitations, Constructive Intervention, Summarisation & Re-evaluation, and Knowledge Sharing. They were expert-refined and informed by teamwork instruments.
 - The authoritative report includes both authored contributions. This document retains the feedback design rationale and proposed concepts; earlier full drafts remain in Git history.
-- [Appendix C](evaluation-v01.html) records Part B's reproduced engineering checks. [Appendix D](output-v01.html) inspects the author-supplied redacted specimen. The frozen prototype and both evidence records are preserved.
+- [Appendix C](evaluation-v01.html) records Part B's reproduced engineering checks. [Appendix D](output-v01.html) records aggregate inspection of supplied output; its public illustrations are synthetic. The frozen prototype and both evidence records are preserved.
 - Published research informs design and proposed outcomes. The concepts, milestones and educational studies below describe proposed work.
 
 ## Literature evidence matrix
@@ -58,20 +58,7 @@ Full bibliographic entries are in the [feedback reference register](references.m
 
 ## Proposed report concepts
 
-Both concepts use the existing [redacted CT example](examples/v01-output-redacted.md) as an illustration. The consultant observation and evidence pointer are source evidence. The prompts, candidate standard and practice actions are proposed design content and require clinical review. Operational Part B input is the AI worksheet.
-
-### Learner report
-
-- **Overview.** Show evidence-supported strengths and improvement areas across the available categories. Use team or role framing where individual responsibility is unverified.
-- **Clear Messages.** Candidate standard: direct a specific instruction to its intended receiver. The consultant flagged an oxygen instruction. See `Summary!D71` and the approved nearby excerpt in the redacted example. The excerpt leaves speaker responsibility and full context uncertain.
-- **Reflect.** How could the team identify the intended receiver and specify the request more clearly?
-- **Practise.** In a comparable scenario, address the receiver explicitly and state the required action and parameters. Candidate communication practice for clinical approval.
-
-### Instructor report
-
-- **Overview.** Summarise evidence-supported strengths and team patterns, with access to each category. Keep observations, interpretation and recommendations separate.
-- **Debrief focus.** Review the oxygen instruction using `Summary!D71` and linked context. Discuss how the team interpreted the request and what additional specificity would help.
-- **Group practice.** An educator can approve or adapt a practice goal involving directed, specific requests. Annotation counts do not establish competence or clinical priority.
+The [synthetic examples in Appendix B](report-evidence.html#examples) illustrate learner reflection and instructor discussion using the same invented request. They replace source-derived excerpts for which public redistribution permission was not established. The intended design improvement is case-specific interpretation and practice, while the [aggregate inspection](output-v01.html#inspection) retains the evidence that v0.1 repeated generic prompts.
 
 ## CDE4301 rubric map
 
@@ -116,10 +103,15 @@ The browser and print files contain public report material only. The full PDF an
 
 ## Author-requested format illustration
 
-Following Kang Zhe's review, Figure 2 now shows the intended learner and instructor formats before the frozen v0.1 description. It reuses the approved redacted oxygen-request example at Summary!D71, with proposed understand/reflect/practise and review/discuss/guide-practice fields. The caption identifies the proposed status, clinical review requirement, team attribution and access to the wider assessment.
+Following Kang Zhe's review, Figure 2 now shows the intended learner and instructor formats before the frozen v0.1 description. That revision reused a source-derived oxygen-request example at Summary!D71 (public redistribution approval was not established), with proposed understand/reflect/practise and review/discuss/guide-practice fields. The caption identifies the proposed status, clinical review requirement, team attribution and access to the wider assessment.
 
 This replaces the prose-only worked example, adding 94 main-report words. The current total is 3,786, including references, with Part B at 1,407 and 214 words of headroom. Shared content, Charlie's contribution and the main bibliography retain their earlier counts. The report and repository checks pass. The example uses the existing card styling, arranged side by side on desktop and stacked on mobile.
 
 ## Appendix D clarification after author review
 
 Linked the main findings sentence directly to Appendix D and identified it as the actual learner and instructor output of the current deterministic v0.1 prototype. Updated Appendix D's title, introduction and examiner-facing navigation labels consistently. The output run used CT-only input, while the intended operational input remains the AI worksheet. Generated report contents and recorded results are preserved. Output inspection and an independently reproduced workbook run remain separate evidence records.
+
+
+## Current reconciliation — 14 November 2026
+
+Preserved Kang Zhe’s latest educational-gap explanation, theory-to-feature mapping, proposed report layout and outcome-led evaluation from main. Figure 2 now uses an explicitly synthetic equipment request; source quotations and worksheet pointers are not reproduced. Appendix D remains aggregate inspection of the supplied CT output pair, with synthetic illustrations, rather than a public copy of the actual reports. Earlier entries above record prior revisions, not current publication clearance. The three linked layout screenshots have been refreshed to this revision so they do not retain the superseded source-derived illustration. The main-report count and checks are recorded in [final review](../final-review.md).

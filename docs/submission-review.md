@@ -1,3 +1,7 @@
+> Prior revision QA. See the [final academic review](final-review.md) and current machine-readable checks for the latest branch. Counts and publication statements below describe the PR #4 preparation snapshot.
+
+> Correction to the historical privacy statements below: “approved redacted specimen” was not supported by documented redistribution permission in the final review. PR #5 withholds source-derived excerpts and retains aggregate inspection with synthetic illustrations. The earlier wording is preserved here as a dated record, not evidence of approval.
+
 # Submission review and quality assurance
 
 Completed 11 November 2026 on a dedicated review branch. This document records editorial and technical readiness; it does not certify supervisor approval, live deployment or course submission.

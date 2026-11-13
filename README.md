@@ -2,7 +2,7 @@
 
 NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **Ang Kang Zhe** (educational feedback), supervised by **A/Prof Khoo Eng Tat**.
 
-**[Read the report](https://charlieheemg.github.io/VR-405/)** · **[Appendices and evidence](https://charlieheemg.github.io/VR-405/docs/evidence.html)** · **[Submission QA](docs/submission-review.md)** · **[Canvas handoff](docs/submission.md)**
+**[Read the report](https://charlieheemg.github.io/VR-405/)** · **[Appendices and evidence](https://charlieheemg.github.io/VR-405/docs/evidence.html)** · **[Submission QA](docs/final-review.md)** · **[Canvas handoff](docs/submission.md)**
 
 `index.html` is the authoritative report. `interim-report.html` is a compatibility redirect that preserves section links. The official project code and repository name are VR-405. The live [GitHub Pages site](https://Charlieheemg.github.io/VR-405/) serves `main`; review-branch changes appear there only after an approved merge and deployment.
 
@@ -12,6 +12,10 @@ NUS CDE4301 interim report by **Charlie Hee Ming Guan** (speech analysis) and **
 - **Kang Zhe:** transformation of existing assessment worksheets into learner/instructor feedback. A frozen deterministic v0.1 and engineering evaluation establish extraction/report feasibility and identify fidelity/coverage defects. Educational benefit remains to be tested.
 
 The feedback prototype does not consume speech-model predictions. Both contributions and their limitations are presented in the report; historical hypotheses are labelled in the [history register](docs/history.md).
+
+## Start here
+
+Read the report for the argument and findings, then follow its appendix links for supporting evidence. For implementation and reproduction, use the [speech methods](docs/methodology/reproduction.md) and [feedback prototype guide](prototype/feedback/v0.1/README.md). Historical working notes are identified in the [history register](docs/history.md).
 
 ## Preview and verify
 
@@ -45,7 +49,7 @@ python3 prototype/feedback/v0.1/test_generator.py -v
 | `docs/project-design.html` | Joint progress, completed/proposed study matrices and working specifications |
 | `docs/submission.md` | Canvas website-URL handoff and deployment checks |
 | `docs/speech-evidence.html`, `docs/results/` | Speech methods, aggregates and diagnostics |
-| `docs/feedback/` | Feedback research, engineering evidence and redacted current v0.1 output |
+| `docs/feedback/` | Feedback research, engineering evidence, aggregate output inspection and synthetic examples |
 | `prototype/feedback/v0.1/` | Frozen evaluated baseline; do not silently repair it |
 | `prototype/pvc/` | Retained speech implementations; PVC naming is historical |
 | `scripts/` | Checks and historical analysis/reproduction tools |
@@ -55,4 +59,4 @@ python3 prototype/feedback/v0.1/test_generator.py -v
 
 No clinical recordings, identifiable workbooks, restricted reading audio, private feature rows or fitted models should be committed. `.gitignore` is not an access-control system. Clinical event demonstrations remain private; public aggregate evidence does not make the underlying recordings redistributable. The CREMA-D study is cited at its existing immutable commit; its separate software PR is not implicitly merged.
 
-Use a dedicated branch and review PR. See [WORKFLOW.md](WORKFLOW.md). This submission-preparation branch does not merge, deploy or submit on behalf of the authors.
+Use a dedicated branch and review PR. See [WORKFLOW.md](WORKFLOW.md). GitHub Pages publishes `main`; one author submits the verified website URL to Canvas.
